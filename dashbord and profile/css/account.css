@@ -1,0 +1,1005 @@
+body {
+    
+    overflow-x: hidden;
+   
+}
+
+
+ /* ........................confirm deposit model or popup css start................................ */ 
+.currency-static .total-blance{
+	padding-left:40px;
+	padding-right:40px;
+}
+.currency-static .total-blance h4{
+	    margin-top: 26;
+    color: rgba(0,0,0,0.5);
+    font-size: 16.5;
+}
+.currency-static .total-blance h3{
+	float:right;
+	color: rgba(0,0,0,0.6);
+}
+
+.sb-tabs{
+	border:none;
+   
+    border-radius: 6px;
+   
+}
+
+
+.sb-tabs > li {
+ border:none;
+ margin-top:1px;
+ outline:none;
+ color:rgba(0,0,0,0.2);
+ font-weight:bold;
+
+  background-color: rgb(240, 242, 247);
+ border-radius:0px;
+ margin-left:0px;
+ width:33.3%;
+ 
+ display:inline-block;
+}
+
+.sb-tabs li.active {
+	border:0px solid rgba(0,0,0,0);
+	outline:none;
+    border-radius:6px 6px 6px 6px;
+        box-shadow: rgba(5, 24, 61, 0.1) 0px 4px 8px;
+    transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+	background:#ffff;
+	
+}
+.sb-tabs > li.active > a{
+	 color: #3e83ff;
+	cursor: default;
+	
+	background-color: transparent;
+	border:0px solid rgba(0,0,0,0);
+	outline:none ;
+    font-weight:bold;
+	
+}
+.sb-tabs > li.active > a:hover{
+	color:rgba(62,131,255,0.5);
+	border:0px solid rgba(0,0,0,0);
+	box-shadow:none;border-radius:6px;
+} 
+.sb-tabs > li.active:hover{
+	     box-shadow: rgba(5, 24, 61, 0.1) 0px 4px 8px;
+    transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+	 border-radius:6px;
+}
+.sb-tabs > li.active > a:focus {
+    color: #3e83ff;
+	border:none;
+	background-color: transparent;
+	outline:none ;
+}
+.sb-tabs > li.open{
+	      box-shadow: rgba(5, 24, 61, 0.1) 0px 4px 8px;
+    transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+.sb-tabs> li:hover {
+  	border:0px solid rgba(0,0,0,0);
+    margin-top:1px;
+	
+	outline:none;
+    border-radius:0px;
+   
+	
+}
+.sb-tabs > li.open > a, .sb-tabs > li:hover > a {
+  border: none;
+  background: none !important;
+  color:rgba(0,0,0,0.4);
+  transition:0.2s;
+}
+
+
+
+/* Below tabs mode */
+
+
+.sb-tabs  > li > a {
+  margin-top: 0;
+   color:rgba(0,0,0,0.5);
+   text-align:center;
+   border:none;
+}
+
+
+.sb-tabs .nav-tabs > li,.sb-tabs .nav-pills > li {
+   
+    display:inline-block;
+  
+}
+
+.sb-tabs{
+   margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 3px;
+    border-radius: 6px;
+	padding-left: 1;
+    padding-right: 1;
+     background-color: rgb(240, 242, 247);
+    margin-top: 10px;
+   
+   
+    position: relative
+}
+
+
+
+
+.tab-content-right{
+	height:80%;
+	overflow-y:auto;
+	padding-bottom:45px;
+}
+.tab-content-right::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+#buyc,#sellc,#hard {
+	padding-top:20px;
+	padding-left:0;
+	padding-right:0;
+	overflow:hidden;
+	margin-top:-10px;
+}
+#buyc .row,#sellc .row{
+	    margin-top: 0px;
+    
+    padding-top: 0px;
+    padding-bottom: 1px;
+    padding-left: 25;
+    padding-right: 30;
+}
+#hard .row{
+	    margin-top: 0px;
+    
+    padding-top: 20px;
+    padding-bottom: 1px;
+    padding-left: 40;
+    padding-right: 40;
+}
+#hard .row p{
+	font-size:15px;
+	color:rgba(0,0,0,0.6);
+	font-weight:400;
+}
+#buyc .row:before {
+ content: "";
+    background: rgba(200,200,200,0.1);
+    position: relative;
+    bottom: 0;
+    top: 66;
+    left: 2%;
+    right: 2%;
+    height: 1px;
+    width: 96.4%;}
+	
+	#sellc .row:before {
+ content: "";
+    background: rgba(200,200,200,0.1);
+    position: relative;
+    bottom: 0;
+    top: 66;
+    left: 2%;
+    right: 2%;
+    height: 1px;
+    width: 96.4%;}
+	
+	
+#buyc .row:hover,#sellc .row:hover{
+	
+}
+#buyc ul,#sellc ul{
+	padding-left:0;
+	padding-right:0;
+	margin:0;
+}
+#buyc li,#sellc li{
+	list-style-type:none;
+}
+#buyc li img,#sellc li img{
+	margin-top:16px;
+	width:35px;
+	display:inline-block;
+}
+
+#buyc li .sbcname,#sellc li .sbcname{
+	font-weight:500;
+	font-size:17px;
+	margin-left:9px;
+	color:rgba(0,0,0,0.7);
+	margin-top:20px;
+	position:absolute;
+    
+	
+}
+
+#buyc .sbcnumber,#sellc .sbcnumber{
+font-weight: 500;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 12px;
+    color: rgb(8 75 146);
+    float: right;
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	
+}
+#buyc .sbcc,#sellc .sbcc{
+	font-weight:450;
+	font-size:14px;
+	color:rgba(0,0,0,0.5);
+        float: none;
+    right: 15;
+    position: absolute;
+
+	
+}
+#buyc .c-coin,#sellc .c-coin{
+	width:100%;
+	margin-top:15px;
+	margin-left:-15px;
+}
+
+
+
+
+
+
+#websiteOverlay{
+ z-index:200000;
+  background-color:transparent;
+  
+  opacity: 1;
+  -webkit-animation: fadeOut 3s;
+  animation: fadeOut 3s;
+}
+
+
+
+
+
+
+
+
+
+
+.cmodal,.rrmodal{
+   position:fixed;
+  padding-top: 0px; 
+   z-index:100000000;
+  width: 0%;
+  height: 0%; 
+  margin-top:0;
+  top:0;
+  width: 0%;
+  position:fixed;
+  height: 0%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  border-radius:0px;
+  
+}
+.rrmodal{
+
+}
+
+.cmodal  .cmodal-content ,.rrmodal  .rrmodal-content {
+  position: fixed;
+  background-color: #fefefe;
+  margin: auto;
+   height:100%;
+   transition:all 0.3s ease;
+  padding-left: 30;
+  padding-right: 30;
+  overflow-Y:auto;
+  overflow-x:hidden;
+  border: 0px solid #888;
+  width: 460px;
+ margin-right:0;
+ right:-1200;
+   border-radius:0px;
+   padding-bottom:0;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+    z-index:10000000000;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.cmodal  .cmodal-content::-webkit-scrollbar {
+    display: none;
+}
+.rrmodal  .rrmodal-content::-webkit-scrollbar {
+    display: none;
+}
+.cmodal  .edmodal-content{
+  position: fixed;
+  background-color: #fefefe;
+  margin: auto;
+   height:100%;
+   transition:all 0.3s ease;
+  padding-left: 30;
+  padding-right: 30;
+  overflow-Y:auto;
+  overflow-x:hidden;
+  border: 0px solid #888;
+  width: 460px;
+ margin-right:0;
+ left:-1200;
+   border-radius:0px;
+   padding-bottom:0;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+    z-index:10000000000;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.cmodal  .edmodal-content::-webkit-scrollbar {
+    display: none;
+}
+.cmodal  .modal-header, .rrmodal  .modal-header {
+ border-bottom:1px solid rgba(0,0,0,0);
+ background-color: #fff;
+ color: #6a6a6a;
+ font-size: 16px;
+ margin-top:-8px;
+ padding-left:0;
+ padding-right:0;
+ text-align:center;
+ 
+}
+.cmodal  .modal-header  h3,.rrmodal  .modal-header  h3{
+ margin-top:10px;
+ font-size:25px;
+ float:left;
+ color:rgba(20,20,80,1);
+}
+
+/* The Close Button */
+.cmodal  .close {
+  color:#363535;
+  float: right;
+  margin-top:5px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.cmodal  .close:hover,
+.cmodal  .close:focus {
+  color:#757272;
+  text-decoration: none;
+  cursor: pointer;
+}
+.rrmodal  .close {
+  color:#363535;
+  float: right;
+  margin-top:5px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.rrmodal  .close:hover,
+.rrmodal  .close:focus {
+  color:#757272;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ........................deposit model or popup css start................................ */ 
+.cmodal .active > div { display:block; }
+.rrmodal .active > div { display:block; }
+
+
+.cmodal .w-s,.rrmodal .w-s{
+	
+	margin-left:0px;
+	margin-right:0px;
+	box-shadow:none;
+	
+}
+.cmodal .w-s .col-md-4 p,.rrmodal .w-s .col-md-4 p{
+	margin-top:11px;
+	color:rgba(0,0,0,0.5);
+    font-weight:500;	
+}
+.cmodal .w-s .bootstrap-select.btn-group .dropdown-toggle .filter-option ,.rrmodal .w-s .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+	margin-top: 6px;
+    word-spacing: 29px;
+    text-align: left;
+    font-size: 14px;padding-right:-120px;
+	
+}
+
+
+.cmodal .w-s .bootstrap-select,.rrmodal .w-s .bootstrap-select{
+	margin-top:2px;
+	float:left;
+}
+
+
+
+.bootstrap-select.btn-group .dropdown-menu {
+   
+}
+
+	select{
+		outline:none;
+		box-shadow:none;
+		border:none;
+	}
+	select:focus{
+		outline:none;
+		border:none;
+		box-shadow:none;
+	}
+	
+	.bootstrap-select > .dropdown-toggle {
+			
+		}
+	.bootstrap-select .dropdown-toggle:focus {
+    outline: thin solid #fff !important;
+    outline:none!important;
+    outline-offset: 0px; box-shadow:none !important;
+}
+
+.btn-group.open .dropdown-toggle {
+    
+    box-shadow:none;
+	outline:none !important;
+	border-radius:5px;
+	 border: border:1px solid tgba(220,200,200,0.1) ;
+}
+.btn-group.open .dropdown-toggle:focus {
+    
+	outline:none !important;
+}
+.btn-group.close .dropdown-toggle {
+    border: border:1px solid tgba(220,200,200,0.1)  !important;
+	border-radius:5px;
+	outline:none !important;
+}
+
+.btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+    outline: none !important;
+     border:1px solid tgba(220,200,200,0.1) !important;
+	 border-radius:5px;
+}
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+    color: none;
+	box-shadow:none;
+    background-color:none;
+    outline: none !important;
+     border:1px solid tgba(220,200,200,0.1) !important;
+	 border-radius:5px;
+}
+        .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+	padding-top: 1px;
+	padding-right:120px;
+    text-align: left;
+     outline: none !important;
+    border: none !important;
+   
+}
+	button.btn.dropdown-toggle.btn-default {
+			background-color: transparent;
+			width:100%;
+			
+			 outline: none !important;
+            
+			box-shadow:none;
+			float:none;
+		}
+		
+	
+	.bootstrap-select.btn-group .filter-option {
+			background:none;
+			color:rgba(0,0,0,0.6);
+			padding-top:-10px;
+			font-weight:bold;
+			 outline: none !important;
+			 box-shadow:none;
+		}
+
+	.bootstrap-select > .dropdown-menu {
+			background-color: none;
+			color:rgba(0,0,0,0.6) !important;
+			border-radius: 3px;
+			
+		}
+
+	.dropdown-menu>li>a {
+			background-color: transparent;
+			color:rgba(0,0,0,0.6);
+			font-weight:bold;
+			
+		}
+	.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+			background-color:transparent;
+			color:rgba(0,0,0,0.5);
+			text-decoration: none;
+			outline:none;
+			background:rgba(200,200,200,0.2);
+		}
+
+
+		
+
+
+
+
+.conv-wrap {
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+}
+.conv-cont {
+	padding: 10px;
+	float: left;
+	width: 100%;
+	border: 1px solid #afafaf;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 6px -1px #919191;
+	-webkit-box-shadow: 0 0 6px -1px #919191;
+	box-shadow: 0 0 6px -1px #919191;
+}
+
+.conv-cont .cov-frm {
+	float: left;
+	width: 100%;
+	}
+
+.conv-cont .cov-frm .selectpicker {
+	font-size: 18px !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+	margin: 0px;
+	padding: 23px;
+	float: left;
+	width: 100%;
+
+	outline: none !important;
+}
+
+
+
+.	conv-cont .cov-frm .cov-frm-label {
+font-size: 14px;
+	color: rgba(0,0,0,0.5);
+	text-decoration: none;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding: 5px;
+}
+.conv-cont .cov-frm .cov-frm-labeli {
+	font-size: 14px;
+	color:  rgba(0,0,0,0.5);
+	text-decoration: none;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding: 5px;
+	background-color: transparent;
+}
+
+
+.conv-cont .cov-frm .cov-inp-bx {
+	padding: 0px;
+	float: left;
+	width: 100%;
+	border: 1px solid #c2c2c2;
+	border-radius: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.conv-cont .cov-frm .cov-frm-input {
+	font-size: 24px;
+	font-weight: bold;
+	color: red;
+	text-decoration: none;
+	margin: 0px;
+	padding: 9px;
+	float: left;
+	width: 100%;
+	border: none;
+	outline: none;
+}
+.conv-cont .cov-frm .cov-frm-sbtm {
+	font-size: 20px;
+	font-weight: bold;
+	color: red;
+	text-decoration: none;
+	background-color: transparent;
+	text-align: center;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+.conv-cont .cov-frm .cov-frm-sbtm:hover {
+	background: transparent;
+}
+.cov-spni {
+	font-size: 13px;
+	font-weight: normal;
+	color: red;
+	text-decoration: none;
+	line-height:50px;
+}
+.cov-spnii {
+	color: rgba(0,0,0,0.5);
+	
+}
+.cmodal .bootstrap-select.btn-group .dropdown-toggle .caret,.rrmodal .bootstrap-select.btn-group .dropdown-toggle .caret {
+    position: absolute;
+    top: 50%;
+	color: rgba(0,0,0,0.5);
+	font-weight:bold;
+	font-size:120px;
+	width:10px;
+    right: 42px;
+	margin-top: -2px;
+   
+    vertical-align: middle;
+	transition:all 0.2s ease; 
+}
+.bootstrap-select.btn-group .dropdown-toggle .caret:hover{
+	color: rgba(0,0,0,0.4);
+}
+
+
+.w-s .cur-p{
+	color:rgba(0,0,0,0.4);
+	font-weight:550;
+}
+.cmodal .w-s .bootstrap-select > .dropdown-toggle, .rrmodal .w-s .bootstrap-select > .dropdown-toggle {
+			color:#fff;
+			
+			font-size: 1.5em;
+			background:transparent;
+			 border:1px solid tgba(220,200,200,0.1);
+			border-radius:5px;
+			z-index:10;
+			margin-left:0px;
+			outline:none;
+			box-shadow:none;
+			padding: 7px 15px;
+			left:-15px;
+			padding-bottom:8px;
+			margin-top:0px;
+			padding-left: 10px;
+            width:160px;
+		}
+		
+.cmodal .w-s .bootstrap-select.btn-group .dropdown-menu ,.rrmodal .w-s .bootstrap-select.btn-group .dropdown-menu {
+    min-width: 30%;
+    width: 200px;
+    left:-15px;
+}
+.cmodal .f-e,.rrmodal .f-e{
+	margin-top:16px;
+}
+.cmodal .f-e .input-group,.rrmodal .f-e .input-group{
+	width:100%;
+}
+.cmodal  label,.rrmodal  label{
+    color:rgba(0,0,0,0.4);	
+}
+.cmodal .f-e .input-group .input-group-addon,.rrmodal .f-e .input-group .input-group-addon{
+	background:rgba(220,220,220,0);
+	border:1px solid rgba(120,120,120,0.2);
+	color:rgba(0,0,0,0.4);
+	height:48px;
+	width:50px;
+	cursor:pointer;
+    border-radius: 5px;
+
+
+}
+.cmodal .f-e .input-group input{
+	height:48px;
+	border:1px solid rgba(120,120,120,0.2);
+	box-shadow:none;
+}
+.cmodal .f-estemate .fee {
+	height:35px;
+	text-align:center;
+	border:1px solid rgba(120,120,120,0.2);
+	box-shadow:none;
+	margin-bottom:10px;
+}
+
+.cmodal .f-e .input-group input:focus{
+	
+	box-shadow: -1px -1px 12px -4px rgba(0,0,0,0.05);
+}
+.cmodal .u-e p{
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:10px;
+	padding-right:10px;
+	color:#0F48C4;
+	margin-top:-5px;
+}
+.cmodal .u-e p a{
+	font-weight:500;
+	text-decoration:none;
+	color:#0F5AFB;
+}
+.cmodal .ammount{
+	position:relative;
+}
+.cmodal .ammount input{
+	height:48px;
+	border:1px solid rgba(120,120,120,0.2);
+	box-shadow:none;
+	font-size:20px;
+	color:#1F79A2;
+	border-right:none;
+	font-weight:400;
+}
+.cmodal .ammount .glyphicon{
+	position:absolute;
+	margin-top:15px;
+	margin-left:-7px;
+	color:rgba(0,0,0,0.4);
+}
+
+.cmodal .ammount .input-group-addon{
+	background:rgba(220,220,220,0);
+	border:1px solid rgba(120,120,120,0.2);
+	color:rgba(0,0,0,0.4);
+	height:48px;
+	width:50px;
+	
+	border-left:none;
+   
+
+
+}
+
+
+
+
+
+
+
+
+.cmodal .f-m {
+	
+}
+.cmodal .f-m  textarea{
+	height:65px;
+	border:1px solid rgba(120,120,120,0.2);
+	box-shadow:none;
+	padding-top:10px
+}
+.cmodal .f-m .input-group textarea:focus{
+	
+	box-shadow: -1px -1px 12px -4px rgba(0,0,0,0.05);
+}
+.cmodal .f-b .btn,.rrmodal .f-b .btn{
+	outline:none;
+	box-shadow:none;
+	border:none;
+	height:50px;
+	padding-top:12px;
+	margin-bottom:20px;
+	background:#3e83ff;
+	font-weight:500;
+	color:rgba(255,255,255,0.8);
+}
+.cmodal .f-blance{
+	margin-top:10px;
+}
+.cmodal .f-blance #fblance,.cmodal .f-blance #rblance{
+	float:right;
+	color:rgba(0,0,0,0.9);
+	font-weight:400;
+}
+.cmodal .f-blance #fcurrency,.cmodal .f-blance #rcurrency{
+	
+	font-size:16px;
+	color:rgba(0,0,0,0.6);
+	font-weight:400;
+}
+
+
+
+ /* ........................confirm deposit model or popup css start................................ */ 
+
+.rrmodal .r-p{margin-top:10;}
+.rrmodal .r-p .col-md-12 .container-fluid img{
+	padding-top:20;
+	padding-bottom:20;
+}
+
+
+.rrmodal .due{
+	margin-bottom:10px;
+}
+.rrmodal .due .col-md-12 .link{
+  background:rgba(220,220,220,0.1);
+	margin-top:10px;
+	width:100%;
+	border-radius:5px;
+	z-index:500;
+	color:rgba(0,0,0,0.7);
+	border:1px solid rgba(120,120,120,0.2);
+	font-weight:500;
+	border-radius:0px;
+	font-size:13px;
+	padding:15px;
+	padding-right:40px;
+	flex-direction: row;
+	display:inline-block;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.rrmodal .due .col-md-12 .link span{
+	
+	
+}
+.rrmodal .due .col-md-12 .cop-1{
+	position:absolute;
+	z-index:1000;
+	width:93%;
+	margin-top:11px;
+	display:none;
+	color:#ffff;
+	font-weight:bold;
+	border-radius:5px;
+	font-size:15px;
+	text-align:center;
+	padding:13px;
+	background:rgba(0,0,0,0.9);
+
+	
+}
+
+.rrmodal .due .col-md-12 .cop-1 span{
+	color:#06D25B;
+	margin-top:px;
+
+	
+}
+
+
+.rrmodal .due .col-md-12 i{
+    margin-left:-35px;
+	margin-top:23px;
+	position:absolute;
+	color:#169CDA;
+	cursor:pointer;
+	transition:0.1s;
+}
+
+.rrmodal .due .col-md-12 i:hover{
+   color:rgba(22,156,218,0.5);
+   transition:0.1s;
+}
+.rrmodal .f-estemate{
+	margin-top:15px;
+}
+.rrmodal .f-estemate p a{
+   color:#3e83ff;
+   transition: all 0.2s ease;
+   text-decoration:none;
+}
+.rrmodal .f-estemate p a:hover{
+  opacity:0.7;
+}
+
+
+
+
+
+
+ @media screen and (max-width: 992px) {
+	 .dCBDnV {
+    
+	 margin-right: 0px;}
+	 .tab-content-right{
+	height:80%;
+	overflow-y:auto;
+	padding-bottom:45px;
+}
+.tab-content-right::-webkit-scrollbar {
+    display: none;
+}
+ }
+ @media screen and (max-width: 437px) {
+
+.cmodal .ammount .jko {
+   
+top: 22;}
+.cmodal  .cmodal-content {
+  
+   height:570px;
+ 
+  width: 350px;
+ 
+  
+ }
+ .cmodal .u-e p{
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:5px;
+	padding-right:5px;
+	color:#0F48C4;
+	font-size:12px;
+}
+.cmodal .u-e p a{
+	font-weight:500;
+	text-decoration:none;
+	color:#0F5AFB;
+	font-size:13px;
+}
+.cmodal .edmodal-content{
+	 height:570px;
+ 
+  width: 350px;
+}
+.cmodal  .cmodal-content, .rrmodal  .rrmodal-content {
+  
+   height:570px;
+ 
+  width: 350px;
+ 
+  
+ }
+.cmodal .f-b .btn, .rrmodal .f-b .btn {
+ 
+margin-bottom: 40px;}
+ .cmodal .u-e p{
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:5px;
+	padding-right:5px;
+	color:#0F48C4;
+	font-size:10px;
+}
+.cmodal .u-e p a{
+	font-weight:500;
+	text-decoration:none;
+	color:#0F5AFB;
+	font-size:11px;
+}
+.cmodal .w-s .bootstrap-select > .dropdown-toggle ,.rrmodal .w-s .bootstrap-select > .dropdown-toggle {
+			
+			margin-left:25px;
+		
+		}
+		
+.cmodal .w-s .bootstrap-select.btn-group .dropdown-menu ,.rrmodal .w-s .bootstrap-select.btn-group .dropdown-menu {
+    min-width: 30%;
+    width: 200px;
+    left:3px;
+}
+ }

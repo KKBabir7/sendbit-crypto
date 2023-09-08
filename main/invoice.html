@@ -1,0 +1,287 @@
+<html>
+       <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	          Sendbit-invoice
+	        </title>
+			           <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+		               <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/navbar.css">
+						<link rel="stylesheet" href="css/invoice.css">
+						<link rel="stylesheet" href="css/select/bootstrap-select.css">
+						<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+					    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+                        
+	    <style>
+    
+
+  .usd {
+        background-image:url(img/select-img/usd.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .btc {
+        background-image:url(img/select-img/btc.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .ltc {
+        background-image:url(img/select-img/ltc.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .dash {
+        background-image:url(img/select-img/dash.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .bch {
+        background-image:url(img/select-img/bch.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .eur {
+        background-image:url(img/select-img/eur.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .eth {
+        background-image:url(img/select-img/eth.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+
+</style>                 
+	</head>
+	
+	<body>
+
+
+<!---------------------navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+	<div class="container">
+		<div class="navbar-header">
+			<button onclick="mobile()" type="button" class="navbar-toggle collapsed first-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/index.html"><img   class="img-responsive"  src="img/img/sendbitlogo.png">
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav menu-left">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/main/documentation.html">API documentation</a></li>
+				<li><a href="/main/security.html">Security</a></li>
+				<li><a href="/main/reviews.html">FAQ</a></li>
+				<li><a href="/main/docs.html">API status</a></li>
+				
+			</ul>
+			<ul class="nav navbar-nav navbar-right menu-right">
+				<li class="log"><a href="/main/log.html"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+				<li class="sign "><a href="/main/sign.html" type="button" class="btn btn-primary">Sign up</a>&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+		</div>	
+	</div>
+</nav> 
+<!---------------------mobile navbar -->
+<div id="mobile" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<center>
+				<div class="tabbable-line">
+					<ul class="nav nav-tabs ul">
+						<li><a data-toggle="tab" href="#business">API docs</a></li>
+					</ul>
+				</div>
+			</center>   
+			<span class="close">&times;</span>	
+		</div>
+		<div class="modal-body">
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/main/documentation.html">API documentation</a></li>
+				<li><a href="/main/security.html">Security</a></li>
+				<li><a href="/main/reviews.html">FAQ</a></li>
+				<li><a href="/main/docs.html">API status</a></li>
+				<li class="log"><a href="/main/log.html
+					"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+				<center><p class="gt"><a href="/main/sign.html" class="btn btn-primary" role="button">Get Start</a></p></center>
+			</ul>
+		</div>
+	</div>
+</div>
+		<section class="invoice">
+			<div class="row invoice-row">
+			    <div class="col-md-3 col-sm-3">
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 invoice-form">
+					<div class="container-fluid">
+					  
+						<div class="center"> 
+						    <div class="i-head">
+								<center><img width="100px;" style="margin-top:-70px;" class="img-responsive" src="img/invoice/log1.png"></center>						
+								<h4 style="color:rgba(0,0,0,0.9)">Invoice from Sendbit</h4>
+								<p>Billed to Jenny Rosen</p>
+								<p>Invoice #C76F183D-00001</p>
+							</div>
+							<div class="i-slect">
+								<h4 class="uh4">$22.50 USD due on May 4,2019</h4>
+								<p class="chp">Choose how you'd like to pay</p>
+								<div class="container-fluid">
+								    <div class="row  sec">
+									    <div class="col-md-6 col-sm-12 col-xs-12">
+										    <select class="selectpicker"  name="coin" onchange="invoice()"  id="mur">
+												<option value="EUR" data-icon="eur">&nbsp;EUR</option>
+												<option value="LTC" data-icon="ltc">&nbsp;LTC</option>
+												<option value="ETH" data-icon="eth">&nbsp;ETH</option>
+												<option value="DASH" data-icon="dash" >&nbsp;DASH</option>
+												<option value="BCH" data-icon="bch">&nbsp;BCH</option>
+									        </select> 
+										</div>
+										<div class="col-md-6  col-sm-0 col-xs-0">
+										    
+										
+										</div>
+										
+									</div>
+								    <div class="row pay">
+									    <div class="col-md-12">
+										    <a href=
+											"#" type="button" class="btn btn-primary btn-lg btn-block">Pay invoice</a>
+										
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid footer">
+							    <p><i class="fa fa-pencil-square-o"></i></p><p class="in"> This includes the first month discount we discusssed.Thanks for your business</p>
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+										  <tr>
+											<th>DESCRIPTION</th>
+										   
+											<th>QTY</th>
+											<th>PRICE</th>
+											 <th>TOTAL</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td style="border-bottom: 1px solid rgba(100,100,100,0.1);">Growth Plan</td>
+											
+											<td>1</td>
+											<td>$20.00</td>
+											 <td>$20.00</td>
+										  </tr>
+										  <tr>
+											<td class="pdf"><a style="text-decoration:none;opacity:0.5" href="img/empty.pdf" download><i class="fa fa-arrow-down"></i> PDF</a></td>
+											<td></td>
+											<td>Tax(12.50%)</td>
+											<td>$2.50</td>
+										  </tr>
+										   <tr style="margin-top:-10px;padding-top:-50;line-height:0px;">
+											<td style="border-top:none"></td>
+											<td style="border-top:none"></td>
+											<td style="border-top:none;color:rgba(0,0,0,0.8);line-height:0;">Amount due</td>
+											<td style="border-top:none;color:rgba(0,0,0,0.8);line-height:0">$22.50</td>
+										  </tr>
+										  
+										</tbody>
+									</table>
+							    </div>
+							</div>
+							<hr style="margin-top:-5px;">
+							<p class="contact">If you have any questions,contact sendbit at <a href="#">contact@sendbit.com </a> or call at <a href="#">(415)555-5555</a></p>
+					</div>
+					<div class="last">
+					<center>
+					<p>Invoice by Sendbit<p>
+					<p>Sendbit partners with sendbit to provide seccure invoice and <br>payments processing</p>
+					
+					</center>
+					</div>
+					</div>
+					
+				</div>
+				<div class="col-md-3 col-sm-3 ">
+				</div>
+			</div>
+		</section>
+		<div class="dropup dropuptemporaly">
+			<button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  All Page
+			  <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+			  <li><a href="/buisness/buis.html">Business</a></li>
+			  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+			  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+			  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+			  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+			  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+			  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+			  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+			  <li><a href="/main/invoice.html">Invioce</a></li>
+			  <li><a href="/main/payment.html">Payment</a></li>
+			</ul>
+		  </div>
+		
+		
+		
+		
+		
+		
+		
+	          <a href="#top" id="js-top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a>
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			   
+			   <script src="js/bootstrap.min.js"></script>
+			   <script src="js/extranal.js"></script>
+			   <script src="js/dist/js/bootstrap-select.js"></script>
+			   
+			  
+		
+<script>
+  var re=document.getElementById("content1").value;
+  re = Math.floor((Math.random() * 100) + 1);
+</script>
+			<script>
+var mySVG = document.getElementById("mySVG");
+mySVG.setAttribute("width",  window.innerWidth);
+mySVG.setAttribute("height", window.innerHeight);
+</script>   
+	</body>
+</html>

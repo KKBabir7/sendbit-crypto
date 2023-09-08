@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">    
+
+	<head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	          Security
+	        </title>
+			           <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+		               <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/documentation.css">
+						<link rel="stylesheet" href="css/secri1.css">
+						<link rel="stylesheet" href="css/navbar.css">
+						<link rel="stylesheet" href="css/security.css">
+						<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+						<link rel="stylesheet" href="css/material-design-iconic-font.css">
+						<link rel="stylesheet" href="fonts/font-awesome.min.css">						
+	                    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                   <link href="@import url('https://fonts.googleapis.com/css?family=Patua+One');" rel="stylesheet">
+		               <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+					    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+                        
+	                
+
+</head>
+
+
+
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="30">
+	<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button onclick="mobile()" type="button" class="navbar-toggle collapsed first-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					 <span class="icon-bar"></span>
+					 <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/index.html"><img   class="img-responsive"  src="img/img/sendbitlogo.png">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav menu-left">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/main/documentation.html">API documentation</a></li>
+					<li><a href="/main/security.html">Security</a></li>
+					<li><a href="/main/reviews.html">FAQ</a></li>
+					<li><a href="/main/docs.html">API status</a></li>
+					
+				</ul>
+				<ul class="nav navbar-nav navbar-right menu-right">
+					<li class="log"><a href="/main/log.html"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+					<li class="sign "><a href="/main/sign.html" type="button" class="btn btn-primary">Sign up</a>&nbsp;&nbsp;&nbsp;</li>
+				</ul>
+			</div>	
+		</div>
+	</nav> 
+<!---------------------mobile navbar -->
+	<div id="mobile" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<center>
+					<div class="tabbable-line">
+						<ul class="nav nav-tabs ul">
+							<li><a data-toggle="tab" href="#business">API docs</a></li>
+						</ul>
+					</div>
+				</center>   
+				<span class="close">&times;</span>	
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/main/documentation.html">API documentation</a></li>
+					<li><a href="/main/security.html">Security</a></li>
+					<li><a href="/main/reviews.html">FAQ</a></li>
+					<li><a href="/main/docs.html">API status</a></li>
+					<li class="log"><a href="/main/log.html
+						"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+					<center><p class="gt"><a href="/main/sign.html" class="btn btn-primary" role="button">Get Start</a></p></center>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+<br>
+
+<div class="container-fluid doc-section">
+    <div class="row doc">
+	    <div class="bg" id="bg">
+	    <div class="col-md-3 side-navber nav-section" id="nav-section">
+			<nav class="content-nav" id="myScrollspy" >
+			  <ul class="nav nav-pills nav-stacked" >
+			         <li><span onclick="removee()" class="glyphicon glyphicon-remove" aria-hidden="true"></span></li>
+					<li><a href="#s1"><i class='fas fa-lock'></i>&nbsp;  Secure API</a></li>
+					<li><a href="#s2"><i class="fa fa-sticky-note"></i>&nbsp;  HMAC</a></li>
+					<li><a href="#s3"><i class='fas fa-user-lock'></i>&nbsp;  Secure Accounts</a></li>
+					<li><a href="#s4"><i class="fa fa-vcard"></i>&nbsp;  Wallet ID</a></li>
+					<li><a href="#s5"><i class="fa fa-adjust"></i>&nbsp;  Application</a></li>
+					<li><a href="#s6"><i class="fa fa-check-circle"></i>&nbsp; Authentication</a></li>
+					<li><a href="#s7"><i class="fa fa-support"></i>&nbsp;  Verification</a></li>
+					<li><a href="#s8"><i class='fas fa-key'></i>&nbsp;  Private Keys</a></li>
+				</ul>
+			</nav>
+        </div>
+        </div>
+		
+        <div class="col-md-9 menu">
+            <div id="s1" class="fixed-hight row">
+			        <div class="col-md-10 col-sm-12 code-menu intro">
+						<h1 class="c-heading">How we secure API calls</h1>
+						<ul>
+						    <li>HMAC uses two passes of hash computation.</li>
+						    <li>The secret key is first used to derive two keys – inner and outer. The first pass of the algorithm produces an internal hash derived from the message and the inner key.</li>
+						    <li>The second pass produces the final HMAC code derived from the inner hash result and the outer key.</li>
+						    <li>Thus, the algorithm provides better immunity against length extension attacks.</li>
+						</ul>
+			        </div>		
+            </div>
+            <div id="s2" class="fixed-hight row">
+			        <div class="col-md-10 col-sm-12 code-menu intro">
+						<h1 class="c-heading"><span class="num">1. </span> Definition of HMAC</h1>
+						<br>
+						<br>
+							<center><img src="img/security/hmac.svg"></center>
+			        </div>		
+            </div>
+            
+            <div id="s3" class="fixed-hight row">
+			        <div class="col-md-10 code-menu">
+						<h1 class="c-heading"><span class="num">2. </span> How we secure user accounts</h1>
+						<p class="c-p">2FA is an extra layer of security used to make sure that people trying to gain access to an online account are who they say they are. First, a user will enter their username and password. Then, instead of immediately gaining access, they will be required to provide another piece of information. On Sendbit we use a four-digit pin for 2FA - you can set this pin once you've logged into your account through the security centre.
+						<br><br>
+						Verifying your email address allows us to send login codes when suspicious or unusual activity is detected and to send bitcoin payment alerts when you receive funds.
+						 <br><br>
+						How can I make sure my password is secure?
+						 <br><br>
+						 Passwords must be at least 16 characters and be unique. Never use the same password twice - be diverse.
+						 <br><br>
+						 Passwords are case-sensitive, so choose a healthy variety of upper and lowercase letters and numbers, and don’t forget to throw in some symbols such as %,#,!,*, or &.
+						 </p>
+			
+			        </div>
+			        <div class="col-md-4">
+					</div>
+					
+               
+            </div>
+			<div id="s4" class="fixed-hight row">
+				<div class="col-md-8 code-menu">
+					<h1 class="c-heading"><span class="num">3. </span> GUID/UUID wallet ID's</h1>
+					<p class="c-p">Download our library - <a href="#">sendbit.inc.php</a></p>
+					<p class="c-p">You may notice your wallet ID is in a format like this (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx), this makes it almost impossible for a hacker to brute force attack your account. We use UUID for the login as this is the safest option rather than emails, as these are used everywhere and it makes you vulnerable to hacks and spam attacks.</p>
+					
+				</div> 
+				<div class="col-md-4">
+								   
+				</div>
+			</div>
+           
+			<div id="s5" class="fixed-hight row">
+			    <div class="col-md-8 code-menu intro">
+					<h1 class="c-heading"><span class="num">4. </span> Application</h1>
+					<ul>
+					    <li>We use SQL injection filters to prevent CSRF attacks and XSS attacks.</li>
+					    <li>We limit a variety of actions on the site (login attempts, etc.).</li>
+					    <li>We have an advanced error reporting and logging system and are always on top of our work in case something goes wrong somewhere</li>
+					
+					</ul>
+				</div> 
+				<div class="col-md-4">
+					
+				</div>
+            </div>
+			<div id="s6" class="fixed-hight row">
+                <div class="col-md-8 code-menu intro">
+					<h1 class="c-heading"><span class="num">5. </span> Authentication</h1>
+					<p class="c-p">We hash passwords stored in the database with bcrypt with a cost factor of 12. We check all accounts for strong passwords on account creation. Wallet credentials are kept separate from the database and code base.</p>
+				</div> 
+				<div class="col-md-4">
+					
+				</div>
+            </div> 
+			<div id="s7" class="fixed-hight row">
+				<div class="col-md-8 col-sm-12 code-menu intro">
+					<h1 class="c-heading"><span class="num">6. </span>  2-Step Verification on All Accounts</h1>
+					<p class="c-p">In addition to your wallet ID and password, you'll enter a code you have set from your security centre, adding an extra layer of security for your account.</p>
+				</div>	
+				<div class="col-md-4">
+				
+				</div>					
+            </div>
+			<div id="s8" class=" fixed-hight row">
+			    <div class="col-md-12 code-menu intro">
+					<h1 class="c-heading"><span class="num">4. </span> Private keys</h1>
+					<ul>
+					    <li>The private key is what grants a cryptocurrency user ownership of funds on a given address.</li>
+					    <li>The Sendbit wallet automatically generates and stores private keys for you.</li>
+					    <li>You can always get your private keys when you backup your wallet.</li><br>
+					    <li>When you send from a Sendbit wallet, the software signs the transaction with your private key (without actually disclosing it), which indicates to the entire network that you have the authority to transfer the funds on the address you’re sending from.</li>
+					    <li> Not only that, but we also allow our users to backup and download their entire wallet including private keys, change addresses, and all used addresses.</li>
+					    <li>These are the steps taken to create, sign and broadcast a transaction to the crypto network via Sendbit wallet.</li>
+					
+					</ul>
+					<br>
+					<pre class="code-index">createrawtransaction ["txid":"id","vout":n,...] ["address":amount,"data":"hex",...] ( locktime ) ( replaceable )</pre>
+					<pre class="code-index">signrawtransactionwithkey "hexstring" ["privatekey1",...] ( ["txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex",...] sighashtype )</pre>
+					<pre class="code-index">sendrawtransaction "hexstring" </pre>
+					<pre class="code-index">Example output: c95d57202344ad583c48f4b134725ad0e59eb56941b5f62252b8d12770f84258 </pre>
+				</div> 
+				
+            </div>
+			<div class="row section-9"> 
+		            <div class="col-md-2 col-sm-6">
+		                <h1>Products</h1>
+		                    <ul class="list-group">
+								<li class="list-group-item"><a href="#">Instant accounts</a></li>
+								<li class="list-group-item"><a href="#">Joint accounts</a></li>
+								<li class="list-group-item"><a href="#">Business accounts</a></li>
+								<li class="list-group-item"><a href="#">PayPal</a></li>
+								<li class="list-group-item"><a href="#">Avios</a></li>
+		                    </ul>
+		            </div> 
+					<div class="col-md-2 col-sm-6">
+						<h1>Features</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Account opening</a></li>
+								<li class="list-group-item"><a href="#">Card</a></li>
+								<li class="list-group-item"><a href="#">Payments</a></li>
+								<li class="list-group-item"><a href="#">Money transfers</a></li>
+								<li class="list-group-item"><a href="#">Google Pay</a></li>
+								<li class="list-group-item"><a href="#">Security</a></li>
+							</ul>
+					</div> 
+					<div class="col-md-2 col-sm-6">  
+						<h1>Company</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">About us</a></li>
+								<li class="list-group-item"><a href="#">Blog</a></li>
+								<li class="list-group-item"><a href="#">Media</a></li>
+								<li class="list-group-item"><a href="#">Partners</a></li>
+								<li class="list-group-item"><a href="#">Careers</a></li>
+							</ul>
+					</div> 
+					<div class="col-md-2 col-sm-6">  
+						<h1>Help</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Pricing</a></li>
+								<li class="list-group-item"><a href="#">Common questions</a></li>
+								<li class="list-group-item"><a href="#">Service status</a></li>
+								<li class="list-group-item"><a href="#">Get in touch</a></li>
+							</ul>
+					</div> 
+					<div class="col-md-2 col-sm-6">  
+						<h1>Customers</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Foreign nationals</a></li>
+								<li class="list-group-item"><a href="#">Basic account</a></li>
+								<li class="list-group-item"><a href="#">No proof of address</a></li>
+								<li class="list-group-item"><a href="#">Travel money card</a></li>
+								<li class="list-group-item"><a href="#">Expatrio</a></li>
+							</ul>
+					</div> 
+					<div class="col-md-2 col-sm-6">  
+						<h1>Legal</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Terms</a></li>
+								<li class="list-group-item"><a href="#">Privacy</a></li>
+								<li class="list-group-item"><a href="#">Cookies</a></li>
+								<li class="list-group-item"><a href="#" style="line-height:15px;">Modern Slavery Act Statement</a></li>
+							</ul>
+					</div> 
+                </div>
+				<div class="row section-10">
+				    <div class="col-md-12 col-sm-12 social_icon"> 
+                        <center>					
+					    <ul   class="list-inline social_icon" style="float:none;">
+							<li><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="https://instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com/"><i  class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="https://youtube.com/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+							<li><a href="https://medium.com"><i class="fa fa-medium" aria-hidden="true"></i></a></li>		
+						</ul>
+						</center>
+					</div>
+				</div>
+        </div>
+    
+    </div>
+</div><br><br><br>
+<div class="dropup dropuptemporaly">
+	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  All Page
+	  <span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+	  <li><a href="/buisness/buis.html">Business</a></li>
+	  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+	  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+	  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+	  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+	  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+	  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+	  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+	  <li><a href="/main/invoice.html">Invioce</a></li>
+	  <li><a href="/main/payment.html">Payment</a></li>
+	</ul>
+  </div>
+<a href="#top" id="js-top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a>
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			   <script src="js/extranal.js"></script>
+			   <script src="js/bootstrap.min.js"></script>
+			  
+			   
+  <script>
+				function mmenu(){
+				var side=document.getElementById("nav-section");
+				var sideee=document.getElementById("bg");
+				   side.style.left="0px";
+				   sideee.style.left="0px";
+				   sideee.style.background="rgba(0,0,0,0.4)";
+				   
+				}
+				function removee(){
+					 document.getElementById("nav-section").style.left="-300px";
+					 var sideee=document.getElementById("bg");
+				   
+				   sideee.style.left="-1200px";
+				}
+				
+		    </script>
+			
+  <script>
+  function selectElementContents(el) {
+    var body = document.body,
+      range, sel;
+    if (document.createRange && window.getSelection) {
+      range = document.createRange();
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      range.selectNodeContents(el);
+      sel.addRange(range);
+    }
+    document.execCommand("Copy");
+	
+	document.getElementById("addd").innerHTML="Copied";
+	setTimeout(function(){
+	   document.getElementById("addd").innerHTML="Copy";
+	},4000);
+  }
+
+		    </script>
+
+ <script>
+  function selectElementContents1(el) {
+    var body = document.body,
+      range, sel;
+    if (document.createRange && window.getSelection) {
+      range = document.createRange();
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      range.selectNodeContents(el);
+      sel.addRange(range);
+    }
+    document.execCommand("Copy");
+	
+	document.getElementById("addd1").innerHTML="Copied";
+	setTimeout(function(){
+	   document.getElementById("addd1").innerHTML="Copy";
+	},4000);
+  }
+
+		    </script>
+
+<script>
+  function selectElementContents2(el) {
+    var body = document.body,
+      range, sel;
+    if (document.createRange && window.getSelection) {
+      range = document.createRange();
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      range.selectNodeContents(el);
+      sel.addRange(range);
+    }
+    document.execCommand("Copy");
+	
+	document.getElementById("addd2").innerHTML="Copied";
+	setTimeout(function(){
+	   document.getElementById("addd2").innerHTML="Copy";
+	},4000);
+  }
+
+		    </script>
+
+<script>
+  function selectElementContents3(el) {
+    var body = document.body,
+      range, sel;
+    if (document.createRange && window.getSelection) {
+      range = document.createRange();
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      range.selectNodeContents(el);
+      sel.addRange(range);
+    }
+    document.execCommand("Copy");
+	
+	document.getElementById("addd3").innerHTML="Copied";
+	setTimeout(function(){
+	   document.getElementById("addd3").innerHTML="Copy";
+	},4000);
+  }
+
+		    </script>
+
+<script>
+  function selectElementContents4(el) {
+    var body = document.body,
+      range, sel;
+    if (document.createRange && window.getSelection) {
+      range = document.createRange();
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      range.selectNodeContents(el);
+      sel.addRange(range);
+    }
+    document.execCommand("Copy");
+	
+	document.getElementById("addd4").innerHTML="Copied";
+	setTimeout(function(){
+	   document.getElementById("addd4").innerHTML="Copy";
+	},4000);
+  }
+
+		    </script>
+
+        <script>
+				function dsearch() { 
+				let input = document.getElementById('dsearchbar').value 
+				input=input.toLowerCase(); 
+				let x = document.getElementsByClassName('fixed-hight'); 
+				for (i = 0; i < x.length; i++) {  
+					if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+						x[i].style.display="none"; 
+					} 
+					else { 
+						x[i].style.display="";                  
+					} 
+				  } 
+				} 
+			</script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+	<html>
+       <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	          sendbit-reviews
+	        </title>
+			           <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+		               <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/navbar.css">
+						<link rel="stylesheet" href="css/style.css">
+						<link rel="stylesheet" href="css/footer.css">
+						<link rel="stylesheet" href="css/select/bootstrap-select.css">
+						<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+						<link rel="stylesheet" href="css/material-design-iconic-font.css">
+						<link rel="stylesheet" href="fonts/font-awesome.min.css">	<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">					
+	                    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                   <link href="@import url('https://fonts.googleapis.com/css?family=Patua+One');" rel="stylesheet">
+		               <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+					    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                       					
+	</head>
+	<style>
+	
+
+	.navbar{
+	background: radial-gradient(circle at 50% 50%,#056cbb,#00427b 80%) !important;
+	    padding-top: 5px !important;
+    padding-bottom: 5px  !important;
+}
+        .usd {
+		background-image:url(img/select-img/usd.png);
+		width:26px;
+		height:26px;
+		margin-top: 6;
+    position: absolute;
+	overflow:hidden;
+		}
+		.btc {
+		background-image:url(img/select-img/btc.png);
+		width:26px;
+		height:26px;
+		margin-top: 6;
+    position: absolute;
+	overflow:hidden;
+		}
+        .ltc {
+		background-image:url(img/select-img/ltc.png);
+		width:26px;
+		height:26px;
+		margin-top: 6;
+    position: absolute;
+	overflow:hidden;
+		}
+         .dash {
+		background-image:url(img/select-img/dash.png);
+		width:26px;
+		height:26px;
+		margin-top: 6;
+    position: absolute;
+	overflow:hidden;
+		}
+        .bch {
+		background-image:url(img/select-img/bch.png);
+		width:26px;
+		height:26px;
+		margin-top: 6;
+    position: absolute;
+	overflow:hidden;
+		}
+        
+	
+
+  </style>
+	<body onchange="init()">
+<!---------------------navbar -->
+		<nav style="background:radial-gradient(circle at 71% 51%,#3fa6f4,#00427b 57%);" class="navbar navbar-default navbar-fixed-top" id="navbar">
+			<div class="container">
+			    <div class="navbar-header">
+					<button onclick="mobile()" type="button" class="navbar-toggle collapsed first-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						 <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/index.html"><img   class="img-responsive"  src="img/img/sendbitlogo.png">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <ul class="nav navbar-nav menu-left">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="documentation.html">API documentation</a></li>
+						<li><a href="security.html">Security</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">API status</a></li>
+						
+					</ul>
+                    <ul class="nav navbar-nav navbar-right menu-right">
+						<li class="log"><a href="log.html"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+						<li class="sign "><a href="sign.html" type="button" class="btn btn-primary">Sign up</a>&nbsp;&nbsp;&nbsp;</li>
+				    </ul>
+				</div>	
+		    </div>
+		</nav> 
+	<!---------------------mobile navbar -->
+		<div id="mobile" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+				    <center>
+						<div class="tabbable-line">
+							<ul class="nav nav-tabs ul">
+								<li><a data-toggle="tab" href="#business">API docs</a></li>
+							</ul>
+						</div>
+                    </center>   
+					<span class="close">&times;</span>	
+				</div>
+				<div class="modal-body">
+				    <ul>
+					    <li><a href="#">Home</a></li>
+					    <li><a href="#">Security</a></li>
+					    <li><a href="#">FAQ</a></li>
+					    <li><a href="#">API status</a></li>
+						<li class="log"><a href="log.html"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+					    <center><p class="gt"><a href="#" class="btn btn-primary" role="button">Get Start</a></p></center>
+					</ul>
+				</div>
+			</div>
+		</div>
+<BR><BR><BR><BR><br><BR><br>
+<Center>
+  <h1>More than a mobile money account</h1>
+</Center><BR><br>
+
+		<section class="tr-1">
+		    <div class="container">
+			  <!-- Begin widget code -->
+<div data-rw-masonry="19344"></div>
+<script data-cfasync="false" crossorigin="anonymous" type="module" src="https://widgets.thereviewsplace.com/2.0/rw-widget-masonry.js"></script>
+<!-- End widget code -->
+			</div>
+		</section>
+		
+
+		<section class="tr-sign">
+		    <div class="container">
+			    <div class="row slideanim">
+				    <div class="col-md-6">
+					    
+					    <h1>Let's Start</h1>
+						
+						<hr style="width:100px;float:left;border:1px solid rgba(255,255,255,0.5)">
+					</div>
+					
+					<div class="col-md-6">
+					   
+					    
+						<a href="#" class="btn btn-primary" role="button">Sign up</a>
+						
+					</div>
+					
+					
+			    </div>
+			</div>
+		</section>
+		<section class="section-12">
+		    <div class="container">
+			    <div class="row "> 
+		            <div class="col-md-3 col-sm-6 col-xs-6">
+		                <h1 style="font-size:23px;font-weight:bold;">Sendbit<span style="font-size:22px;opacity:0.7;">.io</span></h1>
+		                    <ul class="list-group">
+								<li class="list-group-item"><a href="#"><img src="img/footer/twitter-color.svg">&nbsp;&nbsp;&nbsp;Twitter</a></li>
+								<li class="list-group-item"><a href="#"><img src="img/footer/instagram.png">&nbsp;&nbsp;&nbsp;Instagram</a></li>
+								<li class="list-group-item"><a href="#"><img src="img/footer/linkedin.png">&nbsp;&nbsp;&nbsp;Linked</a></li>
+								
+		                    </ul>
+		            </div> 
+					
+					<div class="col-md-3 col-sm-6 col-xs-6">  
+						<h1>Learn</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Buy crypto</a></li>
+								<li class="list-group-item"><a href="#">Exchange</a></li>
+								<li class="list-group-item"><a href="#">Explorer</a></li>
+							</ul>
+					</div> 
+					<div class="col-md-3 col-sm-6 col-xs-6">  
+						<h1>Resources</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">API Documentation</a></li>
+								<li class="list-group-item"><a href="#">API Status</a></li>
+								<li class="list-group-item"><a href="#">FAQ's</a></li>
+								
+							</ul>
+					</div> 
+					<div class="col-md-3 col-sm-6 col-xs-6">  
+						<h1>About</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Terms of services</a></li>
+								<li class="list-group-item"><a href="#">Careers&nbsp;&nbsp;&nbsp;<span style="background:rgb(50,50,150);color:#fff;padding:3px;border-radius:4px;padding-left:5px;padding-right:5px;font-size:11px;padding-top: 5;">HIRING</span></a></li>
+								
+							</ul>
+					</div> 
+					
+                </div>
+               
+			</div>
+		</section>
+		<div class="dropup dropuptemporaly">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  All Page
+			  <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+			  <li><a href="/buisness/buis.html">Business</a></li>
+			  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+			  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+			  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+			  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+			  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+			  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+			  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+			  <li><a href="/main/invoice.html">Invioce</a></li>
+			  <li><a href="/main/payment.html">Payment</a></li>
+			</ul>
+		  </div>
+        <a href="#top" id="js-top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a>
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			   
+			   <script src="js/bootstrap.min.js"></script>
+                <script src="js/dist/js/bootstrap-select.js"></script>
+			   <script src="js/extranal.js"></script>
+			   <script src="js/currency-transfer.js"></script>
+			   	
+	 
+			 
+			 
+	</body>
+</html>

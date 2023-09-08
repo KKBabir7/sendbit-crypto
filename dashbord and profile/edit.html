@@ -1,0 +1,307 @@
+
+<html>
+       <head>
+
+             <meta charset="utf-8">
+             <meta http-equiv="X-UA-Compatible" content="IE=edge">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+            <title>
+               SendBit-edit-profile
+            </title>
+			        <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+                    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+                    <link rel="stylesheet" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/bootstrap.css">
+                    <link rel="stylesheet" href="css/style.css">
+                    <link rel="stylesheet" href="css/edit.css">
+                       
+                        <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+                        <link rel="stylesheet" href="css/select/bootstrap-select.css">
+                    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+                    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+                    <link rel="stylesheet" href="fonts/font-awesome.min.css">                       
+                    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+                   <link href="@import url('https://fonts.googleapis.com/css?family=Patua+One');" rel="stylesheet">
+				   
+                   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				   
+                  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        </head>
+ 
+    <body>
+
+
+           <body >
+
+<!-----------------------navber side------------ --> 
+        <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+            <!-----logo------------ -->
+                    <a class="navbar-brand" href="/index.html">   
+                        <img src="img/logo/sendbitlogo.png" width="123" height="28">
+                    
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+       <!-----profile-dropdown------------ -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                            <li><a href="#">Dashbord</a></li>
+                            <li><a href="#">Edit profile</a></li>
+                            <li><a href="#">API keys</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Google 2FA Setting</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </li>
+                   
+                </ul>              
+            </div>
+        </nav>
+		<section class="edit-p">
+		    <div class="container-fluid">
+			    <div class="row">
+			        <div class="col-md-3">
+					
+					</div>
+					<div class="col-md-6">
+					    <div class="jumbotron">
+						    <div class="row">
+							    <div class="col-md-12">
+								     <p style="color:rgba(0,0,0,0.6)">Wallet ID:</p>
+								    <h3 class="e-i">a1e6a53f-9a61-48b6-9ed3-834643a74d51</h3>
+								    <div class="media">
+										<div class="media-left">
+											<a href="#">
+											  <img width="100px;" height="100px;" class="media-object" src="img/sajal.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body custom-file-upload">
+										
+											<label for="file-upload" class="custom-file-upload1">
+                                                Basic information: verified
+                                            </label>
+                                            <input id="file-upload" type="file"/>
+											<p>Acculated forment jpg,png only <br>Max fole size is 500kb and min 70 kb</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+							    <div class="col-md-12">
+								    <h3 class="e-i-a">Account information</h3>
+									<div  class="wrong1"><span id="ww1">&nbsp;</span>&nbsp; <p id="w1"></p></div>
+								    <form class="form-horizontal" name="myForm" method="post" onsubmit="return validateForm()">
+											<div class="form-group">
+											    <div class="col-md-2">
+												<label for="inputname" class="control-label">First Name</label>
+												</div>
+												
+												<div class="col-md-1">
+												</div>
+												<div class="col-sm-9">
+												  <input name="fname" type="text" class="form-control" id="inputname" placeholder="first name..">
+												</div>
+											</div>
+									        <div class="form-group">
+											    <div class="col-md-2">
+												<label for="inputname" class="control-label">Last Name</label>
+												</div>
+												
+												<div class="col-md-1">
+												</div>
+												<div class="col-sm-9">
+												  <input  name="lname" type="text" class="form-control" id="inputname" placeholder="last name..">
+												</div>
+											</div>
+									        <div class="form-group">
+											   <div class="col-md-2">
+												<label for="inputEmail1" class="control-label">Email</label>
+												</div>
+												<div class="col-md-1">
+												</div>
+												<div class="col-sm-9">
+												  <input  name="ename" type="email" class="form-control" id="inputEmail3" placeholder="email..">
+												</div>
+											</div>
+									    <hr>
+									 
+									
+								
+							        
+							    
+								    <h3 style="margin-top:30px;" class="e-i-a">Change password</h3>
+								   <div  class="wrong1"><span id="ww2">&nbsp;</span>&nbsp; <p id="w2"></p></div>
+											<div class="form-group">
+											    <div class="col-md-3">
+												<label for="inputname" class="control-label">Current Password</label>
+												</div>
+												
+												
+												<div class="col-sm-9">
+												  <input  name="cpass" type="password" class="form-control" id="inputpas" placeholder="current password..">
+												</div>
+											</div>
+									        <div class="form-group">
+											    <div class="col-md-3">
+												<label for="inputname" class="control-label">New Password</label>
+												</div>
+												<div class="col-sm-9">
+												  <input  name="npass" type="password" class="form-control" id="inputpas1" placeholder="new password..">
+												</div>
+											</div>
+									        <div class="form-group">
+											   <div class="col-md-3">
+												<label for="inputpass2" class="control-label">Confirm Password</label>
+												</div>
+												<div class="col-sm-9">
+												  <input name="conpass"  type="password" class="form-control" id="inputpas2" placeholder="confirm password..">
+												</div>
+											</div>
+									  
+									 <center><button type="Submit" class="btn btn-primary btn-lg btn-block">Update password</button></center>
+									 
+									 <hr>
+									 <h3 style="margin-top:30px;" class="e-i-a">Withdrawal pin</h3>
+								   <div  class="wrong1"><span id="ww2">&nbsp;</span>&nbsp; <p id="w2"></p></div>
+											<div class="form-group">
+											    <div class="col-md-3">
+												<label for="inputname" class="control-label">Set new pin</label>
+												</div>
+												
+												
+												<div class="col-sm-9">
+												  <input  name="cpass" type="password" class="form-control" id="inputpas" placeholder="Enter 4 digit pin..">
+												</div>
+											</div>
+									       
+									        
+									  
+									 <center><button type="Submit" class="btn btn-primary btn-lg btn-block">Set pin</button></center>
+									 
+									 
+									 
+									 
+									</form>
+									
+									
+									
+								</div>
+							
+							
+						</div>
+					</div>
+					</div>
+					<div class="col-md-3">
+					
+					</div>
+					
+			    </div>
+		    </div>
+		</section>
+		<div class="dropup dropuptemporaly">
+			<button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  All Page
+			  <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+			  <li><a href="/buisness/buis.html">Business</a></li>
+			  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+			  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+			  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+			  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+			  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+			  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+			  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+			  <li><a href="/main/invoice.html">Invioce</a></li>
+			  <li><a href="/main/payment.html">Payment</a></li>
+			</ul>
+		  </div>
+        <script src="js/bootstrap.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+			<script>
+			
+			function validateForm() {
+			
+							
+  var a = document.forms["myForm"]["fname"].value;
+  if (a == "") {
+
+    document.getElementById("w1").innerHTML=" Please Input Your First Name";
+	document.getElementById('ww1').innerHTML = '<i class="fa fa-exclamation-triangle"></i>';
+	
+    return false;
+  }
+ 
+  var b = document.forms["myForm"]["lname"].value;
+  if (b == "") {
+    document.getElementById("w1").innerHTML="Please Input Your Last Name"
+	document.getElementById('ww1').innerHTML = '<i class="fa fa-exclamation-triangle"></i>';
+	
+	
+    return false;
+  }
+  var c = document.forms["myForm"]["ename"].value;
+  if (c == "") {
+    document.getElementById("w1").innerHTML="Please Input Your Email Name"
+	document.getElementById('ww1').innerHTML = '<i class="fa fa-exclamation-triangle"></i>';
+	 
+    return false;
+  }
+  else{
+    document.getElementById("w1").style.display="none"
+    document.getElementById("ww1").style.display="none"
+  }
+  
+   var d = document.forms["myForm"]["cpass"].value;
+  if (d == "") {
+    document.getElementById("w2").innerHTML="Please Input Your Current Password"
+	document.getElementById('ww2').innerHTML = '<i class="fa fa-exclamation-triangle"></i>';
+    return false;
+  }
+  
+   var e = document.forms["myForm"]["npass"].value;
+  if (e == "") {
+    document.getElementById("w2").innerHTML="Please Input Your New Password"
+	document.getElementById('ww2').innerHTML = '<i class="fa fa-exclamation-triangle"></i>';
+    return false;
+  }
+  
+   var f = document.forms["myForm"]["conpass"].value;
+  if (f == "") {
+    document.getElementById("w2").innerHTML="Please Type Confirm Password"
+	document.getElementById('ww2').innerHTML = '<i class="fa fa-exclamation-triangle"></i>';
+    return false;
+  }
+        
+	    if(e.length < 5 && f.length < 5){
+		        document.getElementById("w2").innerHTML="Passwords Must Be Length Six"
+				document.getElementById('ww2s').innerHTML = '<i class="fa fa-exclamation-triangle"></i>';
+		
+			return false;
+		    
+        }
+		
+		
+		if (e != f) {
+		document.getElementById("w2").innerHTML="Passwords Do Not Match"
+           
+            return false;
+        }
+        
+	
+		
+    }
+		
+		</script>
+    </body>
+</html>

@@ -1,0 +1,348 @@
+body,html{
+	background:transparent;
+	background:none;
+	overflow-y:hidden;
+}
+.navbar{
+	background:radial-gradient(circle at 71% 51%,#3fa6f4,#00427b 57%);
+}
+.invoice{
+	background:none;
+	background:transparent;
+	
+}
+.invoice .invoice-row{
+	overflow-y:scroll;
+	height:100%;
+	border-right:1px solid rgba(0,0,0,0.1);
+	background-image:url(../img/invoice/inbg.svg);
+
+    background-position: center;
+    background-position-y: 60px; 
+	background-size: cover;
+    background-repeat: no-repeat;
+   
+	z-index:10000;
+}
+.invoice-form{
+	margin-top:140px;
+}
+.invoice-form .center{
+	background:#ffff;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:0px;
+	padding-right:0px;
+	width:75%;
+	top:40px;
+	border-radius:5px;
+	margin:auto;
+	text-align:center;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.20);
+}
+.i-head h4{
+	margin-bottom:15px;
+	font-size:25px;
+	font-weight:500;
+}
+.i-head p{
+	margin-top:-8px;
+	font-weight:500;
+	font-size:16px;
+	color:rgba(0,0,0,0.6);
+}
+.i-slect{
+	margin-top:20px;
+	padding-top:15px;
+	background:#FAFAFA;
+	border-top:1px solid rgba(100,100,100,0.1);
+	border-bottom:1px solid rgba(100,100,100,0.1);
+}
+.i-slect .uh4{
+	font-size:16px;
+	
+}
+.i-slect .chp{
+	margin-top:-5px;color:rgba(0,0,0,0.5);font-weight:400;
+	font-size:14px;
+}
+
+.i-slect .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+	margin-top: 6px;
+    word-spacing: 29px;
+    text-align: left;
+    font-size: 15px;padding-right:-120px;
+	
+}
+
+
+.i-slect .bootstrap-select{
+	margin-top:2px;
+	float:left;
+}
+.sec{
+	padding-right:50px;
+	padding-left:50px;
+}
+.pay{
+	padding-right:50px;
+	padding-left:50px;
+}
+.pay .btn{
+	padding:7px 6px 5px;
+	margin-top:20px;
+	margin-bottom:20px;
+	background:#546AD8;
+	outline:none;
+	box-shadow:none;
+	border:none;
+	font-size:17px;
+	outline-offset:0px;
+	font-weight:500;
+	transition:all 0.3s ease;
+}
+.pay .btn:hover{
+	background:#4354B2;
+}
+
+
+.footer{
+	margin-top:20px;
+	padding-right:30px;
+	padding-left:30px;
+}
+.footer p{
+	text-align:justify;
+	
+}
+.footer .in{
+	padding-left:20px;
+	padding-right:20px;
+	color:rgba(0,0,0,0.7);
+	margin-top:-26px;
+	font-weight:400;
+	font-size:13px;
+	
+}
+.footer .table{
+	margin-top:10px;
+}
+.footer .table th{
+	font-size:13.5px;
+	color:rgba(0,0,0,0.8);
+}
+.footer .table td{
+	font-size:14px;
+	color:rgba(0,0,0,0.6);
+	font-weight:500;
+}
+
+.footer .table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid rgba(100,100,100,0.1);
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid rgba(100,100,100,0.1);
+}
+.footer .pdf{
+	    background: #fff;
+    padding: 5px 10px 5px 10px;
+   text-align:center;
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.05);
+  border:1px solid rgba(100,100,100,0.1);
+   position:absolute;
+   color:rgba(0,0,0,0.5);
+   cursor:pointer;
+   border-radius:5px;
+	margin-top:15px;
+	
+}
+
+.contact{
+	padding-right:25px;
+	padding-left:25px;
+	color:rgba(0,0,0,0.5);
+	font-weight:400;
+}
+.contact a{
+	text-decoration:none;
+}
+.last{
+	margin-top:35px;
+	margin-bottom:30px;
+}
+.last p{
+	margin-top:-5px;
+	color:rgba(0,0,0,0.5);
+	font-weight:400;
+	font-size:13px;
+}
+.last p:first-child{
+	font-weight:500;
+	color:rgba(0,0,0,0.7);
+	font-size:14px;
+}
+.i-slect .bootstrap-select.btn-group .dropdown-toggle .caret {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    right: 40px;
+	color:rgba(0,0,0,0.5);
+    margin-top: -2px;
+    vertical-align: middle;
+}
+select{
+		outline:none;
+		box-shadow:none;
+		border:none;
+	}
+	select:focus{
+		outline:none;
+		border:none;
+		box-shadow:none;
+	}
+.bootstrap-select.btn-group .dropdown-menu {
+   
+}
+
+	
+	
+	.bootstrap-select > .dropdown-toggle {
+			
+		}
+	.bootstrap-select .dropdown-toggle:focus {
+    outline: thin solid #fff !important;
+    outline:none!important;
+    outline-offset: 0px; box-shadow:none !important;
+}
+
+.btn-group.open .dropdown-toggle {
+    
+    box-shadow:none;
+	outline:none !important;
+	border-radius:5px;
+	 border: border:1px solid tgba(220,200,200,0.1) ;
+}
+.btn-group.open .dropdown-toggle:focus {
+    
+	outline:none !important;
+}
+.btn-group.close .dropdown-toggle {
+    border: border:1px solid tgba(220,200,200,0.1)  !important;
+	border-radius:5px;
+	outline:none !important;
+}
+
+.btn-group .dropdown-toggle:active, .btn-group.open .dropdown-toggle {
+    outline: none !important;
+     border:1px solid tgba(220,200,200,0.1) !important;
+	 border-radius:5px;
+}
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+    color: none;
+	box-shadow:none;
+    background-color:none;
+    outline: none !important;
+     border:1px solid tgba(220,200,200,0.1) !important;
+	 border-radius:5px;
+}
+        .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+	padding-top: 1px;
+	padding-right:120px;
+    text-align: left;
+     outline: none !important;
+    border: none !important;
+   
+}
+	button.btn.dropdown-toggle.btn-default {
+			background-color: transparent;
+			width:100%;
+			
+			 outline: none !important;
+            padding-bottom: 10px;
+			box-shadow:none;
+			float:none;
+		}
+		
+	
+	.bootstrap-select.btn-group .filter-option {
+			background:none;
+			color:rgba(0,0,0,0.6);
+			padding-top:-10px;
+			font-weight:bold;
+			 outline: none !important;
+			 box-shadow:none;
+		}
+
+	.bootstrap-select > .dropdown-menu {
+			background-color: none;
+			color:rgba(0,0,0,0.6) !important;
+			border-radius: 3px;
+			
+		}
+
+	.dropdown-menu>li>a {
+			background-color: transparent;
+			color:rgba(0,0,0,0.6);
+			font-weight:bold;
+			
+		}
+	.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+			background-color:transparent;
+			color:rgba(0,0,0,0.5);
+			text-decoration: none;
+			outline:none;
+			background:rgba(200,200,200,0.2);
+		}
+
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 200px;
+  float:left;
+ 
+}
+@media screen and (max-width: 992px) {
+	 .invoice-form .center{
+	
+	width:100%;
+	
+	.20);
+}
+
+	.navbar{
+   
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+ }
+.invoice .invoice-row {
+   
+    background-position-y: 50px; 
+ }
+ }
+
+
+
+
+ @media screen and (max-width: 768px) {
+	.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 0px solid #ddd;
+}
+	
+ }
+
+
+

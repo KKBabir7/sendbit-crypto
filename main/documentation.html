@@ -1,0 +1,681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">    
+
+	<head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	          documentation
+	        </title>
+			           <link rel="icon" href="img/logo/monese-logo-horizontal-svg.png" type="image/png" sizes="16x16">
+		               <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/style.css">
+						<link rel="stylesheet" href="css/navbar.css">
+						<link rel="stylesheet" href="css/documentation.css">
+						<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+						<link rel="stylesheet" href="css/material-design-iconic-font.css">
+						<link rel="stylesheet" href="fonts/font-awesome.min.css">						
+	                    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                   <link href="@import url('https://fonts.googleapis.com/css?family=Patua+One');" rel="stylesheet">
+		               <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+					    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+                        
+	                
+
+</head>
+
+
+
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="30">
+	<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button onclick="mobile()" type="button" class="navbar-toggle collapsed first-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					 <span class="icon-bar"></span>
+					 <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/index.html"><img   class="img-responsive"  src="img/img/sendbitlogo.png">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav menu-left">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/main/documentation.html">API documentation</a></li>
+					<li><a href="/main/security.html">Security</a></li>
+					<li><a href="/main/reviews.html">FAQ</a></li>
+					<li><a href="/main/docs.html">API status</a></li>
+					
+				</ul>
+				<ul class="nav navbar-nav navbar-right menu-right">
+					<li class="log"><a href="/main/log.html"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+					<li class="sign "><a href="/main/sign.html" type="button" class="btn btn-primary">Sign up</a>&nbsp;&nbsp;&nbsp;</li>
+				</ul>
+			</div>	
+		</div>
+	</nav> 
+<!---------------------mobile navbar -->
+	<div id="mobile" class="modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<center>
+					<div class="tabbable-line">
+						<ul class="nav nav-tabs ul">
+							<li><a data-toggle="tab" href="#business">API docs</a></li>
+						</ul>
+					</div>
+				</center>   
+				<span class="close">&times;</span>	
+			</div>
+			<div class="modal-body">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/main/documentation.html">API documentation</a></li>
+					<li><a href="/main/security.html">Security</a></li>
+					<li><a href="/main/reviews.html">FAQ</a></li>
+					<li><a href="/main/docs.html">API status</a></li>
+					<li class="log"><a href="/main/log.html
+						"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+					<center><p class="gt"><a href="/main/sign.html" class="btn btn-primary" role="button">Get Start</a></p></center>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+<br>
+
+<div class="container-fluid doc-section">
+    <div class="row doc">
+	    <div class="bg" id="bg">
+	    <div class="col-md-2 side-navber nav-section" id="nav-section">
+			<nav class="content-nav" id="myScrollspy" >
+			  <ul class="nav nav-pills nav-stacked" >
+			         <li><span onclick="removee()" class="glyphicon glyphicon-remove" aria-hidden="true"></span></li>
+					<li><a href="#m1">Introduction</a></li>
+					<li><a href="#m2">Sendbit API</a></li>
+					<li><a href="#m3">Accept Payments</a></li>
+					<li><a href="#m4">Send Payments </a></li>
+					<li><a href="#m5">Response codes</a></li>
+				</ul>
+			</nav>
+        </div>
+        </div>
+        <div class="col-md-10 menu">
+            <div id="m1" class="fixed-hight row">
+			        <div class="col-md-7 col-sm-7 code-menu">
+						<h1 class="c-heading">Introduction</h1>
+						<p class="c-p">All API calls are implemented as HTTP Post. Requests must be made to our API endpoint located at https://sendbit.io/api/[METHOD]<br>An incredibly easy method for websites to receive bitcoin payments, this service is completely free and secure. Perfect for business or personal use.
+					    Our API consists of two methods, which will enable you to accept and send cryptocurrency payments.</p>
+			        </div>
+					<div class="col-md-5 col-sm-5" style="padding-top:20px;">
+					    <img   class="img-responsive s-d-img" src="img/clipar.png">
+					</div>
+					
+            </div>
+            
+            <div id="m2" class="fixed-hight row">
+               
+			        <div class="col-md-8 code-menu">
+						<h1 class="c-heading">Sendbit API</h1>
+						<p class="c-p">All API calls are implemented as HTTP Post. Requests must be made to our API endpoint located at https://sendbit.io/api/[METHOD]<br>An incredibly easy method for websites to receive bitcoin payments, this service is completely free and secure. Perfect for business or personal use.
+					  Our API consists of two methods, which will enable you to accept and send cryptocurrency payments.</p>
+			
+			        </div>
+			        <div class="col-md-4">
+					</div>
+					
+               
+            </div>
+			<div id="m3" class="fixed-hight row">
+				<div class="col-md-6 code-menu">
+					<h1 class="c-heading">Accept Payments on your website</h1>
+					<p class="c-p">Download our library - <a href="#">sendbit.inc.php</a></p>
+					
+					<ul class="nav nav-tabs nav-stacked">
+						<li   class="active"><a data-toggle="tab" href="#accept1">Useful Codes</a></li>
+						<hr>
+						<li><a data-toggle="tab" href="#accept2">Call-back URL receiving payments</a></li>
+						<p class="c-s">The following details will be sent to your call-back URL upon receiving payments. Payment notifications are sent every minute up until the transaction gets three confirmations</p>
+						<hr>
+						<li><a data-toggle="tab" href="#accept3">Call-backs URL in your database</a></li>
+						<p class="c-s">To handle call-backs we have made a small useful code to log payments into your database</p>
+						<hr>
+					</ul>
+				</div> 
+				<div class="col-md-6">
+					<div class="php">
+						<div class="tab-content">
+							<div id="accept1" class="tab-pane fade in active">
+								<div class="table-responsive">
+									<table class="table">
+										<tr>
+										  <td>1</td>
+										  <td>include_once(<span>"sendbit.inc.php"</span>);</td>
+										</tr>
+										<tr>
+										  <td>2</td>
+										  <td><span></span></td>
+										</tr>
+										<tr>
+										  <td>3</td>
+										  <td>define(<span>"API_KEY", "YOUR_API_KEY"</span>);</td>
+										</tr>
+										<tr>
+										  <td>4</td>
+										  <td>define(<span>"API_SECRET", "YOUR_API_SECRET"</span>);</td>
+										</tr>
+										<tr>
+										  <td>5</td>
+										  <td><span></span></td>
+										</tr>
+										
+										<tr>
+										  <td>6</td>
+										  <td>$callback_url =<span>"https://site.com/IPN.php?user=2450"</span>;</td>
+										</tr>
+										<tr>
+										  <td>7</td>
+										  <td>$api_client = new SendBitApi(API_KEY, API_SECRET);</td>
+										</tr>
+										<tr>
+										  <td>8</td>
+										  <td>$api_client->setCoin(<span>"BTC"</span>);<span class="comment">// set coin (BTC, LTC, BCH, DASH) https://www.sendbit.io/page/coins_accepted</span></td>
+										  
+										</tr>
+										<tr>
+										  <td>9</td>
+										  <td>$api_client->setField(<span>"callback_url"</span>, $callback_url);</td>
+										</tr>
+										<tr>
+										  <td>10</td>
+										  <td>$api_client->setMethod(<span>"generate-address"</span>);</td>
+										</tr>
+										<tr>
+										  <td>11</td>
+										  <td>$response = $api_client->process();</td>
+										</tr>
+										<tr>
+										  <td>12</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>13</td>
+										  <td>if($response[<span>"response_code"</span>] != <span>200</span>) {</td>
+										</tr>
+										<tr>
+										  <td>14</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>15</td>
+										  <td>exit($response[<span>"response_message"</span>]);</td>
+										</tr>
+										<tr>
+										  <td>16</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>17</td>
+										  <td>} else {</td>
+										</tr>
+										<tr>
+										  <td>18</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>19</td>
+										  <td>$address = $response[<span>"address"</span>];</td>
+										</tr>
+										<tr>
+										  <td>20</td>
+										  <td>$qr_code_url = $response[<span>"qr_code"</span>];</td>
+										</tr>
+										<tr>
+										  <td>21</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>22</td>
+										  <td>}</td>
+										</tr>
+										
+									</table>
+								</div>
+							</div>
+							<div id="accept2" class="tab-pane fade">
+								<div class="table-responsive">
+									<table class="table">
+										<tr>
+										  <td>1</td>
+										  <td>$address = $_POST[<span>"address"</span>];</td>
+										</tr>
+										<tr>
+										  <td>2</td>
+										  <td>$amount = $_POST[<span>"amount"</span>];</td>
+										</tr>
+										<tr>
+										  <td>3</td>
+										  <td>$confirmations = $_POST[<span>"confirmations"</span>];</td>
+										</tr>
+										<tr>
+										  <td>4</td>
+										  <td>$hash = $_POST[<span>"hash"</span>];</td>
+										</tr>
+										<tr>
+										  <td>5</td>
+										  <td>$auth_hmac = $_POST[<span>auth_hmac" </span>];</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div id="accept3" class="tab-pane fade">
+								<table class="table">
+									<tr>
+									  <td>1</td>
+									  <td>include_once(<span>"sendbit.inc.php"</span>); <span class="comment">//libaray</span></td>
+									</tr>
+									<tr>
+									  <td>2</td>
+									  <td><span></span></td>
+									</tr>
+									<tr>
+									  <td>3</td>
+									  <td>define(<span>"API_KEY", "YOUR_API_KEY"</span>);</td>
+									</tr>
+									<tr>
+									  <td>4</td>
+									  <td>define(<span>"API_SECRET", "YOUR_API_SECRET"</span>);</td>
+									</tr>
+									<tr>
+									  <td>5</td>
+									  <td><span></span></td>
+									</tr>
+									
+									<tr>
+									  <td>6</td>
+									  <td>$transaction_id = $_POST[<span>"transaction_id"</span>];</td>
+									</tr>
+									<tr>
+									  <td>7</td>
+									  <td>$address = $_POST[<span>"address"</span>];</td>
+									</tr>
+									<tr>
+									  <td>8</td>
+									  <td>$amount = $_POST[<span>"amount"</span>];</td>
+									  
+									</tr>
+									<tr>
+									  <td>9</td>
+									  <td>$confirmations = $_POST[<span>"confirmations"</span>];</td>
+									</tr>
+									<tr>
+									  <td>10</td>
+									  <td>$hash = $_POST[<span>"hash"</span>];</td>
+									</tr>
+									<tr>
+									  <td>11</td>
+									  <td>$auth_hmac = $_POST[ <span>"auth_hmac"</span>];</td>
+									</tr>
+									<tr>
+									  <td>12</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <td>13</td>
+									  <td>$api_client = new SendBitApi(API_KEY, API_SECRET);</td>
+									</tr>
+									<tr>
+									  <td>14</td>
+									  <td>$valid = $api_client->validatePayment($hash, $auth_hmac);</td>
+									</tr>
+									<tr>
+									  <td>15</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <td>16</td>
+									  <td>if($valid == <span class="true">true</span>) {</td>
+									</tr>
+									<tr>
+									  <td>17</td>
+									  <td>} else {</td>
+									</tr>
+									<tr>
+									  <td>18</td>
+									  <td><span class="comment">// Process the payment.</span></td>
+									</tr>
+									<tr>
+									  <td>19</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <td>20</td>
+									  <td><span class="comment">// We recommend you add a parameter here to check if payment record exists</span></td>
+									</tr>
+									<tr>
+									<tr>
+									  <td>21</td>
+									  <td><span class="comment">// so you dont log the same payment each time you get a callback notification.</span></td>
+									</tr>
+									<tr>
+									  <td>22</td>
+									  <td><span class="comment">// callback notifications are sent every minute up until three confirmations.</span></td>
+									</tr>
+									<tr>
+									  <td>23</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <td>24</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <td>25</td>
+									  <td>} else {</td>
+									</tr>
+									<tr>
+									  <td>26</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <td>27</td>
+									  <td>exit(<span>"Could not verify the payment."</span>);</td>
+									</tr>
+									<tr>
+									  <td>28</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <td>29</td>
+									  <td><span class="comment">// Log for manual verification</span></td>
+									</tr>
+									<tr>
+									  <td>30</td>
+									  <td></td>
+									</tr>
+									<tr>
+									  <td>31</td>
+									  <td>}</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>				   
+				</div>
+			</div>
+           
+			<div id="m4" class="fixed-hight row">
+			    <div class="col-md-6 code-menu">
+					<h1 class="c-heading">Send Payments via API</h1>
+					<p class="c-p">Use our API to send payments using your API key and API secret. This can be modified to your needs and is great for mass payments.</p>
+					<ul class="nav nav-tabs nav-stacked">
+						<li   class="active"><a data-toggle="tab" href="#send">Send Payments API</a></li>
+						<hr>
+					</ul>
+				</div> 
+				<div class="col-md-6">
+					<div class="php">
+						<div class="tab-content">
+							<div id="send" class="tab-pane fade in active">
+								<div class="table-responsive">
+									<table class="table">
+										<tr>
+										  <td>1</td>
+										  <td>include_once(<span>"sendbit.inc.php"</span>);<span class="comment"> //libaray</span></td>
+										</tr>
+										<tr>
+										  <td>2</td>
+										  <td><span></span></td>
+										</tr>
+										<tr>
+										  <td>3</td>
+										  <td>define(<span>"API_KEY", "YOUR_API_KEY"</span>);</td>
+										</tr>
+										<tr>
+										  <td>4</td>
+										  <td>define(<span>"API_SECRET", "YOUR_API_SECRET"</span>);</td>
+										</tr>
+										<tr>
+										  <td>5</td>
+										  <td>$hash =  <span>"$2y$12$SeCkgzINScl2DWSzs2ofYO2604UO6U.kI3mCWfoGYuCpvvbpzp9HG"</span>;<span class="comment">//Do not change this hash, or else API becomes invalid.</span></td>
+										</tr>
+										<tr>
+										  <td>6</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>7</td>
+										  <td>$address = <span>"1tkh8ENwHr8Uoo6PWFM31T5ub2cQiFGbm"</span>;</td>
+										</tr>
+										
+										<tr>
+										  <td>8</td>
+										  <td>$amount =  <span>0.00000000</span>;<span class="comment"> // amount to send (amount in selected coin)</span></td>
+										</tr>
+										<tr>
+										   <td>9</td>
+										   <td>$fee =  <span>0.000055</span>;<span class="comment"> // total fee for your transaction (amount in selected coin)</span></td> 
+										</tr>
+										<tr>
+										  <td>10</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>11</td>
+										  <td>$api_client = new SendBitApi(API_KEY, API_SECRET);</td>
+										</tr>
+										<tr>
+										  <td>12</td>
+										  <td>$api_client->setCoin(<span>"BTC"</span>); <span class="comment">// set coin (BTC, LTC, BCH, DASH) https://www.sendbit.io/page/coins_accepted</span></td>
+										</tr>
+										<tr>
+										  <td>13</td>
+										  <td>$api_client->setField(<span>"recipient"</span>, $address);</td>
+										</tr>
+										<tr>
+										  <td>14</td>
+										  <td>$api_client->setField(<span>"amount"</span>, $amount);</td>
+										</tr>
+										<tr>
+										  <td>15</td>
+										  <td>$api_client->setField(<span>"fee"</span>, $fee);</td>
+										</tr>
+										<tr>
+										  <td>16</td>
+										  <td>$api_client->setField(<span>"akhami_hash"</span>, $hash);</td>
+										</tr>
+										<tr>
+										  <td>17</td>
+										  <td>$api_client->setMethod(<span>"send-payment"</span>);</td>
+										</tr>
+										<tr>
+										  <td>18</td>
+										  <td>$response = $api_client->process();</td>
+										</tr>
+										<tr>
+										  <td>19</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>20</td>
+										  <td>if($response[<span>"response_code"</span>] != <span>200</span>) {</td>
+										</tr>
+										<tr>
+										  <td>21</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>22</td>
+										  <td>exit($response[<span>"response_message"</span>]);</td>
+										</tr>
+										<tr>
+										  <td>23</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>24</td>
+										  <td>} else {</td>
+										</tr>
+										<tr>
+										  <td>25</td>
+										  <td></td>
+										</tr>
+										<tr>
+										  <td>26</td>
+										  <td>$transaction_id = $response[<span>"transaction_id"</span>]; <span class="comment">//Shows TXN</span></td>
+										</tr>
+										<tr>
+										  <td>27</td>
+										  <td></td>
+										</tr>
+										<tr>
+										
+										  <td>28</td>
+										  <td>}</td>
+										</tr>
+										
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<div id="m5" class="fixed-hight row">
+                <div class="col-md-6 code-menu">
+					<h1 class="c-heading">Response codes</h1>
+					<p class="c-p">Use our API to send payments using your API key and API secret. This can be modified to your needs and is great for mass payments.</p>
+					<ul class="nav nav-tabs nav-stacked">
+						<li   class="active"><a data-toggle="tab" href="#res">Response codes</a></li>
+						<hr>
+					</ul>
+				</div> 
+				<div class="col-md-6">
+					<div class="php">
+						<div class="tab-content">
+							<div id="res" class="tab-pane fade in active">
+								<div class="table-responsive">
+									<table class="table">
+										<tr>
+										  <td></td>
+										  <td><span class="red">500</span> - Unknown internal error</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">401</span> - Invalid API details</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">403 </span>- You do not have permissions to access used API</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">404 </span>- Wrong coin abbreviation used</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">200</span> - Success, check other parameters</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">17</span> - API limit reached, please upgrade API plan</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">19 </span>- Invalid callback or success URL used</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">21 </span>- Amount too small</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">30 </span>- Fee too small</td>
+										</tr>
+										<tr>
+										  <td></td>
+										  <td><span class="red">28 </span>- Amount exceeds your balance</td>
+										</tr>
+
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div> 
+			
+        </div>
+    
+    </div>
+</div><br><br><br>
+<section class="d-p">
+    <div class="container-fluid">
+	    <center>
+	    <ul>
+		    <li><a href="#">© 2020 Sendbit All Rights Reserved. v1.8.2</a></li>
+		    <li><a href="#">Terms </a></li>
+		    <li><a href="#">F.A.Q </a></li>
+		    <li><a href="#">Compare Wallets</a></li>
+		    <li><a href="#">Contact</a></li>
+		    <li><a href="#">Donate</a></li>
+		
+		</ul>
+		</center>
+	</div>
+</section>
+<div class="dropup dropuptemporaly">
+	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  All Page
+	  <span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+	  <li><a href="/buisness/buis.html">Business</a></li>
+	  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+	  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+	  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+	  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+	  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+	  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+	  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+	  <li><a href="/main/invoice.html">Invioce</a></li>
+	  <li><a href="/main/payment.html">Payment</a></li>
+	</ul>
+  </div>
+<a href="#top" id="js-top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a>
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			   <script src="js/extranal.js"></script>
+			   <script src="js/bootstrap.min.js"></script>
+			  
+  <script>
+				function mmenu(){
+				var side=document.getElementById("nav-section");
+				var sideee=document.getElementById("bg");
+				   side.style.left="0px";
+				   sideee.style.left="0px";
+				   sideee.style.background="rgba(0,0,0,0.4)";
+				   
+				}
+				function removee(){
+					 document.getElementById("nav-section").style.left="-300px";
+					 var sideee=document.getElementById("bg");
+				   
+				   sideee.style.left="-1200px";
+				}
+				
+		    </script>
+
+
+
+</body>
+</html>

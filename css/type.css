@@ -1,0 +1,309 @@
+
+.type-right .c-input{
+position:relative;
+height:180px;
+background:#032E54; 
+border-radius:none;
+margin:0;
+padding-left:20;
+padding-top:35px;
+padding-bottom:15px;
+}
+.type-right .c-output{
+position:relative;
+height:180px;
+padding-left:20;
+background:#032E54; 
+border-radius:none;
+margin:0;
+padding-top:35px;
+padding-bottom:15px;
+}
+#luci{
+	display:none;
+}#luci1{
+	display:none;
+}
+#typewriter p {
+    white-space: nowrap;
+    margin: 0 auto;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    clear: both;
+	font-size:14px;
+	
+    border-right: 2px solid transparent
+}
+#typewriter-o p {
+    white-space: nowrap;
+    margin: 0 auto;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    clear: both;
+	font-size:14px;
+	
+    border-right: 2px solid transparent
+}
+
+
+#typewriter p:nth-child(1) {
+    animation: typing-1 2.2s steps(50) 1.2s 1 normal both, blink-caret .5s 0.2s 5 
+	
+}
+
+#typewriter p:nth-child(2) {
+    animation: typing-2 2.5s steps(25) 3s 1 normal both, blink-caret .5s 2.8s 6
+}
+
+#typewriter p:nth-child(3) {
+    animation: typing-3 2.5s steps(25) 6.1s 1 normal both, blink-caret .5s 5.9s 6
+}
+
+#typewriter p:nth-child(4) {
+    animation: typing-3 2.5s steps(25) 9.1s 1 normal both, blink-caret .5s 9s 6
+}
+
+#typewriter p:nth-child(5) {
+    animation: typing-4 1s steps(10) 11.8s 1 normal both, blink-caret .1s 11.6s 6
+}
+
+
+
+#typewriter-o p:nth-child(1) {
+    animation: typing-o-1 2.5s steps(25) 14.5s 1 normal both, blink-caret-o .5s 13.8s 6
+}
+#typewriter-o p:nth-child(2) {
+    animation: typing-o-1 2.5s steps(25) 17.5s 1 normal both, blink-caret-o .5s 17.5s 6
+}
+#typewriter-o p:nth-child(3) {
+    animation: typing-o-2 .5s steps(25) 20.5s 1 normal both, blink-caret-o .1s 20.5s 6
+}
+
+#typewriter-o p:nth-child(4) {
+    animation: typing-o-2 .5s steps(25) 21s 1 normal both, blink-caret-o .1s 21s 6
+}
+
+#typewriter-o p:nth-child(5) {
+    animation: typing-o-2 .5s steps(25) 21.5s 1 normal both, blink-caret-o .1s 21.5s 6
+}
+
+
+@keyframes typing-1 {
+    from {
+        border-color: transparent;
+        width: 0em
+    }
+    to {
+        width: 40.5em
+    }
+}
+
+@keyframes typing-2 {
+    from {
+        border-color: transparent;
+        width: 0em
+    }
+    to {
+        width: 20.5em;
+    }
+}
+
+@keyframes typing-3 {
+    from {
+        border-color: transparent;
+        width: 0em
+    }
+    to {
+        width: 12.8em
+    }
+}
+
+@keyframes typing-4 {
+    from {
+        border-color: transparent;
+        width: 0em
+    }
+    to {
+        width: 5em
+    }
+}
+@keyframes typing-o-1 {
+    from {
+        border-color: transparent;
+        width: 0em
+    }
+    to {
+        width: 17em;
+    }
+}
+@keyframes typing-o-2 {
+    from {
+        border-color: transparent;
+        width: 0em
+    }
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blink-caret {
+    from {
+        border-color: transparent
+    }
+    to {
+        border-color: #FC5604
+    }
+}
+@keyframes blink-caret-o {
+    from {
+        border-color: transparent
+    }
+    to {
+        border-color: #FC5604
+    }
+}
+
+.indent-1 {
+    text-indent: 0em;
+    width: auto;
+}
+
+.indent-2 {
+    text-indent: 4em;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.class {
+    color: #ffff;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+.storage {
+    color: #0593D0;
+	font-weight:bold;
+}
+.req{
+    color: #06E2D3;
+	font-weight:bold;
+}
+.stri{
+    color: #FDA604;
+	font-weight:bold;
+
+}
+.function {
+    color: #D28445
+}
+
+.variable {
+	color: #CC555A
+}
+.num{
+    font-weight:bold;
+	margin-right:25px;
+	color:#55718d;
+	 text-indent: 0em;
+	
+}
+.num-i{
+    margin-left:-56px;
+    margin-right:65px;
+	 font-weight:bold;
+	
+	color:#55718d;
+	
+}
+.mid-c{
+   padding:0px;
+   margin-bottom:-9;
+   background:#032545;
+  
+}
+.mid-c p{
+  display:inline-block;
+  color: #55718d;
+  
+}
+.mid-c .ser{
+  font-weight:bold;
+  margin-left:20px;
+  color: #55718d;
+  
+}
+.mid-c .hun{
+  font-weight:bold;
+  margin-right:20px;
+  color: #55718d;
+  float:right;
+  margin-top:6px;
+  
+}
+
+.mid-c .nor{
+   padding:5px;
+   background:#8B95FF;
+   width:80px;
+   color: #55718d;
+   font-weight:bold;
+   border-radius: 0px 0px 100px 0px;
+  
+}
+@media screen and (max-width: 992px) {
+	
+	.section-5 .type-right {
+    padding-left: 16px;
+}
+	
+}
+@media screen and (max-width: 545px) {
+	.num {
+    font-weight: bold;
+    margin-right: 5px;
+	}
+.type-right .c-input {
+   
+padding-left: 10;}
+
+
+
+#typewriter p {
+    
+	font-size:9.5px;
+}
+#typewriter-o p {
+ 
+font-size:9.5px;}
+
+
+}
+
+
+

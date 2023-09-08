@@ -1,0 +1,116 @@
+body,html{
+	overflow-x: inherit !important;
+}
+
+
+ /*............ .............section-9 css*/
+.section-9{
+	padding-top:80px;
+	padding-bottom:50px;
+	overflow:hidden;
+}
+
+.section-9 h1{
+	color:#113355;
+	font-size:16px;
+	opacity:0.8;
+	margin-left:14px;
+	font-weight:500;
+	margin-bottom:20px;
+}
+.section-9 h1 svg path{
+	fill: rgb(22, 82, 240);
+	}
+.section-9 .list-group li{
+	border:none;
+	line-height:0.8;
+}
+
+.section-9 .list-group li a{
+	color:#113355;
+	font-size:14px;
+	opacity: 0.8;
+	
+}
+
+ /*............ .............section-10 or fotter css*/
+.section-10 .container  .col-md-6 img{
+	width:20%;
+	
+	margin-top:10px;
+	display:inline-block;
+}
+.section-10 .social_icon{
+	float:right;
+	padding-right:0;
+	margin-top:5px;
+}
+.section-10 .social_icon li a{
+	font-size:18px;
+	background:#210e4a;
+	color:white;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:100px;
+}
+
+
+.section-10 .footer{
+	font-size:10.5px;
+	word-spacing:2px;
+	color:rgba(0,0,0,0.5);
+}
+
+
+@media screen and (max-width: 768px) {
+	
+.section-10 .social_icon{
+	float:left;
+	padding-right:0;
+	margin-top:20px;
+}
+.section-10 .container  .col-md-6 img{
+	width:40%;
+	
+	margin-top:10px;
+	display:inline-block;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 368px) {
+
+
+.section-9 h1{
+	color:#113355;
+	font-size:14px;
+	opacity:0.8;
+	margin-bottom:18px;
+}.section-8 .sign-up p{
+	margin-top:25px;
+	font-size:16px;
+}.section-8 .sign-up h1{
+	color:white;
+	font-size:35px;
+}.section-7 h1{
+	font-size:35px;
+	margin-bottom:40px;
+}
+
+}
+
+
+
+

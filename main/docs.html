@@ -1,0 +1,2289 @@
+
+<!doctype html>
+<html>
+<head>
+<title data-react-helmet="true">Start accepting crypto payments - sendbit.io</title>
+<meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><meta data-react-helmet="true" charset="utf-8" /><meta data-react-helmet="true" name="google" value="notranslate" /><meta data-react-helmet="true" property="og:image" content="https://app.gitbook.com/share/space/thumbnail/-MLSVG4Um7St5HqJJlV9.png" /><meta data-react-helmet="true" property="twitter:card" content="summary" /><meta data-react-helmet="true" property="twitter:site" content="sendbit.io" /><meta data-react-helmet="true" name="description" content="Accept crypto payments instantly on your website" /><meta data-react-helmet="true" property="og:title" content="Start accepting crypto payments" /><meta data-react-helmet="true" property="og:description" content="Accept crypto payments instantly on your website" />
+<link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;display=swap" /><link data-react-helmet="true" rel="stylesheet" href="https://unpkg.com/emojione-assets@4.0.0/sprites/emojione-sprite-40.min.css" /><link data-react-helmet="true" rel="preconnect" href="https://www.googleapis.com" /><link data-react-helmet="true" rel="preconnect" href="https://api.amplitude.com" /><link data-react-helmet="true" rel="preconnect" href="https://gblobscdn.gitbook.com/" /><link data-react-helmet="true" rel="icon" href="https://gblobscdn.gitbook.com/orgs%2F-MLSfUoBhhQWYQSD92DX%2Favatar-1604668810982.png?alt=media" /><link data-react-helmet="true" rel="canonical" href="https://docs.sendbit.io/accpet-payments" /><link data-react-helmet="true" rel="stylesheet" href="https://gstatic.gitbook.com/css/6c3c9dec9383137845be0f0ea2cf1bf4.css" />
+<style data-react-helmet="true" type="text/css">
+        @font-face {
+            font-family: "Roboto";
+            src: local("Roboto"), local("Roboto-Regular"), url(https://gstatic.gitbook.com/fonts/fc3d4b35e4d07d4e0485cc2db0e57c77.woff) format('woff');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Roboto";
+            src: local("Roboto Medium"), local("Roboto-Medium"), url(https://gstatic.gitbook.com/fonts/f4fa50c4003f87e7dc10459e500933c3.woff) format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Roboto";
+            src: local("Roboto Bold"), local("Roboto-Bold"), url(https://gstatic.gitbook.com/fonts/72e37e5bf95a8dba938c78b1d7d91253.woff) format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+    </style><style data-react-helmet="true" type="text/css">
+        @font-face {
+            font-family: "Content-font";
+            src: local("Roboto"), local("Roboto-Regular"), url(https://gstatic.gitbook.com/fonts/fc3d4b35e4d07d4e0485cc2db0e57c77.woff) format('woff');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Content-font";
+            src: local("Roboto Medium"), local("Roboto-Medium"), url(https://gstatic.gitbook.com/fonts/f4fa50c4003f87e7dc10459e500933c3.woff) format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Content-font";
+            src: local("Roboto Bold"), local("Roboto-Bold"), url(https://gstatic.gitbook.com/fonts/72e37e5bf95a8dba938c78b1d7d91253.woff) format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+    </style>
+<script data-react-helmet="true" type="fe254ade005fd02d928f96f7-text/javascript" defer="true" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&amp;features=Intl"></script>
+<style>#__GITBOOK__ROOT__SERVER__ { width: 100%; height: 100%; display: flex;}</style>
+<style>#__GITBOOK__ROOT__CLIENT__ { width: 100%; min-height: 100%; height: initial; display: flex;}</style>
+<style id="__GITBOOK__STYLE__">html, body {
+  color: #242A31;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background: #F5F7F9;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: 1em;
+  font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+@media screen and (min-width: 768px) {
+  html, body {
+    text-rendering: optimizeLegibility;
+  }
+}
+@media print {
+  html, body {
+    background: transparent;
+  }
+}
+*, *:before, *:after {
+  outline: none;
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: "Flow-Rounded";
+  src: url("https://gstatic.gitbook.com/fonts/bfc0a96537ceb0cad9e956b9f980fe88.woff") format('woff');
+  font-display: block;
+}
+input, select, textarea {
+  font-size: 16px;
+}
+input, select, textarea, button {
+  font: inherit;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+.draggingElement, .draggingElement *:hover {
+  cursor: grabbing !important;
+  pointer-events: auto !important;
+}
+.draggingElement .draggingHidden {
+  display: none;
+}
+
+.reset-3c756112--body-68cac36c {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #242A31;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  background: #F5F7F9;
+  min-height: 100vh;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--header-07037613--header-09ef972a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  height: 80px;
+  margin: 0;
+  display: none;
+  padding: 0;
+  z-index: 20;
+  position: relative;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  border-bottom: 1px solid #d4dadf;
+  background-color: #FFFFFF;
+}
+@media print {
+  .reset-3c756112--header-07037613--header-09ef972a {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--header-07037613--header-09ef972a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    top: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reset-3c756112--header-07037613--header-09ef972a {
+    height: 60px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.reset-3c756112--headerContainer-bb8cc0bc {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+  max-width: 1448px;
+}
+.reset-3c756112--headerLeftColumn-4eae0bae--headerLeftColumn-7efc9f26 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .reset-3c756112--headerLeftColumn-4eae0bae--headerLeftColumn-7efc9f26 {
+    max-width: 298px;
+    justify-content: center;
+    -webkit-box-pack: center;
+  }
+  .reset-3c756112--headerLeftColumn-4eae0bae--headerLeftColumn-7efc9f26:after {
+    top: 50%;
+    right: 0;
+    height: 40px;
+    content: " ";
+    position: absolute;
+    transform: translateY(-50%);
+    border-left: 1px solid #E6ECF1;
+  }
+}
+.reset-3c756112--mobileButton-7a76d05f {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 0 0 auto;
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  margin: 0;
+  display: flex;
+  outline: none;
+  padding: 0;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .reset-3c756112--mobileButton-7a76d05f {
+    display: none;
+  }
+}
+.icon-7f6730be--text-3f89f380--icon-1f8349b3 {
+  color: #242A31;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+.reset-3c756112--headerLogo-5c0b38e2 {
+  margin: 0;
+  display: block;
+  padding: 0px 24px;
+}
+@media screen and (min-width: 1024px) {
+  .reset-3c756112--headerLogo-5c0b38e2 {
+    width: 250px;
+    padding: 0;
+  }
+}
+.reset-3c756112--mobileLogo-dacfd15c {
+  margin: 0;
+  display: none;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .reset-3c756112--mobileLogo-dacfd15c {
+    display: block;
+  }
+}
+.link-a079aa82--primary-53a25e66--logoLink-10d08504 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #3884FF;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  -webkit-box-align: center;
+}
+.reset-3c756112--tooltipContainer-7fdb9b70--small-2ec8ae1a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  border-radius: 3px;
+}
+.reset-3c756112--avatarFrame-2f40cdc9--small-2ec8ae1a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-mask-image: -moz-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -moz-radial-gradient(white, black);
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  mask-image: radial-gradient(white, black);
+  align-items: center;
+  border-radius: 3px;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-mask-image: radial-gradient(white, black);
+}
+.image-67b14f24--avatar-1c1d03ec {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+.reset-3c756112--S100Left-7c8af13a--logoDisplayNameContainer-583bfe61--logoText-e24e7614 {
+  flex: 1;
+  color: #242A31;
+  margin: 0;
+  display: block;
+  padding: 0;
+  padding-left: 8px;
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--S100Left-7c8af13a--logoDisplayNameContainer-583bfe61--logoText-e24e7614 {
+    overflow: hidden;
+    max-width: 50vw;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+.reset-3c756112--S100Left-7c8af13a--logoDisplayNameContainer-583bfe61--logoText-e24e7614:hover {
+  color: #00427B;
+}
+.text-4505230f--DisplayH700-a03ad9b4--textContentFamily-49a318e1--spaceNameText-677c2969 {
+  font-size: 24px;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+.reset-3c756112--desktopLogo-a594db90 {
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .reset-3c756112--desktopLogo-a594db90 {
+    display: none;
+  }
+}
+.reset-3c756112--tooltipContainer-7fdb9b70--medium-296350e4 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  border-radius: 3px;
+}
+.reset-3c756112--avatarFrame-2f40cdc9--medium-296350e4 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-mask-image: -moz-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -moz-radial-gradient(white, black);
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  mask-image: radial-gradient(white, black);
+  align-items: center;
+  border-radius: 3px;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-mask-image: radial-gradient(white, black);
+}
+.reset-3c756112--headerInnerWrapper-629f79d1--headerInnerWrapper-4f99acea {
+  flex: 1 1 auto;
+  margin: 0px 88px;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  max-width: 750px;
+}
+.reset-3c756112--headerInnerWrapper-629f79d1--headerInnerWrapper-4f99acea:after {
+  background: -webkit-linear-gradient(to right, rgba(255,255,255,0) 0%, #FFFFFF 100%);
+  background: -moz-linear-gradient(to right, rgba(255,255,255,0) 0%, #FFFFFF 100%);
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, #FFFFFF 100%);
+  pointer-events: none;
+}
+@media screen and (max-width: 1439px) {
+  .reset-3c756112--headerInnerWrapper-629f79d1--headerInnerWrapper-4f99acea {
+    margin: 0px 24px 0px 88px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--headerInnerWrapper-629f79d1--headerInnerWrapper-4f99acea {
+    display: none;
+  }
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48 {
+  display: -webkit-box;
+  overflow-x: auto;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  opacity: 1;
+  padding: 0;
+  overflow-x: overlay;
+  overflow-y: hidden;
+  transition: flex 250ms ease,width 250ms ease,opacity 250ms ease;
+  -moz-transition: flex 250ms ease,width 250ms ease,opacity 250ms ease;
+  -webkit-transition: flex 250ms ease,width 250ms ease,opacity 250ms ease;
+  -webkit-overflow-scrolling: touch;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48::-webkit-scrollbar-track {
+  background: none;
+  border-width: 0;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.16);
+  transition: background 250ms ease;
+  border-radius: 2px;
+  -moz-transition: background 250ms ease;
+  -webkit-transition: background 250ms ease;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48::-webkit-scrollbar-button {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48::-webkit-scrollbar-track-piece {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48::-webkit-scrollbar-corner {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48::-webkit-resizer {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48:hover::-webkit-scrollbar {
+  display: initial;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48:hover::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.16);
+}
+.reset-3c756112--link-0be4f603 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  height: 100%;
+  margin: 0px 16px;
+  display: flex;
+  padding: 0;
+  border-top: 3px solid transparent;
+  align-items: center;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  -webkit-box-align: center;
+}
+.reset-3c756112--link-0be4f603:first-child  {
+  margin-left: 0;
+}
+.button-36063075--medium-6e2a217a--button-0a0aa816--linkButton-67c61496--links-8c92b9e4 {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  color: #00427B !important;
+  border: 1px solid;
+  cursor: pointer;
+  height: 40px;
+  display: inline-flex;
+  outline: none;
+  padding: 0;
+  transition: all 250ms ease-out;
+  align-items: center;
+  line-height: 1em;
+  white-space: nowrap;
+  border-color: transparent;
+  border-radius: 3px;
+  -moz-transition: all 250ms ease-out;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-box-pack: center;
+  background-color: transparent;
+  -webkit-box-align: center;
+  -webkit-transition: all 250ms ease-out;
+}
+.button-36063075--medium-6e2a217a--button-0a0aa816--linkButton-67c61496--links-8c92b9e4:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.button-36063075--medium-6e2a217a--button-0a0aa816--linkButton-67c61496--links-8c92b9e4:hover {
+  color: hsl(207.79999999999995, 100%, 16.9%) !important;
+}
+.button-36063075--medium-6e2a217a--button-0a0aa816--linkButton-67c61496--links-8c92b9e4:active {
+  color: #00427B;
+}
+.text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1--text-8ee2c8b2 {
+  font-size: 16px;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+}
+.text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1 {
+  font-size: 16px;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.link-a079aa82--primary-53a25e66 {
+  color: #3884FF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.reset-3c756112--searchInputWrapper-ea7f3052--searchInputWrapper-0442d130 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  height: 80px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  max-width: 224px;
+  align-items: center;
+  -webkit-box-align: center;
+}
+.reset-3c756112--searchInputWrapper-ea7f3052--searchInputWrapper-0442d130:before {
+  top: 50%;
+  left: 0;
+  height: 40px;
+  content: " ";
+  position: absolute;
+  transform: translateY(-50%);
+  border-left: 1px solid #E6ECF1;
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--searchInputWrapper-ea7f3052--searchInputWrapper-0442d130 {
+    display: none;
+  }
+}
+.reset-3c756112--inputContainer-b2cb171c {
+  margin: 0;
+  display: block;
+  padding: 0;
+  padding-left: 14px;
+  padding-right: 16px;
+}
+.inputInner-5c86b87d--medium-0bbed4bd--inputInner-4216b016--searchInputPlaceholder-936306be {
+  font: inherit;
+  color: #242A31;
+  width: 100%;
+  border: none;
+  cursor: inherit;
+  height: 38px;
+  margin: 0;
+  resize: none;
+  outline: none;
+  padding: 0px 8px;
+  background: transparent;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: inherit;
+  border-radius: 3px;
+}
+.inputInner-5c86b87d--medium-0bbed4bd--inputInner-4216b016--searchInputPlaceholder-936306be::placeholder {
+  color: #9DAAB6;
+  font-size: 16px;
+  font-weight: 500;
+}
+.reset-3c756112--inputWrapper-63396dac--TextH400-3033861f--medium-4505230f--light-502263b4--input-6d442051--searchInput-3fa812d5 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 100%;
+  border: none;
+  margin: 0;
+  display: flex;
+  outline: none;
+  padding: 0;
+  font-size: 16px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.625;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+.reset-3c756112--inputInnerSizer-756c9114 {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+.reset-3c756112--inputAddOn-45de9ec1--inputAddOnPrefix-202fa60d--icon-1f8349b3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 0 0 auto;
+  color: #242A31;
+  order: -1;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  line-height: 1.2;
+  white-space: nowrap;
+  padding-left: 8px;
+  -webkit-box-align: center;
+}
+.icon-7f6730be--text-3f89f380 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+.reset-3c756112--bodyContent-2f98451b {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 1;
+  color: #3B454E;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+}
+.reset-3c756112--wholeContent-9fc567d4 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  min-height: 100%;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--wholeContentBody-554be184 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 1;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  transition: margin-bottom 250ms ease;
+  align-items: stretch;
+  -moz-transition: margin-bottom 250ms ease;
+  -webkit-box-align: stretch;
+  -webkit-transition: margin-bottom 250ms ease;
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--wholeContentBody-554be184 {
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reset-3c756112--wholeContentBody-554be184 {
+    padding-top: 60px;
+  }
+}
+@keyframes keyframes-animation-2f81d449-0-1-532 {
+  0% {
+    background-color: rgba(24, 48, 85, 0);
+  }
+  100% {
+    background-color: rgba(24, 48, 85, 0.30000000000000004);
+  }
+}
+.reset-3c756112--backdrop-1322b68a--hidden-247382c3--overlay-29559ab8 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  z-index: 29;
+  position: absolute;
+  transition: background-color 250ms ease-out;
+  align-items: center;
+  animation-name: none;
+  pointer-events: none;
+  -moz-transition: background-color 250ms ease-out;
+  justify-content: center;
+  -webkit-box-pack: center;
+  background-color: rgba(24, 48, 85, 0);
+  -webkit-box-align: center;
+  -webkit-transition: background-color 250ms ease-out;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+@media screen and (min-width: 1024px) {
+  .reset-3c756112--backdrop-1322b68a--hidden-247382c3--overlay-29559ab8 {
+    z-index: 14;
+  }
+}
+.reset-3c756112--contentNavigation-dd3370a4 {
+  margin: 0;
+  display: block;
+  padding: 0;
+  z-index: 30;
+}
+@media print {
+  .reset-3c756112--contentNavigation-dd3370a4 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .reset-3c756112--contentNavigation-dd3370a4 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex: 0 0 auto;
+    width: calc((100% - 1448px) / 2 + 298px);
+    display: flex;
+    z-index: 15;
+    min-width: 298px;
+    background: #F5F7F9;
+    align-items: stretch;
+    border-right: 1px solid #E6ECF1;
+    padding-left: calc((100% - 1448px) / 2);
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+  }
+}
+.reset-3c756112--contentNavigationInner-205d49ea--contentNavigationInnerCollapsed-7b4aca00 {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--contentNavigationInner-205d49ea--contentNavigationInnerCollapsed-7b4aca00 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    position: fixed;
+    max-width: 298px;
+    transform: translateX(-100%) !important;
+    box-shadow: none;
+    overflow-y: auto;
+    transition: transform 250ms ease;
+    border-right: 1px solid #E6ECF1;
+    -moz-transition: transform 250ms ease;
+    background-color: #fff;
+    -webkit-transition: transform 250ms ease;
+  }
+}
+.reset-3c756112--sidebarWrapper-84a13d8e {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: stretch;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112 {
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+.reset-3c756112--sidebar-84a13d8e {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: stretch;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--navigationHeader-2c71cfec {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 0 0 auto;
+  height: 80px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin-left: 24px;
+  border-bottom: 1px solid #E6ECF1;
+  padding-right: 12px;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--navigationHeader-2c71cfec {
+    display: none;
+  }
+}
+.reset-3c756112--navigationHeaderLogo-756c9114 {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+.button-36063075--medium-6e2a217a--button-ecb50a60--medium-54db2ab3 {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  color: #9DAAB6;
+  width: 40px;
+  border: 1px solid;
+  cursor: pointer;
+  height: 40px;
+  display: inline-flex;
+  outline: none;
+  padding: 0;
+  transition: all 250ms ease-out;
+  align-items: center;
+  line-height: 1em;
+  white-space: nowrap;
+  border-color: transparent;
+  border-radius: 3px;
+  -moz-transition: all 250ms ease-out;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-box-pack: center;
+  background-color: transparent;
+  -webkit-box-align: center;
+  -webkit-transition: all 250ms ease-out;
+}
+.button-36063075--medium-6e2a217a--button-ecb50a60--medium-54db2ab3:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.button-36063075--medium-6e2a217a--button-ecb50a60--medium-54db2ab3:hover {
+  color: #00427B;
+}
+.medium-3bde6db7--iconOnly-bddce91a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin: 0;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.text-4505230f--UIH400-4e41e82a--textUIFamily-5ebd8e40--text-8ee2c8b2 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+}
+.reset-3c756112--sidebarMain-13701e8f--sidebarMainWithHeader-7d9d70ef {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  height: calc(100% - 80px);
+  margin: 0;
+  display: flex;
+  padding: 0;
+  overflow-y: hidden;
+  flex-direction: column;
+  background-color: #F5F7F9;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--sidebarMain-13701e8f--sidebarMainWithHeader-7d9d70ef {
+    height: 100%;
+  }
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe {
+  overflow-y: auto;
+  flex: 1 1 auto;
+  width: 100%;
+  margin: 0;
+  display: block;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  -webkit-overflow-scrolling: touch;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe::-webkit-scrollbar-track {
+  background: none;
+  border-width: 0;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.16);
+  transition: background 250ms ease;
+  border-radius: 2px;
+  -moz-transition: background 250ms ease;
+  -webkit-transition: background 250ms ease;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe::-webkit-scrollbar-button {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe::-webkit-scrollbar-track-piece {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe::-webkit-scrollbar-corner {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe::-webkit-resizer {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe:hover::-webkit-scrollbar {
+  display: initial;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe:hover::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.16);
+}
+.reset-3c756112--mobileHeader-4e2d4892 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #74818D;
+  height: 59px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  box-shadow: 0 1px 1px 0 rgba(116, 129, 141, 0.1);
+  align-items: stretch;
+  border-bottom: 1px solid #d4dadf;
+  background-color: #FFFFFF;
+  -webkit-box-align: stretch;
+}
+@media screen and (min-width: 768px) {
+  .reset-3c756112--mobileHeader-4e2d4892 {
+    display: none;
+  }
+}
+.reset-3c756112--mobileHeaderClose-47b8fa64 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  padding: 8px 16px;
+  font-size: 24px;
+  align-items: center;
+  -webkit-box-align: center;
+}
+.reset-3c756112--pagesTree-4b07cd56 {
+  margin: 0;
+  display: block;
+  padding: 0;
+  font-size: 15px;
+  margin-top: 32px;
+  padding-left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .reset-3c756112--pagesTree-4b07cd56 {
+    padding-left: 24px;
+  }
+}
+.reset-3c756112--pageItem-01e3f344 {
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+  border-left: 1px solid transparent;
+}
+.reset-3c756112--pageComponent-7cc5301a {
+  margin: 0;
+  display: block;
+  padding: 0;
+  margin-left: -1px;
+}
+.navButton-94f2579c--navButtonClickable-161b88ca {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: inherit;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  padding: 7px 24px 7px 16px;
+  position: relative;
+  align-items: center;
+  border-right: 0;
+  text-decoration: none;
+  -webkit-box-align: center;
+}
+.navButton-94f2579c--navButtonClickable-161b88ca:hover {
+  background-color: #E6ECF1;
+}
+.text-4505230f--UIH300-2063425d--textContentFamily-49a318e1--navButtonLabel-14a4968f {
+  flex: 1;
+  font-size: 14px;
+  word-break: break-word;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.reset-3c756112--pageItemWithChildren-56f27afc {
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+}
+.navButton-94f2579c--navButtonClickable-161b88ca--navButtonOpened-6a88552e {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: inherit;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: flex;
+  padding: 7px 24px 7px 16px;
+  position: relative;
+  align-items: center;
+  border-color: #E6ECF1 !important;
+  border-right: 0;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  -webkit-box-align: center;
+}
+.navButton-94f2579c--navButtonClickable-161b88ca--navButtonOpened-6a88552e:hover {
+  border-color: #E6ECF1;
+  background-color: #FFFFFF;
+}
+.reset-3c756112--pageItemWithChildren-56f27afc--S300Bottom-9b4658d2 {
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+  margin-bottom: 24px;
+}
+.reset-3c756112--footer-68e6f18c {
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+}
+.reset-3c756112--footer-68e6f18c:before {
+  background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0) 0%, #F5F7F9 100%);
+  background: -moz-linear-gradient(to bottom, rgba(255,255,255,0) 0%, #F5F7F9 100%);
+  top: -24px;
+  width: 100%;
+  height: 24px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #F5F7F9 100%);
+}
+.reset-3c756112--trademark-a8da4b94 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #9DAAB6;
+  margin: 16px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin-left: 32px;
+  padding-top: 8px;
+  padding-left: 16px;
+  border-radius: 3px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  background-color: #E6ECF1;
+  -webkit-box-align: center;
+}
+.reset-3c756112--trademark-a8da4b94:hover {
+  color: #3884FF;
+}
+.reset-3c756112--trademarkLogo-0d2d53bc {
+  margin: 0;
+  display: block;
+  padding: 0;
+  font-size: 40px;
+}
+.reset-3c756112--trademarkContent-04a01aea {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+  padding-left: 16px;
+}
+.text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40 {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+.reset-3c756112--wholeContentPage-6c3f1fc5 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 1 1 auto;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  max-width: 100%;
+  min-width: 0;
+  background: #fff;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--wholePageSticky-f53dafd2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 1 1 auto;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+}
+.reset-3c756112--pageContainer-544d6e9c {
+  flex: 1 1 auto;
+  margin: 0px 16px;
+  display: block;
+  padding: 0;
+  max-width: 750px;
+  min-width: 0;
+  padding-bottom: 64px;
+}
+@media screen and (max-width: 1023px) {
+  .reset-3c756112--pageContainer-544d6e9c {
+    margin: 0px auto;
+    padding: 0px 24px 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .reset-3c756112--pageContainer-544d6e9c {
+    margin: 0px 88px;
+  }
+}
+.reset-3c756112--pageHeader-15724735 {
+  margin: 0;
+  display: block;
+  padding: 0;
+  border-bottom: 2px solid #E6ECF1;
+  margin-bottom: 32px;
+}
+.reset-3c756112--pageHeaderInner-7c0f0284 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: auto;
+  margin: 0;
+  display: flex;
+  padding: 40px 0px;
+}
+@media screen and (min-width: 768px) {
+  .reset-3c756112--pageHeaderInner-7c0f0284 {
+    flex-wrap: wrap;
+    align-items: baseline;
+    flex-direction: row;
+    -webkit-box-align: baseline;
+    -webkit-box-lines: multiple;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+  }
+}
+.reset-3c756112--pageHeaderWrapperContent-6897c946 {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+}
+.reset-3c756112--horizontalFlex-5a0077e0 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: stretch;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-box-align: stretch;
+}
+.reset-3c756112--pageHeaderIntro-0c1463da {
+  flex: 1 1 auto;
+  margin: 0;
+  display: block;
+  padding: 0;
+  padding-right: 16px;
+}
+.reset-3c756112--pageTitle-33dc39a3 {
+  color: #242A31;
+  width: 100%;
+  border: none;
+  margin: 0;
+  display: block;
+  outline: none;
+  padding: 0;
+  background: none;
+  border-radius: 3px;
+}
+.text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1 {
+  font-size: 32px;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.reset-3c756112--toolbar-a6a9f7d2--medium-8e46b02c--pageHeaderToolbar-6457a802--withControlsClosed-3e96e46c {
+  display: -ms-inline-grid;
+  margin: 0;
+  display: none;
+  padding: 0;
+  margin-top: 9px;
+  -ms-grid-rows: none;
+  grid-column-gap: 16px;
+  grid-template-rows: none;
+}
+@media screen and (max-width: 1279px) {
+  .reset-3c756112--toolbar-a6a9f7d2--medium-8e46b02c--pageHeaderToolbar-6457a802--withControlsClosed-3e96e46c {
+    display: block;
+  }
+}
+.button-36063075--small-30ceeddb--button-ecb50a60--small-54db2a94 {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  color: #9DAAB6;
+  width: 30px;
+  border: 1px solid;
+  cursor: pointer;
+  height: 30px;
+  display: inline-flex;
+  outline: none;
+  padding: 0;
+  transition: all 250ms ease-out;
+  align-items: center;
+  line-height: 1em;
+  white-space: nowrap;
+  border-color: transparent;
+  border-radius: 3px;
+  -moz-transition: all 250ms ease-out;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-box-pack: center;
+  background-color: transparent;
+  -webkit-box-align: center;
+  -webkit-transition: all 250ms ease-out;
+}
+.button-36063075--small-30ceeddb--button-ecb50a60--small-54db2a94:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.button-36063075--small-30ceeddb--button-ecb50a60--small-54db2a94:hover {
+  color: #00427B;
+}
+.small-3bde6db7--iconOnly-bddce91a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin: 0;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1em;
+}
+.reset-3c756112--pageHeaderDescription-22970244 {
+  flex: auto;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+.reset-3c756112--pageDescription-8425f32c {
+  color: #74818D;
+  width: 100%;
+  border: none;
+  margin: 8px 0px 0px 0px;
+  resize: none;
+  display: block;
+  outline: none;
+  padding: 0;
+  background: none;
+  min-height: 19px;
+  overflow-x: hidden;
+  border-radius: 3px;
+  letter-spacing: 0.0em;
+}
+.text-4505230f--TextH400-3033861f--textContentFamily-49a318e1 {
+  font-size: 16px;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+.reset-3c756112--toaster-c029690e {
+  top: 16px;
+  left: 50%;
+  margin: 0;
+  display: block;
+  padding: 0;
+  z-index: 160;
+  position: fixed;
+  transform: translateX(-50%);
+}
+.reset-3c756112--pageBody-a91db4ac {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  font-size: 16px;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--container-960c7c26 {
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+  margin-bottom: -24px;
+}
+.blockHeading-442b4f12 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #242A31;
+  margin: 0;
+  display: flex;
+  position: relative;
+  margin-bottom: 24px;
+}
+.blockHeadingContent-756c9114 {
+  flex: 1;
+}
+.text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1 {
+  font-size: 24px;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.blockHeadingAnchor-34f75d78--blockHeadingAnchorHidden-d69b5eda {
+  color: #242A31;
+  width: 20px;
+  opacity: 0;
+  transition: opacity 150ms ease;
+  line-height: 1em;
+  padding-left: 4px;
+  -moz-transition: opacity 150ms ease;
+  -webkit-transition: opacity 150ms ease;
+}
+.blockHeadingAnchor-34f75d78--blockHeadingAnchorHidden-d69b5eda:hover {
+  color: #3884FF;
+}
+@media print {
+  .blockHeadingAnchor-34f75d78--blockHeadingAnchorHidden-d69b5eda {
+    display: none;
+  }
+}
+.blockHeadingAnchorIcon-1c2bf3cb {
+  font-size: 16px;
+  vertical-align: middle;
+}
+.reset-3c756112--blockHeadingUp-c32402b2 {
+  width: 1em;
+  cursor: pointer;
+  height: 1em;
+  margin: 0;
+  display: block;
+  outline: none;
+  padding: 0;
+  line-height: 1em;
+}
+@media screen and (min-width: 768px) {
+  .reset-3c756112--blockHeadingUp-c32402b2 {
+    display: none;
+  }
+}
+@media print {
+  .reset-3c756112--blockHeadingUp-c32402b2 {
+    display: none;
+  }
+}
+.reset-3c756112--blockHint-a7403a60 {
+  width: 100%;
+  margin: 0;
+  display: block;
+  padding: 24px 24px calc(1px / 10) 50px;
+  position: relative;
+  margin-top: 32px;
+  border-left: 4px solid;
+  border-radius: 3px;
+  margin-bottom: 32px;
+  background-color: #F5F7F9;
+}
+.reset-3c756112--hintIcon-7c7981dd--paragraph-ae3112d0 {
+  top: 24px;
+  left: 16px;
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: absolute;
+  font-size: 24px;
+}
+.blockParagraph-544a408c {
+  color: inherit;
+  margin: 0;
+  position: relative;
+  margin-bottom: 24px;
+}
+.bold-3c254bd9 {
+  font-weight: 700;
+}
+.reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #242A31;
+  border: 1px solid #E6ECF1;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  align-self: stretch;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  margin-top: 32px;
+  transition: border 250ms ease;
+  align-items: center;
+  justify-self: stretch;
+  border-radius: 3px;
+  margin-bottom: 32px;
+  flex-direction: row;
+  -moz-transition: border 250ms ease;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  -webkit-box-align: center;
+  page-break-inside: avoid;
+  -ms-grid-row-align: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-transition: border 250ms ease;
+  -ms-grid-column-align: stretch;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--cardIcon-5b647d22 {
+  flex: 0 0 auto;
+  color: #9DAAB6;
+  margin: 0;
+  display: block;
+  padding: 16px;
+  font-size: 24px;
+  transition: color 250ms ease;
+  -moz-transition: color 250ms ease;
+  -webkit-transition: color 250ms ease;
+}
+.reset-3c756112--cardIcon-5b647d22:first-child {
+  padding-right: 0;
+}
+.reset-3c756112--cardIcon-5b647d22:last-child {
+  padding-left: 0;
+}
+.reset-3c756112--cardBody-25dca3b1--captionTitle-c44ec79e {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.reset-3c756112--cardTitle-32aa092e--captionTitle-c44ec79e {
+  margin: 0;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  transition: color 250ms ease;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -moz-transition: color 250ms ease;
+  -webkit-transition: color 250ms ease;
+}
+.reset-3c756112--cardBody-25dca3b1--subTitleWrapper-34440fa4 {
+  flex: 0 0 auto;
+  margin: 0;
+  display: block;
+  padding: 16px;
+}
+.reset-3c756112--cardHint-2c5d8183 {
+  color: #9DAAB6;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+.text-4505230f--TextH200-a3425406--textContentFamily-49a318e1 {
+  font-size: 12px;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+.reset-3c756112--codeBlockWrapper-56f27afc {
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+}
+.reset-3c756112--copyButtonWrapper-ca591f6e {
+  top: 16px;
+  right: 16px;
+  margin: 0;
+  display: block;
+  padding: 0;
+  z-index: 1;
+  position: absolute;
+}
+@keyframes keyframes-animation-bd7e9c6a-0-1-533 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.reset-3c756112--touchableView-a079aa82--copyButton-4f9a9412--tooltipped-57ae51fe {
+  color: #9DAAB6;
+  cursor: pointer;
+  margin: 0;
+  display: block;
+  opacity: 0.5;
+  outline: none;
+  padding: 8px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1em;
+}
+.reset-3c756112--touchableView-a079aa82--copyButton-4f9a9412--tooltipped-57ae51fe:hover {
+  opacity: 1;
+}
+@media print {
+  .reset-3c756112--touchableView-a079aa82--copyButton-4f9a9412--tooltipped-57ae51fe {
+    display: none;
+  }
+}
+.reset-3c756112--touchableView-a079aa82--copyButton-4f9a9412--tooltipped-57ae51fe:after {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  top: calc(100% + 16px);
+  left: 50%;
+  color: #FFFFFF;
+  width: max-content;
+  bottom: auto;
+  content: attr(aria-label);
+  display: none;
+  opacity: 0;
+  padding: 5px 8px;
+  z-index: 155;
+  position: absolute;
+  font-size: 12px;
+  max-width: 300px;
+  transform: translateX(-50%);
+  background: #242A31;
+  font-weight: 400;
+  line-height: 1.625;
+  white-space: normal;
+  border-radius: 3px;
+  animation-name: keyframes-animation-bd7e9c6a-0-1-533;
+  pointer-events: none;
+  text-transform: none;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.reset-3c756112--touchableView-a079aa82--copyButton-4f9a9412--tooltipped-57ae51fe:before {
+  top: calc(100% + 8px);
+  left: 50%;
+  width: 0;
+  bottom: auto;
+  height: 0;
+  content: "";
+  display: none;
+  opacity: 0;
+  z-index: 156;
+  position: absolute;
+  transform: translateX(-50%);
+  border-color: #242A31 transparent;
+  border-style: solid;
+  animation-name: keyframes-animation-bd7e9c6a-0-1-533;
+  border-top-width: 0;
+  border-left-width: 8px;
+  animation-duration: 0.2s;
+  border-right-width: 8px;
+  animation-fill-mode: forwards;
+  border-bottom-width: 8px;
+}
+.reset-3c756112--touchableView-a079aa82--copyButton-4f9a9412--tooltipped-57ae51fe:hover:before {
+  display: block;
+}
+.reset-3c756112--touchableView-a079aa82--copyButton-4f9a9412--tooltipped-57ae51fe:hover:after {
+  display: block;
+}
+.reset-3c756112--codeBlock-36378b66 {
+  color: #E6ECF1;
+  margin: 32px 0px;
+  display: block;
+  hyphens: none;
+  padding: 24px 24px 24px 8px;
+  overflow: auto;
+  tab-size: 2;
+  direction: ltr;
+  font-size: 14px;
+  background: #183055;
+  text-align: left;
+  word-break: normal;
+  -ms-hyphens: none;
+  font-family: "Source Code Pro", Consolas, Menlo, Monaco, Courier, monospace;
+  line-height: 1.4;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 2;
+  border-radius: 3px;
+  -webkit-hyphens: none;
+}
+@supports (-moz-appearance:none) {
+  .reset-3c756112--codeBlock-36378b66 {
+    font-family: Consolas, Menlo, Monaco, Courier, monospace;
+  }
+}
+.reset-3c756112--codeBlock-36378b66::selection {
+  background: #D3DCE4;
+  text-shadow: none;
+}
+.codeLine-a3169fbc {
+  font: inherit;
+  padding: 0px 0px;
+  position: relative;
+  word-wrap: normal;
+  white-space: pre;
+  padding-left: 44px;
+  padding-right: 14px;
+  counter-increment: line;
+}
+.codeLine-a3169fbc:not(:only-child):before {
+  top: 2px;
+  left: 4px;
+  color: #5C6975;
+  width: 24px;
+  bottom: 0;
+  content: counter(line);
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  font-size: 12px;
+  text-align: right;
+  user-select: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  background-color: transparent;
+  -webkit-user-select: none;
+}
+.codeLine-a3169fbc:only-child {
+  padding-left: 30px;
+}
+.reset-3c756112--pageFooter-f1d5e2b0 {
+  margin: 0;
+  display: block;
+  padding: 0;
+  margin-top: 64px;
+}
+@media print {
+  .reset-3c756112--pageFooter-f1d5e2b0 {
+    display: none;
+  }
+}
+.reset-3c756112--navPagesLinks-67bea901 {
+  display: -ms-grid;
+  width: auto;
+  margin: 0;
+  display: grid;
+  padding: 0;
+  -ms-grid-rows: auto;
+  grid-column-gap: 24px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "previous next";
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 767px) {
+  .reset-3c756112--navPagesLinks-67bea901 {
+    grid-row-gap: 24px;
+    -ms-grid-columns: 1fr;
+    grid-template-areas: "next" "previous";
+    grid-template-columns: 1fr;
+  }
+}
+.reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #242A31;
+  border: 1px solid #E6ECF1;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  grid-area: previous;
+  align-self: stretch;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  transition: border 250ms ease;
+  align-items: center;
+  justify-self: stretch;
+  border-radius: 3px;
+  flex-direction: row;
+  -moz-transition: border 250ms ease;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  -webkit-box-align: center;
+  page-break-inside: avoid;
+  -ms-grid-row-align: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-transition: border 250ms ease;
+  -ms-grid-column-align: stretch;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--cardBody-25dca3b1--cardPreviousBody-79f02c06 {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 16px;
+  text-align: right;
+}
+.reset-3c756112--cardTitle-32aa092e {
+  margin: 0;
+  display: block;
+  padding: 0;
+  transition: color 250ms ease;
+  -moz-transition: color 250ms ease;
+  -webkit-transition: color 250ms ease;
+}
+.reset-3c756112--card-6570f064--whiteCard-fff091a4--cardNext-19241c42 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #242A31;
+  border: 1px solid #E6ECF1;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  grid-area: next;
+  align-self: stretch;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  transition: border 250ms ease;
+  align-items: center;
+  justify-self: stretch;
+  border-radius: 3px;
+  flex-direction: row;
+  -moz-transition: border 250ms ease;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  -webkit-box-align: center;
+  page-break-inside: avoid;
+  -ms-grid-row-align: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-transition: border 250ms ease;
+  -ms-grid-column-align: stretch;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--cardBody-25dca3b1 {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 16px;
+}
+.reset-3c756112--pageFooterColumns-ef8f347e {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  border-top: 2px solid #E6ECF1;
+  margin-top: 24px;
+  align-items: center;
+  padding-top: 24px;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+@media screen and (max-width: 767px) {
+  .reset-3c756112--pageFooterColumns-ef8f347e {
+    align-items: stretch;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+  }
+}
+.reset-3c756112--pageFooterSummary-12074aff {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .reset-3c756112--pageFooterSummary-12074aff {
+    margin-bottom: 16px;
+  }
+}
+.reset-3c756112--pageChangesSummary-08821678 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: auto;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  -webkit-box-align: center;
+}
+.reset-3c756112--pageContributors-5c59582e {
+  flex: 0 0 auto;
+  margin: 0;
+  display: block;
+  padding: 0;
+  margin-right: 8px;
+}
+.reset-3c756112--ownerAvatarList-696792ce {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+}
+.reset-3c756112--pageEditedDate-b805c39a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: auto;
+  color: #9DAAB6;
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+.reset-3c756112--pageSide-ad9fed26 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 0 0 auto;
+  width: 224px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  position: relative;
+  margin-right: auto;
+}
+@media print {
+  .reset-3c756112--pageSide-ad9fed26 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .reset-3c756112--pageSide-ad9fed26 {
+    display: none;
+  }
+}
+.reset-3c756112--stickyContainer-2bed3a82 {
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+  max-width: 100%;
+}
+.reset-3c756112--tocWrapper-506ea24c {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  padding-top: 40px;
+  flex-direction: column;
+  padding-bottom: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114 {
+  overflow-y: auto;
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  -webkit-overflow-scrolling: touch;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114::-webkit-scrollbar-track {
+  background: none;
+  border-width: 0;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.16);
+  transition: background 250ms ease;
+  border-radius: 2px;
+  -moz-transition: background 250ms ease;
+  -webkit-transition: background 250ms ease;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114::-webkit-scrollbar-button {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114::-webkit-scrollbar-track-piece {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114::-webkit-scrollbar-corner {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114::-webkit-resizer {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114:hover::-webkit-scrollbar {
+  display: initial;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114:hover::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.16);
+}
+.reset-3c756112--menu-5b8a7448--pageSideMenu-23bebfd3--pageSideSection-542f1fd5 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex: 0 0 auto;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  min-width: 220px;
+  margin-bottom: 24px;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+.reset-3c756112--menu-5b8a7448--pageSideMenu-23bebfd3--pageSideSection-542f1fd5:before {
+  top: 0;
+  left: 0;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  border-left: 1px solid #E6ECF1;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5 {
+  overflow-y: auto;
+  flex: 1;
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  -webkit-overflow-scrolling: touch;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5::-webkit-scrollbar-track {
+  background: none;
+  border-width: 0;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.16);
+  transition: background 250ms ease;
+  border-radius: 2px;
+  -moz-transition: background 250ms ease;
+  -webkit-transition: background 250ms ease;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5::-webkit-scrollbar-button {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5::-webkit-scrollbar-track-piece {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5::-webkit-scrollbar-corner {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5::-webkit-resizer {
+  display: none;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5:hover::-webkit-scrollbar {
+  display: initial;
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5:hover::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.16);
+}
+.reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5:before {
+  top: 0;
+  left: 0;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  border-left: 1px solid #E6ECF1;
+}
+.reset-3c756112--menuItem-aa02f6ec--menuItemLight-757d5235--menuItemInline-173bdf97--pageSideMenuItem-22949732 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  color: #242A31;
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  padding: 4px 16px;
+  align-items: center;
+  padding-left: 24px;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-box-align: center;
+}
+.reset-3c756112--menuItem-aa02f6ec--menuItemLight-757d5235--menuItemInline-173bdf97--pageSideMenuItem-22949732:hover {
+  background: #F5F7F9;
+}
+.reset-3c756112--menuItemIcon-206eb252 {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  color: #9DAAB6;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  font-size: 18px;
+  margin-right: 8px;
+}
+.reset-3c756112--menuItemContent-c44ec79e {
+  margin: 0;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40 {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.reset-3c756112--pageSideSection-542f1fd5 {
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+}
+.reset-3c756112--pageSideSection-542f1fd5:before {
+  top: 0;
+  left: 0;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  border-left: 1px solid #E6ECF1;
+}
+@keyframes keyframes-animation-bd7e9c6a-0-1-534 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.reset-3c756112--tooltipContainer-7fdb9b70--tooltipped-57ae51fe--bottom-f9ec01b8--small-2ec8ae1a--circle-6c5acd10--ownerAvatarStackListItem-1b188f0f--whiteOutline-6045f802 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  z-index: 0;
+  position: relative;
+  box-shadow: 0 0 0 2px white;
+  border-radius: 128px;
+}
+.reset-3c756112--tooltipContainer-7fdb9b70--tooltipped-57ae51fe--bottom-f9ec01b8--small-2ec8ae1a--circle-6c5acd10--ownerAvatarStackListItem-1b188f0f--whiteOutline-6045f802:after {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  top: calc(100% + 16px);
+  left: 50%;
+  color: #FFFFFF;
+  width: max-content;
+  bottom: auto;
+  content: attr(aria-label);
+  display: none;
+  opacity: 0;
+  padding: 5px 8px;
+  z-index: 155;
+  position: absolute;
+  font-size: 12px;
+  max-width: 300px;
+  transform: translateX(-50%);
+  background: #242A31;
+  font-weight: 400;
+  line-height: 1.625;
+  white-space: normal;
+  border-radius: 3px;
+  animation-name: keyframes-animation-bd7e9c6a-0-1-534;
+  pointer-events: none;
+  text-transform: none;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+.reset-3c756112--tooltipContainer-7fdb9b70--tooltipped-57ae51fe--bottom-f9ec01b8--small-2ec8ae1a--circle-6c5acd10--ownerAvatarStackListItem-1b188f0f--whiteOutline-6045f802:before {
+  top: calc(100% + 8px);
+  left: 50%;
+  width: 0;
+  bottom: auto;
+  height: 0;
+  content: "";
+  display: none;
+  opacity: 0;
+  z-index: 156;
+  position: absolute;
+  transform: translateX(-50%);
+  border-color: #242A31 transparent;
+  border-style: solid;
+  animation-name: keyframes-animation-bd7e9c6a-0-1-534;
+  border-top-width: 0;
+  border-left-width: 8px;
+  animation-duration: 0.2s;
+  border-right-width: 8px;
+  animation-fill-mode: forwards;
+  border-bottom-width: 8px;
+}
+.reset-3c756112--tooltipContainer-7fdb9b70--tooltipped-57ae51fe--bottom-f9ec01b8--small-2ec8ae1a--circle-6c5acd10--ownerAvatarStackListItem-1b188f0f--whiteOutline-6045f802:nth-last-child(n+2) {
+  margin-left: -8px;
+}
+.reset-3c756112--tooltipContainer-7fdb9b70--tooltipped-57ae51fe--bottom-f9ec01b8--small-2ec8ae1a--circle-6c5acd10--ownerAvatarStackListItem-1b188f0f--whiteOutline-6045f802:hover:before {
+  display: block;
+}
+.reset-3c756112--tooltipContainer-7fdb9b70--tooltipped-57ae51fe--bottom-f9ec01b8--small-2ec8ae1a--circle-6c5acd10--ownerAvatarStackListItem-1b188f0f--whiteOutline-6045f802:hover:after {
+  display: block;
+}
+.reset-3c756112--avatarFrame-2f40cdc9--small-2ec8ae1a--circle-6c5acd10 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-mask-image: -moz-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -moz-radial-gradient(white, black);
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  mask-image: radial-gradient(white, black);
+  align-items: center;
+  border-radius: 128px;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-mask-image: radial-gradient(white, black);
+}
+.reset-3c756112--innerShadow-7a3a8651 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: absolute;
+  box-shadow: inset 0 0 1px 1px rgba(24, 48, 85, 0.1);
+  border-radius: 128px;
+  pointer-events: none;
+}</style>
+</head>
+<body>
+<div id="__GITBOOK__ROOT__SERVER__"><div class="reset-3c756112--body-68cac36c" data-reactroot=""><div class="reset-3c756112--header-07037613--header-09ef972a"><div class="reset-3c756112--headerContainer-bb8cc0bc"><div class="reset-3c756112--headerLeftColumn-4eae0bae--headerLeftColumn-7efc9f26"><div role="button" tabindex="-1" class="reset-3c756112--mobileButton-7a76d05f"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380--icon-1f8349b3"><g><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></g></svg></div><div class="reset-3c756112--headerLogo-5c0b38e2"><div class="reset-3c756112--mobileLogo-dacfd15c"><a class="link-a079aa82--primary-53a25e66--logoLink-10d08504" style="color:#00427B" href="/"><div class="reset-3c756112--tooltipContainer-7fdb9b70--small-2ec8ae1a"><div class="reset-3c756112--avatarFrame-2f40cdc9--small-2ec8ae1a"><img class="image-67b14f24--avatar-1c1d03ec" src="https://gblobscdn.gitbook.com/orgs%2F-MLSfUoBhhQWYQSD92DX%2Favatar-1604668810982.png?alt=media" /></div></div><div class="reset-3c756112--S100Left-7c8af13a--logoDisplayNameContainer-583bfe61--logoText-e24e7614"><span class="text-4505230f--DisplayH700-a03ad9b4--textContentFamily-49a318e1--spaceNameText-677c2969">sendbit.io</span></div></a></div><div class="reset-3c756112--desktopLogo-a594db90"><a class="link-a079aa82--primary-53a25e66--logoLink-10d08504" style="color:#00427B" href="/"><div class="reset-3c756112--tooltipContainer-7fdb9b70--medium-296350e4"><div class="reset-3c756112--avatarFrame-2f40cdc9--medium-296350e4"><img class="image-67b14f24--avatar-1c1d03ec" src="https://gblobscdn.gitbook.com/orgs%2F-MLSfUoBhhQWYQSD92DX%2Favatar-1604668810982.png?alt=media" /></div></div><div class="reset-3c756112--S100Left-7c8af13a--logoDisplayNameContainer-583bfe61--logoText-e24e7614"><span class="text-4505230f--DisplayH700-a03ad9b4--textContentFamily-49a318e1--spaceNameText-677c2969">sendbit.io</span></div></a></div></div><div role="button" tabindex="-1" class="reset-3c756112--mobileButton-7a76d05f"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380--icon-1f8349b3"><g><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></g></svg></div></div><div class="reset-3c756112--headerInnerWrapper-629f79d1--headerInnerWrapper-4f99acea"><div class="reset-3c756112--withScrollbar-39338630--scrollAxisX-bf86cd6c--headerInner-c872fc48"><div style="border-bottom-color:transparent" class="reset-3c756112--link-0be4f603"><a class="button-36063075--medium-6e2a217a--button-0a0aa816--linkButton-67c61496--links-8c92b9e4" target="_blank" rel="noopener noreferrer" href="https://sendbit.io"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1--text-8ee2c8b2"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Home</span></span></a></div><div style="border-bottom-color:#00427B" class="reset-3c756112--link-0be4f603"><a class="button-36063075--medium-6e2a217a--button-0a0aa816--linkButton-67c61496--links-8c92b9e4" style="color:#00427B" href="/accpet-payments"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1--text-8ee2c8b2"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Accept payments</span></span></a></div><div style="border-bottom-color:transparent" class="reset-3c756112--link-0be4f603"><a class="button-36063075--medium-6e2a217a--button-0a0aa816--linkButton-67c61496--links-8c92b9e4" style="color:#00427B" href="/log-paymets"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1--text-8ee2c8b2"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Log payments</span></span></a></div><div style="border-bottom-color:transparent" class="reset-3c756112--link-0be4f603"><a class="button-36063075--medium-6e2a217a--button-0a0aa816--linkButton-67c61496--links-8c92b9e4" style="color:#00427B" href="/send-payments"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1--text-8ee2c8b2"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Send payments</span></span></a></div></div></div><div class="reset-3c756112--searchInputWrapper-ea7f3052--searchInputWrapper-0442d130"><div class="reset-3c756112--inputContainer-b2cb171c"><div aria-label="" class="reset-3c756112--inputWrapper-63396dac--TextH400-3033861f--medium-4505230f--light-502263b4--input-6d442051--searchInput-3fa812d5"><div class="reset-3c756112--inputInnerSizer-756c9114"><input type="text" placeholder="Search..." class="inputInner-5c86b87d--medium-0bbed4bd--inputInner-4216b016--searchInputPlaceholder-936306be" /></div><div class="reset-3c756112--inputAddOn-45de9ec1--inputAddOnPrefix-202fa60d--icon-1f8349b3"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></g></svg></div></div></div></div></div></div><div class="reset-3c756112--bodyContent-2f98451b"><div class="reset-3c756112--wholeContent-9fc567d4"><div class="reset-3c756112--wholeContentBody-554be184"><div role="presentation" class="reset-3c756112--backdrop-1322b68a--hidden-247382c3--overlay-29559ab8"></div><div class="reset-3c756112--contentNavigation-dd3370a4"><div class="reset-3c756112--contentNavigationInner-205d49ea--contentNavigationInnerCollapsed-7b4aca00"><div class="reset-3c756112--sidebarWrapper-84a13d8e"><div style="padding-bottom:0" class="reset-3c756112"></div><div class="reset-3c756112--sidebar-84a13d8e"><div class="reset-3c756112--navigationHeader-2c71cfec"><div class="reset-3c756112--navigationHeaderLogo-756c9114"><div class="reset-3c756112--mobileLogo-dacfd15c"><a class="link-a079aa82--primary-53a25e66--logoLink-10d08504" style="color:#00427B" href="/"><div class="reset-3c756112--tooltipContainer-7fdb9b70--small-2ec8ae1a"><div class="reset-3c756112--avatarFrame-2f40cdc9--small-2ec8ae1a"><img class="image-67b14f24--avatar-1c1d03ec" src="https://gblobscdn.gitbook.com/orgs%2F-MLSfUoBhhQWYQSD92DX%2Favatar-1604668810982.png?alt=media" /></div></div><div class="reset-3c756112--S100Left-7c8af13a--logoDisplayNameContainer-583bfe61--logoText-e24e7614"><span class="text-4505230f--DisplayH700-a03ad9b4--textContentFamily-49a318e1--spaceNameText-677c2969">sendbit.io</span></div></a></div><div class="reset-3c756112--desktopLogo-a594db90"><a class="link-a079aa82--primary-53a25e66--logoLink-10d08504" style="color:#00427B" href="/"><div class="reset-3c756112--tooltipContainer-7fdb9b70--medium-296350e4"><div class="reset-3c756112--avatarFrame-2f40cdc9--medium-296350e4"><img class="image-67b14f24--avatar-1c1d03ec" src="https://gblobscdn.gitbook.com/orgs%2F-MLSfUoBhhQWYQSD92DX%2Favatar-1604668810982.png?alt=media" /></div></div><div class="reset-3c756112--S100Left-7c8af13a--logoDisplayNameContainer-583bfe61--logoText-e24e7614"><span class="text-4505230f--DisplayH700-a03ad9b4--textContentFamily-49a318e1--spaceNameText-677c2969">sendbit.io</span></div></a></div></div><div class="reset-3c756112"><button class="button-36063075--medium-6e2a217a--button-ecb50a60--medium-54db2ab3"><span class="medium-3bde6db7--iconOnly-bddce91a"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></g></svg></span><span class="text-4505230f--UIH400-4e41e82a--textUIFamily-5ebd8e40--text-8ee2c8b2"></span></button></div></div><div class="reset-3c756112--sidebarMain-13701e8f--sidebarMainWithHeader-7d9d70ef"><div class="reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--sidebarInner-18a1e7fe"><div class="reset-3c756112--mobileHeader-4e2d4892"><div role="button" tabindex="-1" class="reset-3c756112--mobileHeaderClose-47b8fa64"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></g></svg></div></div><div class="reset-3c756112--pagesTree-4b07cd56"><div class="reset-3c756112--pageItem-01e3f344"><div class="reset-3c756112--pageComponent-7cc5301a"><a class="navButton-94f2579c--navButtonClickable-161b88ca" href="/"><span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1--navButtonLabel-14a4968f">Server requirements</span></a></div></div><div class="reset-3c756112"><div class="reset-3c756112--pageItemWithChildren-56f27afc"><div class="reset-3c756112"><div class="reset-3c756112--pageItem-01e3f344"><div class="reset-3c756112--pageComponent-7cc5301a"><a class="navButton-94f2579c--navButtonClickable-161b88ca--navButtonOpened-6a88552e" style="color:#00427B" href="/accpet-payments"><span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1--navButtonLabel-14a4968f">Start accepting crypto payments</span></a></div></div></div></div><div class="reset-3c756112--pageItemWithChildren-56f27afc"><div class="reset-3c756112"><div class="reset-3c756112--pageItem-01e3f344"><div class="reset-3c756112--pageComponent-7cc5301a"><a class="navButton-94f2579c--navButtonClickable-161b88ca" href="/log-paymets"><span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1--navButtonLabel-14a4968f">Log payments into database</span></a></div></div></div></div><div class="reset-3c756112--pageItemWithChildren-56f27afc"><div class="reset-3c756112"><div class="reset-3c756112--pageItem-01e3f344"><div class="reset-3c756112--pageComponent-7cc5301a"><a class="navButton-94f2579c--navButtonClickable-161b88ca" href="/send-payments"><span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1--navButtonLabel-14a4968f">Send payments via api</span></a></div></div></div></div><div class="reset-3c756112--pageItemWithChildren-56f27afc--S300Bottom-9b4658d2"><div class="reset-3c756112"><div class="reset-3c756112--pageItem-01e3f344"><div class="reset-3c756112--pageComponent-7cc5301a"><a class="navButton-94f2579c--navButtonClickable-161b88ca" href="/faq"><span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1--navButtonLabel-14a4968f">FAQ</span></a></div></div></div></div></div></div></div><div class="reset-3c756112--footer-68e6f18c"><a href="https://www.gitbook.com/?utm_source=content&amp;utm_medium=trademark&amp;utm_campaign=sendbit-1" target="_blank" class="reset-3c756112--trademark-a8da4b94" role="presentation"><div class="reset-3c756112--trademarkLogo-0d2d53bc"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="currentColor" viewBox="0 0 1067 769" xmlns="http://www.w3.org/2000/svg" stroke="none" class="icon-7f6730be--text-3f89f380"><g><path d="M480.026 640.677c17.205 0 31.2 13.997 31.2 31.194s-13.995 31.193-31.2 31.193c-17.197 0-31.193-13.996-31.193-31.193 0-17.197 13.996-31.194 31.193-31.194m489.93-193.226c-17.203 0-31.2-13.998-31.2-31.195 0-17.204 13.997-31.2 31.2-31.2 17.198 0 31.194 13.996 31.194 31.2 0 17.197-13.996 31.195-31.193 31.195m0-127.804c-53.269 0-96.609 43.34-96.609 96.609 0 10.373 1.723 20.702 5.123 30.741L559.328 616.879c-18.132-26.128-47.521-41.617-79.302-41.617-36.821 0-70.391 21.065-86.63 54.003L106.68 478.109c-30.288-15.927-52.965-65.817-50.56-111.223 1.248-23.687 9.438-42.071 21.897-49.17 7.916-4.493 17.436-4.099 27.526 1.188l1.916 1.01c75.96 40.022 324.6 170.981 335.063 175.844 16.157 7.47 25.14 10.5 52.659-2.547l513.958-267.3c7.53-2.844 16.315-10.062 16.315-21.023 0-15.205-15.72-21.199-15.765-21.199-29.218-14.018-74.163-35.054-117.987-55.57C798.033 84.26 691.861 34.547 645.23 10.132c-40.253-21.072-72.655-3.311-78.432.282l-11.227 5.555C345.727 119.743 64.898 258.826 48.911 268.553 20.278 285.973 2.547 320.679.252 363.768c-3.586 68.304 31.261 139.506 81.069 165.634l303.172 156.354c6.83 47.306 47.55 82.725 95.532 82.725 52.78 0 95.808-42.546 96.603-95.14L910.541 492.38c16.93 13.233 37.92 20.486 59.416 20.486 53.268 0 96.61-43.341 96.61-96.61s-43.342-96.61-96.61-96.61" fill-rule="evenodd"></path></g></svg></div><div class="reset-3c756112--trademarkContent-04a01aea"><div class="reset-3c756112"><span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by <b>GitBook</b></span></div></div></a></div></div></div></div></div></div><div class="reset-3c756112--wholeContentPage-6c3f1fc5"><div class="reset-3c756112--wholePageSticky-f53dafd2"><div class="reset-3c756112--pageContainer-544d6e9c"><div class="reset-3c756112"><div class="reset-3c756112--pageHeader-15724735"><div class="reset-3c756112--pageHeaderInner-7c0f0284"><div class="reset-3c756112--pageHeaderWrapperContent-6897c946"><div class="reset-3c756112--horizontalFlex-5a0077e0"><div class="reset-3c756112--pageHeaderIntro-0c1463da"><h1 class="reset-3c756112--pageTitle-33dc39a3"><span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Start accepting crypto payments</span></h1></div><div style="grid-template-columns:repeat(2, auto)" class="reset-3c756112--toolbar-a6a9f7d2--medium-8e46b02c--pageHeaderToolbar-6457a802--withControlsClosed-3e96e46c"><a class="button-36063075--small-30ceeddb--button-ecb50a60--small-54db2a94"><span class="small-3bde6db7--iconOnly-bddce91a"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="none" class="icon-7f6730be--text-3f89f380"><g><path d="M21.9 7.6c-.1-.1-.1-.2-.2-.3l-7-7c-.1-.1-.2-.2-.3-.2-.1-.1-.3-.1-.4-.1H5C3.3 0 2 1.3 2 3v9c0 .6.4 1 1 1s1-.4 1-1V3c0-.6.4-1 1-1h8v6c0 .6.4 1 1 1h6v3c0 .6.4 1 1 1s1-.4 1-1V8c0-.1 0-.3-.1-.4zM15 3.4L18.6 7H15V3.4zM5 15H3c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1s1-.4 1-1v-2h1c1.6 0 3-1.3 3-3s-1.3-3-3-3zm0 4H4v-2h1c.5 0 1 .4 1 1s-.4 1-1 1zm5.5-4H10c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h.5c2.5 0 4.5-2 4.5-4.5S13 15 10.5 15zm2.5 4.5c0 1.2-.9 2.2-2 2.4V17c1.1.3 2 1.3 2 2.5zm5-2.5v2h3c.6 0 1 .4 1 1s-.4 1-1 1h-3v2c0 .6-.4 1-1 1s-1-.4-1-1v-7c0-.6.4-1 1-1h4c.6 0 1 .4 1 1s-.4 1-1 1h-3z"></path></g></svg></span><span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span></a></div></div><div class="reset-3c756112--pageHeaderDescription-22970244"><div class="reset-3c756112--pageDescription-8425f32c"><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Accept crypto payments instantly on your website</span></div></div></div></div></div><div class="reset-3c756112--toaster-c029690e"></div><div class="reset-3c756112--pageBody-a91db4ac"><div data-editioncontainer="true" class="reset-3c756112--container-960c7c26"><div data-slate-editor="true" data-key="000653f0ebf6436eba5b3cd6bbb4b05b" autoCorrect="on" spellcheck="true" data-gramm="false" style="outline:none;white-space:pre-wrap;word-wrap:break-word"><h1 id="accept-payments-on-your-website" class="blockHeading-442b4f12" data-key="e1292c5f2d1a4bdca69399cb241f79d2"><div class="blockHeadingContent-756c9114"><span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="604857d932e7406db09cfdca92dde15b"><span data-offset-key="604857d932e7406db09cfdca92dde15b:0">Accept payments on your website</span></span></span><a href="#accept-payments-on-your-website" contenteditable="false" class="blockHeadingAnchor-34f75d78--blockHeadingAnchorHidden-d69b5eda"><span class="blockHeadingAnchorIcon-1c2bf3cb"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></g></svg></span></a></div><div role="button" tabindex="0" style="color:#00427B" contenteditable="false" class="reset-3c756112--blockHeadingUp-c32402b2"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></g></svg></div></h1><div style="border-color:#3884FF" data-key="bb4c6951140c454f8137dd80078c6ba8" class="reset-3c756112--blockHint-a7403a60"><div class="reset-3c756112--hintIcon-7c7981dd--paragraph-ae3112d0"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="none" style="color:#3884FF" class="icon-7f6730be--text-3f89f380"><g><path d="M12.2 8.98c.06-.01.12-.03.18-.06.06-.02.12-.05.18-.09l.15-.12c.18-.19.29-.45.29-.71 0-.06-.01-.13-.02-.19a.603.603 0 0 0-.06-.19.757.757 0 0 0-.09-.18c-.03-.05-.08-.1-.12-.15-.28-.27-.72-.37-1.09-.21-.13.05-.23.12-.33.21-.04.05-.09.1-.12.15-.04.06-.07.12-.09.18-.03.06-.05.12-.06.19-.01.06-.02.13-.02.19 0 .26.11.52.29.71.1.09.2.16.33.21.12.05.25.08.38.08.06 0 .13-.01.2-.02M13 16v-4a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0M12 3c-4.962 0-9 4.038-9 9 0 4.963 4.038 9 9 9 4.963 0 9-4.037 9-9 0-4.962-4.037-9-9-9m0 20C5.935 23 1 18.065 1 12S5.935 1 12 1c6.066 0 11 4.935 11 11s-4.934 11-11 11" fill-rule="evenodd"></path></g></svg></div><p class="blockParagraph-544a408c" data-key="6fbc109772914bbe9376c806e81e3114"><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d4f08d0690394a4c990527f1080e0c41"><span data-offset-key="d4f08d0690394a4c990527f1080e0c41:0">All API calls are implemented as HTTP Post. Requests must be made to our API endpoint located at </span><span data-offset-key="d4f08d0690394a4c990527f1080e0c41:1"><strong class="bold-3c254bd9" data-slate-leaf="true">https://sendbit.io/api/[METHOD]</strong></span></span></span></p></div><p class="blockParagraph-544a408c" data-key="00a0d4657b9d459d820702683c1c8601"><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4feeabc62f2548df847d85ee48710878"><span data-offset-key="4feeabc62f2548df847d85ee48710878:0">Download our library below</span></span></span></p><div data-slate-void="true" data-key="490859f866e7463cb46fd8070b33fd89"><div><div data-key="490859f866e7463cb46fd8070b33fd89" class="reset-3c756112"><a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MLSVG4Um7St5HqJJlV9%2F-MLSVKBOJer-pz2V7lXZ%2F-MLSWzSZXHj9zXtH8ld5%2Fsendbit.inc.php?alt=media&amp;token=6f58c74a-5088-4b99-8117-9ced53effd49" target="_blank" download="sendbit.inc.php" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e" role="presentation"><div style="color:#00427B" class="reset-3c756112--cardIcon-5b647d22"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></g></svg></div><div class="reset-3c756112--cardBody-25dca3b1--captionTitle-c44ec79e"><div style="color:#00427B" class="reset-3c756112--cardTitle-32aa092e--captionTitle-c44ec79e"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">sendbit.inc.php</span></div></div><div class="reset-3c756112--cardBody-25dca3b1--subTitleWrapper-34440fa4"><div class="reset-3c756112--cardHint-2c5d8183"><span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">sendbit.inc.php - <span>1KB</span></span></div></div></a></div></div></div><p class="blockParagraph-544a408c" data-key="4ae0590fe07a487f9ee58f71d43da2ef"><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a231b6f97164fc2afefa6cc280ef90f"><span data-offset-key="3a231b6f97164fc2afefa6cc280ef90f:0">Once you have downloaded our library paste the following example into your development environment to generate an address to accept payments. your end-user can send any amount to the address and you will be notified - learn more about this in the next step below</span></span></span></p><div class="reset-3c756112--codeBlockWrapper-56f27afc"><div contenteditable="false" class="reset-3c756112--copyButtonWrapper-ca591f6e"><div aria-label="Copy" role="button" tabindex="0" class="reset-3c756112--touchableView-a079aa82--copyButton-4f9a9412--tooltipped-57ae51fe"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></g></svg></div></div><pre data-key="8c51007ca1ff461b8d40d92e611abee0" spellcheck="false" class="reset-3c756112--codeBlock-36378b66"><div class="codeLine-a3169fbc" data-key="73c672ad839e499b8f9983f67183ed6f"><span data-key="398e7db9d2c042b295bb58bad61343b3"><span data-offset-key="398e7db9d2c042b295bb58bad61343b3:0"><span class="prism-token token  keyword ">include_once</span></span><span data-offset-key="398e7db9d2c042b295bb58bad61343b3:1"><span class="prism-token token 1 punctuation ">(</span></span><span data-offset-key="398e7db9d2c042b295bb58bad61343b3:2"><span class="prism-token token 2 double-quoted-string string">&quot;sendbit.inc.php&quot;</span></span><span data-offset-key="398e7db9d2c042b295bb58bad61343b3:3"><span class="prism-token token 3 punctuation ">)</span></span><span data-offset-key="398e7db9d2c042b295bb58bad61343b3:4"><span class="prism-token token 4 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="f10a446c1e1b4cebaf5ff216f8476e86"><span data-key="123f57c96acd4adcb1f01f23003e3d19"><span data-offset-key="123f57c96acd4adcb1f01f23003e3d19:0"><span data-slate-zero-width="n">​</span></span></span></div><div class="codeLine-a3169fbc" data-key="84c16e4f2d044e5e8158a0bef2459f67"><span data-key="aac609087ebd4b198da851434d0b69a8"><span data-offset-key="aac609087ebd4b198da851434d0b69a8:0"><span class="prism-token token 6 function ">define</span></span><span data-offset-key="aac609087ebd4b198da851434d0b69a8:1"><span class="prism-token token 7 punctuation ">(</span></span><span data-offset-key="aac609087ebd4b198da851434d0b69a8:2"><span class="prism-token token 8 double-quoted-string string">&quot;API_KEY&quot;</span></span><span data-offset-key="aac609087ebd4b198da851434d0b69a8:3"><span class="prism-token token 9 punctuation ">,</span></span><span data-offset-key="aac609087ebd4b198da851434d0b69a8:4"><span class="prism-token token 10"> </span></span><span data-offset-key="aac609087ebd4b198da851434d0b69a8:5"><span class="prism-token token 11 double-quoted-string string">&quot;YOUR_API_KEY&quot;</span></span><span data-offset-key="aac609087ebd4b198da851434d0b69a8:6"><span class="prism-token token 12 punctuation ">)</span></span><span data-offset-key="aac609087ebd4b198da851434d0b69a8:7"><span class="prism-token token 13 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="c4eed88e5ef54206a02fa263d04bd27d"><span data-key="5fd9fda94ff24023b6162fe4a609c540"><span data-offset-key="5fd9fda94ff24023b6162fe4a609c540:0"><span class="prism-token token 15 function ">define</span></span><span data-offset-key="5fd9fda94ff24023b6162fe4a609c540:1"><span class="prism-token token 16 punctuation ">(</span></span><span data-offset-key="5fd9fda94ff24023b6162fe4a609c540:2"><span class="prism-token token 17 double-quoted-string string">&quot;API_SECRET&quot;</span></span><span data-offset-key="5fd9fda94ff24023b6162fe4a609c540:3"><span class="prism-token token 18 punctuation ">,</span></span><span data-offset-key="5fd9fda94ff24023b6162fe4a609c540:4"><span class="prism-token token 19"> </span></span><span data-offset-key="5fd9fda94ff24023b6162fe4a609c540:5"><span class="prism-token token 20 double-quoted-string string">&quot;YOUR_API_SECRET&quot;</span></span><span data-offset-key="5fd9fda94ff24023b6162fe4a609c540:6"><span class="prism-token token 21 punctuation ">)</span></span><span data-offset-key="5fd9fda94ff24023b6162fe4a609c540:7"><span class="prism-token token 22 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="38dbbe9071744393adbbedc09278036c"><span data-key="098921eb60cb46a68f26230b0756aff4"><span data-offset-key="098921eb60cb46a68f26230b0756aff4:0"><span data-slate-zero-width="n">​</span></span></span></div><div class="codeLine-a3169fbc" data-key="2142a63903ea4ce78215911fa0c4068f"><span data-key="8bfb70bc9a3f4d81a99df72bb4d2f7df"><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:0"><span class="prism-token token 24 variable ">$amount</span></span><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:1"><span class="prism-token token 25"> </span></span><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:2"><span class="prism-token token 26 operator ">=</span></span><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:3"><span class="prism-token token 27"> </span></span><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:4"><span class="prism-token token 28 variable ">$_POST</span></span><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:5"><span class="prism-token token 29 punctuation ">[</span></span><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:6"><span class="prism-token token 30 double-quoted-string string">&quot;amount&quot;</span></span><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:7"><span class="prism-token token 31 punctuation ">]</span></span><span data-offset-key="8bfb70bc9a3f4d81a99df72bb4d2f7df:8"><span class="prism-token token 32 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="d8f3c45669644e158033dd925362231b"><span data-key="8fba122a7df040eea82464bb494f2cf0"><span data-offset-key="8fba122a7df040eea82464bb494f2cf0:0"><span data-slate-zero-width="n">​</span></span></span></div><div class="codeLine-a3169fbc" data-key="95db5ed2c50145329b8def22f26d7a4d"><span data-key="687a14aceca247a4b8980541857f66a2"><span data-offset-key="687a14aceca247a4b8980541857f66a2:0"><span class="prism-token token 34 variable ">$callback_url</span></span><span data-offset-key="687a14aceca247a4b8980541857f66a2:1"><span class="prism-token token 35"> </span></span><span data-offset-key="687a14aceca247a4b8980541857f66a2:2"><span class="prism-token token 36 operator ">=</span></span><span data-offset-key="687a14aceca247a4b8980541857f66a2:3"><span class="prism-token token 37"> </span></span><span data-offset-key="687a14aceca247a4b8980541857f66a2:4"><span class="prism-token token 38 double-quoted-string string">&quot;https://site.com/IPN.php?user=2450&quot;</span></span><span data-offset-key="687a14aceca247a4b8980541857f66a2:5"><span class="prism-token token 39 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="33faf76e79a141ae83132738dc99c37e"><span data-key="1296b8a105b54c9db64873f75fb59e5e"><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:0"><span class="prism-token token 41 variable ">$api_client</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:1"><span class="prism-token token 42"> </span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:2"><span class="prism-token token 43 operator ">=</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:3"><span class="prism-token token 44"> </span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:4"><span class="prism-token token 45 keyword ">new</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:5"><span class="prism-token token 46"> </span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:6"><span class="prism-token token 47 class-name ">SendBitApi</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:7"><span class="prism-token token 48 punctuation ">(</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:8"><span class="prism-token token 49 constant ">API_KEY</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:9"><span class="prism-token token 50 punctuation ">,</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:10"><span class="prism-token token 51"> </span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:11"><span class="prism-token token 52 constant ">API_SECRET</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:12"><span class="prism-token token 53 punctuation ">)</span></span><span data-offset-key="1296b8a105b54c9db64873f75fb59e5e:13"><span class="prism-token token 54 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="38f991d95347435195f678c17b5eb1e6"><span data-key="7ee534a1a2f84e4d914b11dc98d496d2"><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:0"><span class="prism-token token 56 variable ">$api_client</span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:1"><span class="prism-token token 57 operator ">-</span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:2"><span class="prism-token token 58 operator ">&gt;</span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:3"><span class="prism-token token 59 function ">setCoin</span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:4"><span class="prism-token token 60 punctuation ">(</span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:5"><span class="prism-token token 61 double-quoted-string string">&quot;BTC&quot;</span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:6"><span class="prism-token token 62 punctuation ">)</span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:7"><span class="prism-token token 63 punctuation ">;</span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:8"><span class="prism-token token 64"> </span></span><span data-offset-key="7ee534a1a2f84e4d914b11dc98d496d2:9"><span class="prism-token token 65 comment ">// set coin (BTC, LTC, BCH, DASH) https://www.sendbit.io/page/coins_accepted</span></span></span></div><div class="codeLine-a3169fbc" data-key="bf90266a42474e3fae8ef3ac60b47fde"><span data-key="afdd6d106f9d4b2ca06dfd1cb683a534"><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:0"><span class="prism-token token 67 variable ">$api_client</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:1"><span class="prism-token token 68 operator ">-</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:2"><span class="prism-token token 69 operator ">&gt;</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:3"><span class="prism-token token 70 function ">setField</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:4"><span class="prism-token token 71 punctuation ">(</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:5"><span class="prism-token token 72 double-quoted-string string">&quot;callback_url&quot;</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:6"><span class="prism-token token 73 punctuation ">,</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:7"><span class="prism-token token 74"> </span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:8"><span class="prism-token token 75 variable ">$callback_url</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:9"><span class="prism-token token 76 punctuation ">)</span></span><span data-offset-key="afdd6d106f9d4b2ca06dfd1cb683a534:10"><span class="prism-token token 77 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="5033e218dab14147aba3ada01145a5fa"><span data-key="c42db46e6f77464db97a37ef14b18183"><span data-offset-key="c42db46e6f77464db97a37ef14b18183:0"><span class="prism-token token 79 variable ">$api_client</span></span><span data-offset-key="c42db46e6f77464db97a37ef14b18183:1"><span class="prism-token token 80 operator ">-</span></span><span data-offset-key="c42db46e6f77464db97a37ef14b18183:2"><span class="prism-token token 81 operator ">&gt;</span></span><span data-offset-key="c42db46e6f77464db97a37ef14b18183:3"><span class="prism-token token 82 function ">setMethod</span></span><span data-offset-key="c42db46e6f77464db97a37ef14b18183:4"><span class="prism-token token 83 punctuation ">(</span></span><span data-offset-key="c42db46e6f77464db97a37ef14b18183:5"><span class="prism-token token 84 double-quoted-string string">&quot;generate-address&quot;</span></span><span data-offset-key="c42db46e6f77464db97a37ef14b18183:6"><span class="prism-token token 85 punctuation ">)</span></span><span data-offset-key="c42db46e6f77464db97a37ef14b18183:7"><span class="prism-token token 86 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="1cb6ef2c6af94b22a702507a1dc63d47"><span data-key="0d82b0513e92416b9cc7195d54472f77"><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:0"><span class="prism-token token 88 variable ">$response</span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:1"><span class="prism-token token 89"> </span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:2"><span class="prism-token token 90 operator ">=</span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:3"><span class="prism-token token 91"> </span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:4"><span class="prism-token token 92 variable ">$api_client</span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:5"><span class="prism-token token 93 operator ">-</span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:6"><span class="prism-token token 94 operator ">&gt;</span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:7"><span class="prism-token token 95 function ">process</span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:8"><span class="prism-token token 96 punctuation ">(</span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:9"><span class="prism-token token 97 punctuation ">)</span></span><span data-offset-key="0d82b0513e92416b9cc7195d54472f77:10"><span class="prism-token token 98 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="40b7d52ed8dd4644b71bf5706bb2dd79"><span data-key="923029656e2e46c290bb465a6c56df8d"><span data-offset-key="923029656e2e46c290bb465a6c56df8d:0"><span class="prism-token token 99"> </span></span></span></div><div class="codeLine-a3169fbc" data-key="9b85a1ea372a48d6ac524f96bf23ce23"><span data-key="084b1416874d44c792bc3d90a28b69a1"><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:0"><span class="prism-token token 100 keyword ">if</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:1"><span class="prism-token token 101 punctuation ">(</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:2"><span class="prism-token token 102 variable ">$response</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:3"><span class="prism-token token 103 punctuation ">[</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:4"><span class="prism-token token 104 double-quoted-string string">&quot;response_code&quot;</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:5"><span class="prism-token token 105 punctuation ">]</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:6"><span class="prism-token token 106"> </span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:7"><span class="prism-token token 107 operator ">!=</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:8"><span class="prism-token token 108"> </span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:9"><span class="prism-token token 109 number ">200</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:10"><span class="prism-token token 110 punctuation ">)</span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:11"><span class="prism-token token 111"> </span></span><span data-offset-key="084b1416874d44c792bc3d90a28b69a1:12"><span class="prism-token token 112 punctuation ">{</span></span></span></div><div class="codeLine-a3169fbc" data-key="b5dee1a1bdb5495f833523e546dbd692"><span data-key="05a2a23ef6b743b5b4f21f07d4dcf730"><span data-offset-key="05a2a23ef6b743b5b4f21f07d4dcf730:0"><span class="prism-token token 113"> </span></span></span></div><div class="codeLine-a3169fbc" data-key="7e52316cbfb943dc8c9c5b4b99338042"><span data-key="13c4a2f0092f41018fc043b0d7fcc25d"><span data-offset-key="13c4a2f0092f41018fc043b0d7fcc25d:0"><span class="prism-token token 114 function ">exit</span></span><span data-offset-key="13c4a2f0092f41018fc043b0d7fcc25d:1"><span class="prism-token token 115 punctuation ">(</span></span><span data-offset-key="13c4a2f0092f41018fc043b0d7fcc25d:2"><span class="prism-token token 116 variable ">$response</span></span><span data-offset-key="13c4a2f0092f41018fc043b0d7fcc25d:3"><span class="prism-token token 117 punctuation ">[</span></span><span data-offset-key="13c4a2f0092f41018fc043b0d7fcc25d:4"><span class="prism-token token 118 double-quoted-string string">&quot;response_message&quot;</span></span><span data-offset-key="13c4a2f0092f41018fc043b0d7fcc25d:5"><span class="prism-token token 119 punctuation ">]</span></span><span data-offset-key="13c4a2f0092f41018fc043b0d7fcc25d:6"><span class="prism-token token 120 punctuation ">)</span></span><span data-offset-key="13c4a2f0092f41018fc043b0d7fcc25d:7"><span class="prism-token token 121 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="b612abdef19e4bb08f9775bd0f3fe265"><span data-key="c7c2d5792890465e833231ce3bb94c99"><span data-offset-key="c7c2d5792890465e833231ce3bb94c99:0"><span class="prism-token token 122"> </span></span></span></div><div class="codeLine-a3169fbc" data-key="f6cd5d2629de4a4d90ae06a7fcdd72d6"><span data-key="5ae34672dfd14208943456fdcf41a372"><span data-offset-key="5ae34672dfd14208943456fdcf41a372:0"><span class="prism-token token 123 punctuation ">}</span></span><span data-offset-key="5ae34672dfd14208943456fdcf41a372:1"><span class="prism-token token 124"> </span></span><span data-offset-key="5ae34672dfd14208943456fdcf41a372:2"><span class="prism-token token 125 keyword ">else</span></span><span data-offset-key="5ae34672dfd14208943456fdcf41a372:3"><span class="prism-token token 126"> </span></span><span data-offset-key="5ae34672dfd14208943456fdcf41a372:4"><span class="prism-token token 127 punctuation ">{</span></span></span></div><div class="codeLine-a3169fbc" data-key="1e166fc338474a3e9bd1717641e17a3e"><span data-key="a9f11fa8f25b4f5fbdc0a25ecf1a32b7"><span data-offset-key="a9f11fa8f25b4f5fbdc0a25ecf1a32b7:0"><span class="prism-token token 128"> </span></span></span></div><div class="codeLine-a3169fbc" data-key="cf58fc551bc146aca5c998e4b3f810f9"><span data-key="65a09223f8e847ec89bb0b9117e6222c"><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:0"><span class="prism-token token 129 variable ">$address</span></span><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:1"><span class="prism-token token 130"> </span></span><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:2"><span class="prism-token token 131 operator ">=</span></span><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:3"><span class="prism-token token 132"> </span></span><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:4"><span class="prism-token token 133 variable ">$response</span></span><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:5"><span class="prism-token token 134 punctuation ">[</span></span><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:6"><span class="prism-token token 135 double-quoted-string string">&quot;address&quot;</span></span><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:7"><span class="prism-token token 136 punctuation ">]</span></span><span data-offset-key="65a09223f8e847ec89bb0b9117e6222c:8"><span class="prism-token token 137 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="562c1998b85c4655a1a8bd3de6ce0892"><span data-key="773a411298a542469d499986173562b4"><span data-offset-key="773a411298a542469d499986173562b4:0"><span class="prism-token token 139 variable ">$qr_code_url</span></span><span data-offset-key="773a411298a542469d499986173562b4:1"><span class="prism-token token 140"> </span></span><span data-offset-key="773a411298a542469d499986173562b4:2"><span class="prism-token token 141 operator ">=</span></span><span data-offset-key="773a411298a542469d499986173562b4:3"><span class="prism-token token 142"> </span></span><span data-offset-key="773a411298a542469d499986173562b4:4"><span class="prism-token token 143 variable ">$response</span></span><span data-offset-key="773a411298a542469d499986173562b4:5"><span class="prism-token token 144 punctuation ">[</span></span><span data-offset-key="773a411298a542469d499986173562b4:6"><span class="prism-token token 145 double-quoted-string string">&quot;qr_code&quot;</span></span><span data-offset-key="773a411298a542469d499986173562b4:7"><span class="prism-token token 146 punctuation ">]</span></span><span data-offset-key="773a411298a542469d499986173562b4:8"><span class="prism-token token 147 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="c836f6f1c5d044ecac025c4ebb5fc8a9"><span data-key="62cfdeff9573416ab204586afcde0f4d"><span data-offset-key="62cfdeff9573416ab204586afcde0f4d:0"><span data-slate-zero-width="n">​</span></span></span></div><div class="codeLine-a3169fbc" data-key="7bc8abfd5c344bb595864106e8409088"><span data-key="4fda5df35d8d4773b3a5a8a358959898"><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:0"><span class="prism-token token 149 keyword ">echo</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:1"><span class="prism-token token 150"> </span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:2"><span class="prism-token token 151 double-quoted-string string">&quot;Please send&quot;</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:3"><span class="prism-token token 152"> </span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:4"><span class="prism-token token 153 punctuation ">.</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:5"><span class="prism-token token 154 variable ">$amount</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:6"><span class="prism-token token 155 punctuation ">.</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:7"><span class="prism-token token 156"> </span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:8"><span class="prism-token token 157 double-quoted-string string">&quot; to&quot;</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:9"><span class="prism-token token 158"> </span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:10"><span class="prism-token token 159 punctuation ">.</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:11"><span class="prism-token token 160 variable ">$address</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:12"><span class="prism-token token 161 punctuation ">.</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:13"><span class="prism-token token 162"> </span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:14"><span class="prism-token token 163 double-quoted-string string">&quot;&quot;</span></span><span data-offset-key="4fda5df35d8d4773b3a5a8a358959898:15"><span class="prism-token token 164 punctuation ">;</span></span></span></div><div class="codeLine-a3169fbc" data-key="5b926c8944aa47d893ec5f92d5b7ae74"><span data-key="db5255bfc166490fb29d785a8262ad74"><span data-offset-key="db5255bfc166490fb29d785a8262ad74:0"><span class="prism-token token 165"> </span></span></span></div><div class="codeLine-a3169fbc" data-key="81b67fdbc2ea440bae5e6a6cbd07fe75"><span data-key="0921de1554784c0a87ea7df9143d56bf"><span data-offset-key="0921de1554784c0a87ea7df9143d56bf:0"><span class="prism-token token 166 punctuation ">}</span></span></span></div></pre></div><p class="blockParagraph-544a408c" data-key="eb57db6709eb4a599efd46ae589a4a5b"><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f92f8027b6fb49029a87bf443f2a0ef4"><span data-offset-key="f92f8027b6fb49029a87bf443f2a0ef4:0">Once your end-user sends a payment to the generated address you will get the following details sent back to your callback_url</span></span></span></p></div></div></div></div><div class="reset-3c756112--pageFooter-f1d5e2b0"><div class="reset-3c756112"><div class="reset-3c756112--navPagesLinks-67bea901"><a class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674" href="/"><div class="reset-3c756112--cardIcon-5b647d22"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></g></svg></div><div class="reset-3c756112--cardBody-25dca3b1--cardPreviousBody-79f02c06"><div class="reset-3c756112--cardHint-2c5d8183"><span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">Previous</span></div><div class="reset-3c756112--cardTitle-32aa092e"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Server requirements</span></div></div></a><a class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardNext-19241c42" href="/log-paymets"><div class="reset-3c756112--cardBody-25dca3b1"><div class="reset-3c756112--cardHint-2c5d8183"><span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">Next</span></div><div class="reset-3c756112--cardTitle-32aa092e"><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Log payments into database</span></div></div><div class="reset-3c756112--cardIcon-5b647d22"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-7f6730be--text-3f89f380"><g><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></g></svg></div></a></div></div><div class="reset-3c756112--pageFooterColumns-ef8f347e"><div class="reset-3c756112--pageFooterSummary-12074aff"><div class="reset-3c756112--pageChangesSummary-08821678"><div class="reset-3c756112--pageContributors-5c59582e"><div class="reset-3c756112--ownerAvatarList-696792ce"><div aria-label="SendBit" class="reset-3c756112--tooltipContainer-7fdb9b70--tooltipped-57ae51fe--bottom-f9ec01b8--small-2ec8ae1a--circle-6c5acd10--ownerAvatarStackListItem-1b188f0f--whiteOutline-6045f802"><div class="reset-3c756112--avatarFrame-2f40cdc9--small-2ec8ae1a--circle-6c5acd10" role="presentation"><img class="image-67b14f24--avatar-1c1d03ec" src="https://gblobscdn.gitbook.com/users%2FY9vR0fvew5gqlS1xX98RzO2nyWy2%2Favatar-1604668967361.png?alt=media" /><div class="reset-3c756112--innerShadow-7a3a8651"></div></div></div></div></div><div class="reset-3c756112--pageEditedDate-b805c39a"><span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">Last updated <span>4 days ago</span></span></div></div></div></div></div></div><div class="reset-3c756112--pageSide-ad9fed26"><div class="reset-3c756112--stickyContainer-2bed3a82"><div style="padding-bottom:0" class="reset-3c756112"></div><div class="reset-3c756112--tocWrapper-506ea24c"><div class="reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--scrollableContainer-756c9114"><div class="reset-3c756112--menu-5b8a7448--pageSideMenu-23bebfd3--pageSideSection-542f1fd5"><div class="reset-3c756112--withScrollbar-39338630--scrollAxisY-7680295e--menuItems-2e6f017b--pageSideMenuItems-67c61496--pageSideSection-542f1fd5"><div class="reset-3c756112--menuItem-aa02f6ec--menuItemLight-757d5235--menuItemInline-173bdf97--pageSideMenuItem-22949732" role="presentation"><div class="reset-3c756112--menuItemIcon-206eb252"><svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="none" class="icon-7f6730be--text-3f89f380"><g><path d="M21.9 7.6c-.1-.1-.1-.2-.2-.3l-7-7c-.1-.1-.2-.2-.3-.2-.1-.1-.3-.1-.4-.1H5C3.3 0 2 1.3 2 3v9c0 .6.4 1 1 1s1-.4 1-1V3c0-.6.4-1 1-1h8v6c0 .6.4 1 1 1h6v3c0 .6.4 1 1 1s1-.4 1-1V8c0-.1 0-.3-.1-.4zM15 3.4L18.6 7H15V3.4zM5 15H3c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1s1-.4 1-1v-2h1c1.6 0 3-1.3 3-3s-1.3-3-3-3zm0 4H4v-2h1c.5 0 1 .4 1 1s-.4 1-1 1zm5.5-4H10c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h.5c2.5 0 4.5-2 4.5-4.5S13 15 10.5 15zm2.5 4.5c0 1.2-.9 2.2-2 2.4V17c1.1.3 2 1.3 2 2.5zm5-2.5v2h3c.6 0 1 .4 1 1s-.4 1-1 1h-3v2c0 .6-.4 1-1 1s-1-.4-1-1v-7c0-.6.4-1 1-1h4c.6 0 1 .4 1 1s-.4 1-1 1h-3z"></path></g></svg></div><div class="reset-3c756112--menuItemContent-c44ec79e"><span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40">Export as PDF</span></div></div></div></div><div class="reset-3c756112--pageSideSection-542f1fd5"></div></div></div></div></div></div></div></div></div></div></div></div>
+<div id="__GITBOOK__ROOT__CLIENT__" style="display: none;"></div>
+<script type="fe254ade005fd02d928f96f7-text/javascript">
+            window.GITBOOK_STATE = {"state":{"database":{"orgs/-MLSfUoBhhQWYQSD92DX/infos":{"kind":"org","data":{"kind":"org","uid":"-MLSfUoBhhQWYQSD92DX","name":"sendbit","createdAt":1604668229215,"createdBy":"Y9vR0fvew5gqlS1xX98RzO2nyWy2","logoURL":"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/orgs%2F-MLSfUoBhhQWYQSD92DX%2Favatar-1604668810982.png?generation=1604668811449699\u0026alt=media","baseDomain":"sendbit-1","type":null,"spacesPermission":{},"customDomain":null,"ssoSignInLabel":null,"defaultSpace":null,"lockReason":null,"useCase":"productDocs","usageStatuses":{"members":"below","privateSpaces":"below","publicSpaces":"below"},"hideBranding":false}},"spaces/-MLSVG4Um7St5HqJJlV9/infos":{"kind":"space","data":{"uid":"-MLSVG4Um7St5HqJJlV9","name":"sendbit.io","createdAt":1604665282911,"ownerID":"-MLSfUoBhhQWYQSD92DX","isPrivate":false,"isUnlisted":false,"hasJWT":null,"secretToken":null,"baseName":"docs","createdBy":"Y9vR0fvew5gqlS1xX98RzO2nyWy2","logoURL":null,"fullLogoURL":null,"emoji":null,"colorPrimary":"#00427B","headerTheme":"none","font":null,"locale":null,"primaryRevision":"-MLlppppRUTrO8GU58Ci","edits":{"Y9vR0fvew5gqlS1xX98RzO2nyWy2":{"createdAt":1604665282911,"updatedAt":1605006505514,"count":19}},"algoliaAPIKey":"Mjc1OTY3NzY0NjE1YzBiMDQzNmY4OGUzOTA1MjM0ZjRiNGMxOTM4ZjBlNjc1OWM0YWE5Yjk0MDRiNjU2Mjk3MmZpbHRlcnM9LU1MU1ZHNFVtN1N0NUhxSkpsVjk=","customDomain":"docs.sendbit.io","links":[{"title":"Home","href":"https://sendbit.io","pageID":null},{"title":"Accept payments","href":null,"pageID":"-MLSaKZZpvOIPUcsH1fi"},{"title":"Log payments","href":null,"pageID":"-MLSaVv1C-VsZdtbmYvo"},{"title":"Send payments","href":null,"pageID":"-MLSaj3DGkpeBhrOu7cH"}],"hasGitHubSync":false,"editOnGitHub":null,"googleAnalyticsID":null,"intercomID":null,"hasPageRating":true,"hasPDFExport":true,"indexedRevision":"-MLlppppRUTrO8GU58Ci"}},"spaces/-MLSVG4Um7St5HqJJlV9/revisions/-MLlppppRUTrO8GU58Ci":{"kind":"revision","data":{"uid":"-MLlppppRUTrO8GU58Ci","message":"","createdAt":1605006505513,"createdBy":"Y9vR0fvew5gqlS1xX98RzO2nyWy2","parents":["-MLlpl2kBLROzKNLOHZ7"],"content":{"primaryVersion":"master","versions":{"master":{"index":0,"ref":"master","title":"1.0.0","github":null,"locale":null,"entryPage":"-MLSVJnv0gfpJNWZyB7z","pages":{"-MLSVJnv0gfpJNWZyB7z":{"uid":"-MLSVJnv0gfpJNWZyB7z","kind":"document","title":"Server requirements","path":"master","href":null,"description":"Let's add some important stuff to your server before you accept or send payments","documentURL":"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/documents%2F-MLSVG4Um7St5HqJJlV9%2F-MLSfYGs5rLuC850seHu%2Fmaster%2F-MLSVJnv0gfpJNWZyB7z%2Fdocument.json?alt=media\u0026token=92252f08-59a5-4b26-8578-7812145dad75","createdAt":1604665298171,"edits":{"Y9vR0fvew5gqlS1xX98RzO2nyWy2":{"createdAt":1604666395338,"updatedAt":1604668260285,"count":4}},"github":null,"stats":{"words":54,"images":0,"codeLines":4,"revisions":0},"pages":["-MLSaKZZpvOIPUcsH1fi","-MLSaVv1C-VsZdtbmYvo","-MLSaj3DGkpeBhrOu7cH","-MLSao0dVPfVu1MXApDM"]},"-MLSaKZZpvOIPUcsH1fi":{"uid":"-MLSaKZZpvOIPUcsH1fi","kind":"document","title":"Start accepting crypto payments","path":"accpet-payments","href":null,"description":"Accept crypto payments instantly on your website","documentURL":"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/documents%2F-MLSVG4Um7St5HqJJlV9%2F-MLUBe1750pH_w4ldaJU%2Fmaster%2F-MLSaKZZpvOIPUcsH1fi%2Fdocument.json?alt=media\u0026token=d4d04e4a-e3a7-447b-b1df-002a0d14cd66","createdAt":1604666874149,"edits":{"Y9vR0fvew5gqlS1xX98RzO2nyWy2":{"createdAt":1604667514025,"updatedAt":1604693763674,"count":2}},"github":null,"stats":{"words":99,"images":0,"codeLines":26,"revisions":0},"pages":null},"-MLSaVv1C-VsZdtbmYvo":{"uid":"-MLSaVv1C-VsZdtbmYvo","kind":"document","title":"Log payments into database","path":"log-paymets","href":null,"description":"Log payments into your database/app via your callback URL","documentURL":"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/documents%2F-MLSVG4Um7St5HqJJlV9%2F-MLSiT9FRAUEBqvKaFfF%2Fmaster%2F-MLSaVv1C-VsZdtbmYvo%2Fdocument.json?alt=media\u0026token=9f284c47-df2f-4483-92bb-bbb875b9a1ec","createdAt":1604666920642,"edits":{"Y9vR0fvew5gqlS1xX98RzO2nyWy2":{"createdAt":1604667513912,"updatedAt":1604669136054,"count":2}},"github":null,"stats":{"words":71,"images":0,"codeLines":36,"revisions":0},"pages":null},"-MLSaj3DGkpeBhrOu7cH":{"uid":"-MLSaj3DGkpeBhrOu7cH","kind":"document","title":"Send payments via api","path":"send-payments","href":null,"description":"Send Payments via your website/app instantly","documentURL":"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/documents%2F-MLSVG4Um7St5HqJJlV9%2F-MLS_0xxiRHWprulGupM%2Fmaster%2F-MLSaj3DGkpeBhrOu7cH%2Fdocument.json?alt=media\u0026token=865ae7c4-0dc5-4447-bf7c-66568b872871","createdAt":1604666978574,"edits":{"Y9vR0fvew5gqlS1xX98RzO2nyWy2":{"createdAt":1604667513360,"updatedAt":1604667513360,"count":1}},"github":null,"stats":{"words":47,"images":0,"codeLines":28,"revisions":0},"pages":null},"-MLSao0dVPfVu1MXApDM":{"uid":"-MLSao0dVPfVu1MXApDM","kind":"document","title":"FAQ","path":"faq","href":null,"description":"SendBit API FAQ","documentURL":"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/documents%2F-MLSVG4Um7St5HqJJlV9%2F-MLUA9_TQTnec23pyZjY%2Fmaster%2F-MLSao0dVPfVu1MXApDM%2Fdocument.json?alt=media\u0026token=03b26544-f4fd-474d-b834-dc119f2e5284","createdAt":1604666998889,"edits":{"Y9vR0fvew5gqlS1xX98RzO2nyWy2":{"createdAt":1604667513328,"updatedAt":1604693695046,"count":5}},"github":null,"stats":{"words":119,"images":0,"codeLines":0,"revisions":0},"pages":null}}}},"assets":{"-MLSWzSZXHj9zXtH8ld5":{"uid":"-MLSWzSZXHj9zXtH8ld5","name":"sendbit.inc.php","downloadURL":"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MLSVG4Um7St5HqJJlV9%2F-MLSVKBOJer-pz2V7lXZ%2F-MLSWzSZXHj9zXtH8ld5%2Fsendbit.inc.php?alt=media\u0026token=6f58c74a-5088-4b99-8117-9ced53effd49","size":1372,"contentType":"text/php","createdAt":1604665735303,"github":null,"edits":{"Y9vR0fvew5gqlS1xX98RzO2nyWy2":{"createdAt":1604665735669,"updatedAt":1604665735669,"count":1}}}}},"github":[],"rollbackOf":null}},"orgs/Y9vR0fvew5gqlS1xX98RzO2nyWy2/infos":{"kind":"user","data":{"kind":"user","uid":"Y9vR0fvew5gqlS1xX98RzO2nyWy2","baseDomain":"sendbit","defaultSpace":null,"displayName":"SendBit","photoURL":"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/users%2FY9vR0fvew5gqlS1xX98RzO2nyWy2%2Favatar-1604668967361.png?generation=1604668967872334\u0026alt=media","deletedAt":null,"usageStatuses":{"members":"below","privateSpaces":"below","publicSpaces":"below"}}}},"documents":{"documents":{"https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/documents%2F-MLSVG4Um7St5HqJJlV9%2F-MLUBe1750pH_w4ldaJU%2Fmaster%2F-MLSaKZZpvOIPUcsH1fi%2Fdocument.json?alt=media\u0026token=d4d04e4a-e3a7-447b-b1df-002a0d14cd66":{"format_version":1,"document":{"kind":"document","key":"000653f0ebf6436eba5b3cd6bbb4b05b","data":{"schema_version":6},"nodes":[{"kind":"block","type":"heading-1","key":"e1292c5f2d1a4bdca69399cb241f79d2","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"604857d932e7406db09cfdca92dde15b","ranges":[{"kind":"range","marks":[],"text":"Accept payments on your website"}]}]},{"kind":"block","type":"hint","key":"bb4c6951140c454f8137dd80078c6ba8","isVoid":false,"data":{"style":"info"},"nodes":[{"kind":"block","type":"paragraph","key":"6fbc109772914bbe9376c806e81e3114","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"d4f08d0690394a4c990527f1080e0c41","ranges":[{"kind":"range","marks":[],"text":"All API calls are implemented as HTTP Post. Requests must be made to our API endpoint located at "},{"kind":"range","marks":[{"kind":"mark","data":{},"type":"bold"}],"text":"https://sendbit.io/api/[METHOD]"}]}]}]},{"kind":"block","type":"paragraph","key":"00a0d4657b9d459d820702683c1c8601","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"4feeabc62f2548df847d85ee48710878","ranges":[{"kind":"range","marks":[],"text":"Download our library below"}]}]},{"kind":"block","type":"file","key":"490859f866e7463cb46fd8070b33fd89","isVoid":true,"data":{"assetID":"-MLSWzSZXHj9zXtH8ld5","caption":"sendbit.inc.php"},"nodes":[{"kind":"text","key":"9913968617374979b31c3a7ccae98ea3","ranges":[{"kind":"range","marks":[],"text":""}]}]},{"kind":"block","type":"paragraph","key":"4ae0590fe07a487f9ee58f71d43da2ef","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"3a231b6f97164fc2afefa6cc280ef90f","ranges":[{"kind":"range","marks":[],"text":"Once you have downloaded our library paste the following example into your development environment to generate an address to accept payments. your end-user can send any amount to the address and you will be notified - learn more about this in the next step below"}]}]},{"kind":"block","type":"code","key":"8c51007ca1ff461b8d40d92e611abee0","isVoid":false,"data":{"syntax":"php"},"nodes":[{"kind":"block","type":"code-line","key":"73c672ad839e499b8f9983f67183ed6f","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"398e7db9d2c042b295bb58bad61343b3","ranges":[{"kind":"range","marks":[],"text":"include_once(\"sendbit.inc.php\");"}]}]},{"kind":"block","type":"code-line","key":"f10a446c1e1b4cebaf5ff216f8476e86","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"123f57c96acd4adcb1f01f23003e3d19","ranges":[{"kind":"range","marks":[],"text":""}]}]},{"kind":"block","type":"code-line","key":"84c16e4f2d044e5e8158a0bef2459f67","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"aac609087ebd4b198da851434d0b69a8","ranges":[{"kind":"range","marks":[],"text":"define(\"API_KEY\", \"YOUR_API_KEY\");"}]}]},{"kind":"block","type":"code-line","key":"c4eed88e5ef54206a02fa263d04bd27d","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"5fd9fda94ff24023b6162fe4a609c540","ranges":[{"kind":"range","marks":[],"text":"define(\"API_SECRET\", \"YOUR_API_SECRET\");"}]}]},{"kind":"block","type":"code-line","key":"38dbbe9071744393adbbedc09278036c","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"098921eb60cb46a68f26230b0756aff4","ranges":[{"kind":"range","marks":[],"text":""}]}]},{"kind":"block","type":"code-line","key":"2142a63903ea4ce78215911fa0c4068f","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"8bfb70bc9a3f4d81a99df72bb4d2f7df","ranges":[{"kind":"range","marks":[],"text":"$amount = $_POST[\"amount\"];"}]}]},{"kind":"block","type":"code-line","key":"d8f3c45669644e158033dd925362231b","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"8fba122a7df040eea82464bb494f2cf0","ranges":[{"kind":"range","marks":[],"text":""}]}]},{"kind":"block","type":"code-line","key":"95db5ed2c50145329b8def22f26d7a4d","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"687a14aceca247a4b8980541857f66a2","ranges":[{"kind":"range","marks":[],"text":"$callback_url = \"https://site.com/IPN.php?user=2450\";"}]}]},{"kind":"block","type":"code-line","key":"33faf76e79a141ae83132738dc99c37e","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"1296b8a105b54c9db64873f75fb59e5e","ranges":[{"kind":"range","marks":[],"text":"$api_client = new SendBitApi(API_KEY, API_SECRET);"}]}]},{"kind":"block","type":"code-line","key":"38f991d95347435195f678c17b5eb1e6","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"7ee534a1a2f84e4d914b11dc98d496d2","ranges":[{"kind":"range","marks":[],"text":"$api_client-\u003esetCoin(\"BTC\"); // set coin (BTC, LTC, BCH, DASH) https://www.sendbit.io/page/coins_accepted"}]}]},{"kind":"block","type":"code-line","key":"bf90266a42474e3fae8ef3ac60b47fde","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"afdd6d106f9d4b2ca06dfd1cb683a534","ranges":[{"kind":"range","marks":[],"text":"$api_client-\u003esetField(\"callback_url\", $callback_url);"}]}]},{"kind":"block","type":"code-line","key":"5033e218dab14147aba3ada01145a5fa","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"c42db46e6f77464db97a37ef14b18183","ranges":[{"kind":"range","marks":[],"text":"$api_client-\u003esetMethod(\"generate-address\");"}]}]},{"kind":"block","type":"code-line","key":"1cb6ef2c6af94b22a702507a1dc63d47","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"0d82b0513e92416b9cc7195d54472f77","ranges":[{"kind":"range","marks":[],"text":"$response = $api_client-\u003eprocess();"}]}]},{"kind":"block","type":"code-line","key":"40b7d52ed8dd4644b71bf5706bb2dd79","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"923029656e2e46c290bb465a6c56df8d","ranges":[{"kind":"range","marks":[],"text":" "}]}]},{"kind":"block","type":"code-line","key":"9b85a1ea372a48d6ac524f96bf23ce23","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"084b1416874d44c792bc3d90a28b69a1","ranges":[{"kind":"range","marks":[],"text":"if($response[\"response_code\"] != 200) {"}]}]},{"kind":"block","type":"code-line","key":"b5dee1a1bdb5495f833523e546dbd692","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"05a2a23ef6b743b5b4f21f07d4dcf730","ranges":[{"kind":"range","marks":[],"text":" "}]}]},{"kind":"block","type":"code-line","key":"7e52316cbfb943dc8c9c5b4b99338042","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"13c4a2f0092f41018fc043b0d7fcc25d","ranges":[{"kind":"range","marks":[],"text":"exit($response[\"response_message\"]);"}]}]},{"kind":"block","type":"code-line","key":"b612abdef19e4bb08f9775bd0f3fe265","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"c7c2d5792890465e833231ce3bb94c99","ranges":[{"kind":"range","marks":[],"text":" "}]}]},{"kind":"block","type":"code-line","key":"f6cd5d2629de4a4d90ae06a7fcdd72d6","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"5ae34672dfd14208943456fdcf41a372","ranges":[{"kind":"range","marks":[],"text":"} else {"}]}]},{"kind":"block","type":"code-line","key":"1e166fc338474a3e9bd1717641e17a3e","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"a9f11fa8f25b4f5fbdc0a25ecf1a32b7","ranges":[{"kind":"range","marks":[],"text":" "}]}]},{"kind":"block","type":"code-line","key":"cf58fc551bc146aca5c998e4b3f810f9","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"65a09223f8e847ec89bb0b9117e6222c","ranges":[{"kind":"range","marks":[],"text":"$address = $response[\"address\"];"}]}]},{"kind":"block","type":"code-line","key":"562c1998b85c4655a1a8bd3de6ce0892","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"773a411298a542469d499986173562b4","ranges":[{"kind":"range","marks":[],"text":"$qr_code_url = $response[\"qr_code\"];"}]}]},{"kind":"block","type":"code-line","key":"c836f6f1c5d044ecac025c4ebb5fc8a9","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"62cfdeff9573416ab204586afcde0f4d","ranges":[{"kind":"range","marks":[],"text":""}]}]},{"kind":"block","type":"code-line","key":"7bc8abfd5c344bb595864106e8409088","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"4fda5df35d8d4773b3a5a8a358959898","ranges":[{"kind":"range","marks":[],"text":"echo \"Please send\" .$amount. \" to\" .$address. \"\";"}]}]},{"kind":"block","type":"code-line","key":"5b926c8944aa47d893ec5f92d5b7ae74","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"db5255bfc166490fb29d785a8262ad74","ranges":[{"kind":"range","marks":[],"text":" "}]}]},{"kind":"block","type":"code-line","key":"81b67fdbc2ea440bae5e6a6cbd07fe75","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"0921de1554784c0a87ea7df9143d56bf","ranges":[{"kind":"range","marks":[],"text":"}"}]}]}]},{"kind":"block","type":"paragraph","key":"eb57db6709eb4a599efd46ae589a4a5b","isVoid":false,"data":{},"nodes":[{"kind":"text","key":"f92f8027b6fb49029a87bf443f2a0ef4","ranges":[{"kind":"range","marks":[],"text":"Once your end-user sends a payment to the generated address you will get the following details sent back to your callback_url"}]}]}]}}}},"user":{"kind":"user","uid":"-MLlpwR-8NHCGpat0WkV","baseDomain":"","defaultSpace":null,"displayName":"","photoURL":null,"deletedAt":null,"usageStatuses":null,"email":"","emailVerified":false,"disabled":false,"phoneNumber":null,"providers":{},"isVisitor":true,"customClaims":{},"lastLoggedInAt":1605004804631,"createdAt":1605004804631}},"config":{"environment":"production","firebase":{"databaseURL":"https://gitbook-28427.firebaseio.com","apiKey":"AIzaSyBL3yy07hdwBstwhhFTkRtzJA865UQzQVg","authDomain":"app.gitbook.com","projectId":"gitbook-28427","storageBucket":"gitbook-28427.appspot.com","messagingSenderId":"208404988308"},"amplitude":{"key":"fef1e872c952688acd962d30aa545b9e","endpoint":"www.gitbook.com/__amp/"},"intercom":{"app_id":"ajrah9dt"},"ga":{"spaces":{"id":"UA-57505611-10","view_id":"152688311"},"website":{"id":"UA-57505611-9"}},"slack":{"client_id":"3085992729.251477828931","redirect_uri":"https://hooks.gitbook.com/hooks/slack/oauth"},"sentry":{"url":"https://df403e1abd7046148b272790ec350ce0@sentry.io/193897"},"stripe":{"public_key":"pk_live_iPkbPsG28bjTrkbfHXUq0cA0","plans":{"startup_monthly":"plan_FpdWuSK3BgOldB","startup_yearly":"plan_FpdZWR4TLYnKYH","team_monthly":"plan_GAeDpGXRUSctoE","team_yearly":"plan_GAeDEVtig2ujYe","business_monthly":"plan_ERCJFVRMVGgjVZ","business_yearly":"plan_ERCJgSzm3Ui1ox"},"products":{"startup":"prod_Cd5mCUdVDfZSHY","business":"prod_DpiRtaS8dvrtrK","enterprise":"prod_DpMsO7RlzNd0Ty","legacy":"prod_FROhqd8l1W4Fwg","team":"prod_GAeD47cc905FaD"}},"algolia":{"appid":"Q9UGR6532T"},"clearbit":{"public_key":"pk_e1e4d94ae5385255f0fc7d76d4897ade"},"urls":{"api":"https://api-beta.gitbook.com","spaces":"https://gitbook-28427.firebaseapp.com","website":"https://app.gitbook.com","saml":"https://www.gitbook.com"},"domains":{"spaces":"gitbook.io","cookie":".gitbook.com"},"cdn":{"blobsurl":"https://gblobscdn.gitbook.com/","hosting_cname":"hosting.gitbook.com"},"logrocket":{"key":"fvjtqz/gitbook"},"version":"6.22.1","buildVersion":"6.22.1-623413c.32536"},"props":{"ownerID":"-MLSfUoBhhQWYQSD92DX","spaceID":"-MLSVG4Um7St5HqJJlV9","spaceName":"docs","basename":"","location":"/accpet-payments"}};
+            </script>
+<script id="__LOADABLE_REQUIRED_CHUNKS__" type="application/json" crossorigin="anonymous" charset="utf-8">[]</script>
+<script async data-chunk="space" src="https://gstatic.gitbook.com/js/111.b5322a3a.js" crossorigin="anonymous" charset="utf-8" type="fe254ade005fd02d928f96f7-text/javascript"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="fe254ade005fd02d928f96f7-|49" defer=""></script></body>
+</html>

@@ -1,0 +1,688 @@
+<html>
+       <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	          Sendbit
+	        </title>
+			           <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/navbar.css">
+						<link rel="stylesheet" href="css/style.css">
+						<link rel="stylesheet" href="css/type.css">
+						<link rel="stylesheet" href="css/footer.css">
+						<link rel="stylesheet" href="css/select/bootstrap-select.css">
+						<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+                         
+					    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+                        
+	     <style>
+	
+
+	    
+        .usd {
+		background-image:url(img/select-img/usd.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+		.btc {
+		background-image:url(img/select-img/btc.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+        .ltc {
+		background-image:url(img/select-img/ltc.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+         .dash {
+		background-image:url(img/select-img/dash.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+        .bch {
+		background-image:url(img/select-img/bch.png);
+		width:26px;
+		height:26px;
+		margin-top: 20;
+    position: absolute;
+	overflow:hidden;
+		}
+        
+	
+
+  </style>               
+	</head>
+	
+	<body onchange="init()">
+
+
+<!---------------------navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+			<div class="container">
+			    <div class="navbar-header">
+					<button onclick="mobile()" type="button" class="navbar-toggle collapsed first-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						 <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img   class="img-responsive"  src="img/img/sendbitlogo.png">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <ul class="nav navbar-nav menu-left">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="main/documentation.html">API documentation</a></li>
+						<li><a href="main/security.html">Security</a></li>
+						<li><a href="main/reviews.html">FAQ</a></li>
+						<li><a href="main/docs.html">API status</a></li>
+						
+					</ul>
+                    <ul class="nav navbar-nav navbar-right menu-right">
+						<li class="log"><a href="main/log.html"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+						<li class="sign "><a href="main/sign.html" type="button" class="btn btn-primary">Sign up</a>&nbsp;&nbsp;&nbsp;</li>
+				    </ul>
+				</div>	
+		    </div>
+		</nav> 
+	<!---------------------mobile navbar -->
+		<div id="mobile" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+				    <center>
+						<div class="tabbable-line">
+							<ul class="nav nav-tabs ul">
+								<li><a data-toggle="tab" href="#business">API docs</a></li>
+							</ul>
+						</div>
+                    </center>   
+					<span class="close">&times;</span>	
+				</div>
+				<div class="modal-body">
+				    <ul>
+					    <li><a href="index.html">Home</a></li>
+						<li><a href="main/documentation.html">API documentation</a></li>
+						<li><a href="main/security.html">Security</a></li>
+						<li><a href="main/reviews.html">FAQ</a></li>
+						<li><a href="main/docs.html">API status</a></li>
+						<li class="log"><a href="main/log.html
+							"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+					    <center><p class="gt"><a href="main/sign.html" class="btn btn-primary" role="button">Get Start</a></p></center>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+   <!---------------------main menu or section-1 --> 
+		<section class="main-heading section-1">
+		    <div class="container">
+			    <div class="row">
+				    <div class="col-md-6 left-side">
+					    <h1>The Easiest and Most Powerful Crypto Wallet</h1>
+						<h3>The safest and most popular wallet for buying and storing and accepting cryptocurrencies, with 0% fees!</h3>
+						<p class="accept">We accept:</p>
+						<ul>
+						    <li class="ball"><img src="img/transfer/btc.png"></li>
+						    <li class="ball1"><img src="img/transfer/eth.png"></li>
+						    <li class="ball2"><img src="img/transfer/bch.png"></li>
+						    <li class="ball3"><img src="img/transfer/ltc.png"></li>
+						    <li class="ball4"><img src="img/transfer/dash.png"></li>
+						    <li class="accept t3">and any more to come...</li>
+						</ul>
+						 <a href="#"  type="button" class="btn btn1 btn-primary"><i class="fa fa-user"></i> &nbsp;Manage account</a>&nbsp;&nbsp;&nbsp;
+						  <a href="#"   type="button" class="btn btn2 btn-success"><i class='fas fa-wallet'></i> &nbsp;Get free wallet</a>
+						  
+						
+						
+				    </div>
+					<div class="col-md-6 right-side" style="margin-top: -30px">
+						<div class="jumbotron"> 
+							<button type="button" class="btn btn-primary cl-l cl">Buy<sup style="font-size:15px;font-weight:1000;"><i>&nbsp;SEPA</i></sup></button><button type="button" class="btn btn-primary cl cl-r">Swap</button>
+							<br><br><br>
+							<div class="input-group toper t-1" >
+								  <input type="text" onkeyup="eurf()" id="eurf" class="form-control input-0" autocomplete="off" placeholder="0.00" maxlength="20">
+								 
+								  <span class="send">EXCHANGE</span>
+								  <span class="input-group-btn b-1">
+									<button class="btn btn-default" type="button"><img style="margin-top:-4px;" width="30px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgAgMAAAApuhOPAAAACVBMVEUAU6eApFP/9ABWIW2TAAAAQ0lEQVQY02NgoD5gdEDisE1AsEXYJojAOZmMDpkIDhjBlIERMbbAbQLZArcJhYOiDA9AsRTFOSgORfECiueIsoVkAACg9AqhFj835AAAAABJRU5ErkJggg=="> EUR</button>
+								  </span>
+							</div>
+							<ul class="currency-dp">
+								<li class="minus"><i class="fa fa-minus"></i></li>
+								<li class="countt">$2.08</li>
+								<li class="next-dp">
+								<div class=" dp">
+									  <button  class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+										Fixed miner fee
+										&nbsp;<span class="glyphicon glyphicon-exclamation-sign"aria-hidden="true"></span>
+									  </button>
+									  
+									</div>
+								</li>
+								
+							</ul>
+							<ul class="currency-dp2">
+								<li class="closee"><i class="fa fa-close"></i></li>
+								<li class="countt">Convert your EUR balance to crypto instantly</li>				
+								
+							</ul>
+							<div class="input-group down t-2">
+								  <input type="text" onkeyup="allcurf()" id="allcurf" class="form-control input-1" autocomplete="off" placeholder="0.0000" maxlength="20">
+								   <i class='fas fa-unlock-alt' style='font-size:24px'></i>
+								  <span class="send">RECEIVE</span>
+								  <span class="input-group-btn b-2">
+									<select class="selectpicker"  onchange="allcurfc()"  id="allcurfc">
+										
+										<option value="BTC" data-icon="btc">&nbsp;BTC</option>
+										<option value="LTC" data-icon="ltc">&nbsp;LTC</option>
+										<option value="DASH" data-icon="dash" >&nbsp;DASH</option>
+										<option value="BCH" data-icon="bch">&nbsp;BCH</option>
+									</select>
+								  </span>
+							</div>
+							<div class="row button-gu" >
+								<div class="col-md-12  col-sm-12 ">
+									<a href="#" type="button" class="btn btn-primary  left btn-lg btn-block">
+									Sign-in to buy with <i style="font-size:20px;font-weight:bold">SEPA</i></a>
+								</div>
+							</div>
+						</div>   
+				    </div>
+				</div>
+		    </div>
+		</section>
+		<BR><BR>
+
+        <section class="table-section">
+		    <div class="container">
+			    <div id="hh" class="row tab slideanim">
+			        <div class="container">
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-10">
+							<div class="table-responsive">
+								<table class="table table-hover " >
+									
+									<tr class="one">
+										<td><img width="35px" src="img/table/tab1.png">&nbsp;&nbsp; Bitcoin   &nbsp;&nbsp;&nbsp;<span>BTC</span></td>
+										<td>$740,490.36</td>
+										<td>+0.33%</td>
+										<td><img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" class="graphUp___2IEcj"></td>
+										
+									    <td><button type="button" class="btn2 btn2-primary">Buy</button></td>
+									    <td><button type="button" class="btn2 btn2-primary">Trade</button></td>
+									  
+									</tr>
+									<tr class="two">
+										
+										<td><img width="35px" src="https://i.ibb.co/93GK3Hv/litecoin-ltc-logo.png">&nbsp;&nbsp; Litecoin &nbsp;&nbsp;&nbsp;<span>ETH</span></td>
+										<td>$15,695.36</td>
+										<td>+.016%</td>
+										<td><img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" class="graphUp___2IEcj"></td>
+										<td><button type="button" class="btn2 btn2-primary">Buy</button></td>
+										<td><button type="button" class="btn2 btn2-primary">Trade</button></td>
+										
+									</tr>
+									<tr class="three">
+										<td><img width="35px" src="img/table/tab3.png">&nbsp;&nbsp; Bitcoin Cash &nbsp;&nbsp;&nbsp;<span>BCH</span></td>
+										<td>$24,324.90</td>
+										<td>-0.07%</td>
+										<td><img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" class="graphUp___2IEcj"></td>
+										<td><button type="button" class="btn2 btn2-primary">Buy</button></td>
+										<td><button type="button" class="btn2 btn2-primary">Trade</button></td>
+									</tr>
+									<tr class="three">
+										<td><img width="35px" src="https://i.ibb.co/TvHFXNd/Dash-Crypto-Logo-No-Background.png">&nbsp;&nbsp; Dark Coin &nbsp;&nbsp;&nbsp;<span>Dash</span></td>
+										<td>$24,324.90</td>
+										<td>-0.07%</td>
+										<td><img src="https://s2.coinmarketcap.com/generated/sparklines/web/7d/usd/1.png" class="graphUp___2IEcj"></td>
+										<td><button type="button" class="btn2 btn2-primary">Buy</button></td>
+										<td><button type="button" class="btn2 btn2-primary">Trade</button></td>
+									</tr>
+								</table>
+							</div><br>
+							<center><a class="view">View More Prices <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> 
+                            </a></center>
+						</div>
+					    <div class="col-md-1">
+				        </div>
+				    </div>
+			    </div>
+			</div>
+		</section>
+	
+<!--------------------- section-3 --> 
+        <section class="section-3">
+		    <div class="container">
+				<div class="row all-side">
+					<div  class="col-md-6 content-left-side slideanim">
+						<h1>Accept crypto</h1>
+						<p>An incredibly easy wallet for websites & people to receive and send Bitcoin, Ethereum, Bitcoin Cash, Litecoin & Dash payments. This service is completely free and secure and is perfect for business or personal use. Check out our API docs <a href="#">here</a></p>	
+						<BR>
+						<img style="margin-left:-20px;" src="img/homecoins.png">
+					</div>
+					<div class="col-md-6  image-right-side slideanim">
+						<img  class="img-responsive" src="img/img/apple.png">
+					</div>
+				</div>
+			</div>
+		</section>
+<!--------------------- section-3 --> 
+        <section class="section-4">
+		    <div class="container">
+				<div class="row all-side">
+					<div class="col-md-6 image-left-side slideanim img">
+						<img class="img-responsive" src="img/img/secure.png">
+					</div>
+					<div class="col-md-6 content-right-side slideanim  wer">
+						<h1>Secure crypto!</h1>
+						<p>Sendbit is fully transparent, allowing users to have full access over their funds at all times. Wallets and private keys are stored using AES-256 encryption.</p>	
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+<!--------------------- section-4 cause its diffrent --> 
+		<section class="section-5">
+		    <div class="container">
+				<div class="row all-side">
+					<div class="col-md-5 card">
+						<div class="thumbnail slideanim">
+						  <div class="caption">
+							<h3>Developers</h3>
+							<p>The world’s most powerful and easy-to-use APIs, We agonize over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality.</p>
+							<p><a href="#" class="btn btn-primary" role="button">Start building</a></p>
+						  </div>
+					    </div>
+					</div>
+					<div  class="col-md-7 type-right slideanim" style="padding-top:30px;padding-bottom:30px;border-radius: 5px 5px 0px 0px;">
+						<div style="border-radius: 8px 8px 0px 0px;margin-left:0;margin:0;" id="luci" class="jumbotron c-input">
+							<div id="typewriter" class="">
+								<p id="one"><span class="num">1</span><span class="storage">include </span> <span class="class">   &nbsp;sendbit&nbsp; = &nbsp;</span><span class="req">require</span><span class="class"> ( </span><span class="stri">'sendbit'</span><span class="class"> ) </span><span class="class"> ( </span><span class="stri">'PRIVATE_API_KEY'</span></span><span class="class"> ) </span></p>
+								
+								
+								<p id="one" class="indent-1"><span class="num">2</span><span class="storage">await </span> <span class="class"> &nbsp;sendbit.makeaddress.<span class="req">create</span></span></span><span class="class"> {( </span></p>
+								
+								
+						
+								<p id="one" class="indent-2"><span class="num-i">3</span><span class="class">amount: </span><span class="stri"> 1</span><span class="class">,</span></p>
+								
+								<p id="one" class="indent-2"><span class="num-i">4</span><span class="class">currency: </span><span class="stri"> 'btc'</span><span class="class">,</span></p>
+								
+								
+								<p id="one" class="indent-1"><span class="num">5</span><span class="class">});</span></p>
+								
+						    </div> 
+						
+						</div>
+						<div class="mid-c">
+						    <p class="nor">NORMAL</p>
+						    <p class="ser">server.js</p>
+						    <p class="hun">100% <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></p>
+						</div>
+						<div style="border-radius: 0px 0px 8px 8px;" id="luci1" class="jumbotron c-output">
+							<div id="typewriter-o" class="">
+								<p id="one" class="indent-1"><span class="num">$</span><span class="class">node server.js && sendbit listen</span></p>
+								
+								<p id="one" class="indent-1"><span class="num" style="color:#fff">></span><span class="class">bc1qr6wesvuf4x7gmwvx5hks</span></p>
+								<p id="one" class="indent-1"><span class="num" style="color:#fff"></span><span class="class">zt6pnqg6vc6pnqg6vczt6pnq</span></p>
+								<p id="one" class="indent-1"><span class="num" style="color:#fff"></span><span class="class">g6vc9erjcfgm5hkszt6pnqg6vc9erjcfgm</span></p>
+								
+								
+								
+								
+								
+								
+						    </div>
+							
+						</div>
+							
+					</div>		
+			    </div>
+			
+			</div>
+		</section>
+<!--------------------- section-3 --> 
+
+
+		<section class="section-6">
+		    <div class="container">
+				<div class="row all-side">
+					<div class="col-md-6 image-left-side slideanim">
+						<img class="img-responsive" src="img/img/jim.png">
+					</div>
+					<div class="col-md-6 content-right-side   slideanim">
+						<h1>We're recruiting</h1>
+						<p>We’ve taken a huge challenge and made it into our mission: To create an open financial system for the world. To achieve this, we are building a team of smart, creative, passionate optimists, the kind of people who see opportunity where others see roadblocks. If this sounds like you, check out our open roles..</p>	
+						<p class="learn"><a href="#" class="btn btn-primary" role="button">See roles</a></p>
+					</div>
+				</div>
+			   
+			</div>
+		</section>
+<!--------------------- section-4 and section-5 --> 
+		<section class=" section-7">
+		    <div class="container">
+				<div class="row all-side">
+					<div class="col-md-5 card">
+						<div class="thumbnail slideanim">
+						  <div class="caption">
+							<h3>Meet Alina</h3>
+							<p>SendBit is growing fast, but there are still more challenges than there are people. So if finding and solving problems lights you up, you’ll have fun here..</p>
+							<p><a href="#" class="btn btn-primary" role="button">Read Alina's story</a></p>
+						  </div>
+					    </div>
+					</div>
+					<div class="col-md-7 image-alina-side slideanim">
+						<img  class="img-responsive"  src="img/img/headoffice.png">
+					</div>	
+			    </div>
+			
+			</div>
+		</section>
+<!--------------------- section-3 --> 
+
+<!--------------------- section-3 --> 
+		<section class="section-8">
+		    <div class="container">
+				<div class="row all-side">
+					<div  class="col-md-6 image-left-side slideanim">
+						<img  class="img-responsive" src="img/img/plan.png">
+					</div>
+					<BR>
+					<div class="col-md-6 slideanim  content-right-side">
+						<h1>We're multilingual</h1>
+						<p>Talk to our Customer Support team and use your app in 14 languages: English, French, German, Brazilian Portuguese, European Portuguese, Bulgarian, Italian, Spanish, Romanian, Polish, Czech, Turkish, Estonian and Lithuanian.</p>	
+					</div>
+				</div>		  
+			</div>
+		</section><br><br>
+<!--------------------- section-3 --> 
+	
+<!--------------------- section-6 --> 	
+		<section class="section-9"> 
+		    <div class="container">
+				<div class="row all-side">
+					<div class="col-md-6 content-left-side slideanim ">
+							<h1>Your access to the top coin markets</h1>
+							<p>Capitalize on trends and trade with confidence through our expansive marketplace listings.</p>
+							<a type="button" class="btn btn-primary btn-lg">REGISTER</a><a type="button" class="btn btn-primary btn-lg ve">LOGIN</a>
+					</div>
+					<div class="col-md-6  slideanim">
+						<div class="row c-c">
+							<div class="col-md-6 col-sm-6 col-xs-6 f-num">
+							   <div class="media">
+									<a href="#">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object btc-t" src="img/transfer/btc.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body">
+										   <h4 class="media-heading">BTC <span class="usd-t">USD</span></h4>
+										   <span class="c-d">Bitcoin</span>
+										</div>
+									</a>
+								</div> 
+							</div>
+							<div class="col-md-6  col-sm-6 col-xs-6 c-num">
+								<div class="media">
+									<div class="media-body">
+									  <p class="media-heading">$18753.81</p><br><br>
+									  <p class="numw">0.30% &nbsp;<i class='fas fa-arrow-up'></i></p>
+									</div>
+									<div class="media-right">
+									  <span class="glyphicon glyphicon-chevron-right"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row c-c">
+							<div class="col-md-6 col-sm-6 col-xs-6 f-num">
+							   <div class="media">
+									<a href="#">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object eth-t" src="img/transfer/eth.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body">
+										   <h4 class="media-heading">ETH <span class="usd-t">USD</span></h4>
+										   <span class="c-d">Etherume</span>
+										</div>
+									</a>
+								</div> 
+							</div>
+							<div class="col-md-6  col-sm-6 col-xs-6 c-num">
+								<div class="media">
+									<div class="media-body">
+									  <p class="media-heading">$536.29</p><br><br>
+									  <p class="numw">6.22% &nbsp;<i class='fas fa-arrow-up'></i></p>
+									</div>
+									<div class="media-right">
+									  <span class="glyphicon glyphicon-chevron-right"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row c-c">
+							<div class="col-md-6 col-sm-6 col-xs-6 f-num">
+							   <div class="media">
+									<a href="#">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object ltc-t" src="img/transfer/ltc.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body">
+										   <h4 class="media-heading">LTC <span class="usd-t">USD</span></h4>
+										   <span class="c-d">Litecoin</span>
+										</div>
+									</a>
+								</div> 
+							</div>
+							<div class="col-md-6  col-sm-6 col-xs-6 c-num">
+								<div class="media">
+									<div class="media-body">
+									  <p class="media-heading">$85.86</p><br><br>
+									  <p class="numw">5.24% &nbsp;<i class='fas fa-arrow-up'></i></p>
+									</div>
+									<div class="media-right">
+									  <span class="glyphicon glyphicon-chevron-right"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row c-c">
+							<div class="col-md-6 col-sm-6 col-xs-6 f-num">
+							   <div class="media">
+									<a href="#">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object bch-t" src="img/transfer/bch.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body">
+										   <h4 class="media-heading">BCH <span class="usd-t">USD</span></h4>
+										   <span class="c-d">Bitcoin Cash</span>
+										</div>
+									</a>
+								</div> 
+							</div>
+							<div class="col-md-6  col-sm-6 col-xs-6 c-num">
+								<div class="media">
+									<div class="media-body">
+									  <p class="media-heading">$289.59</p><br><br>
+									  <p class="numw">13.39% &nbsp;<i class='fas fa-arrow-up'></i></p>
+									</div>
+									<div class="media-right">
+									  <span class="glyphicon glyphicon-chevron-right"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row c-c">
+							<div class="col-md-6 col-sm-6 col-xs-6 f-num">
+							   <div class="media">
+									<a href="#">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object dash-t" src="img/transfer/dash.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body">
+										   <h4 class="media-heading">Dash <span class="usd-t">USD</span></h4>
+										   <span class="c-d">Dark Coin</span>
+										</div>
+									</a>
+								</div> 
+							</div>
+							<div class="col-md-6  col-sm-6 col-xs-6 c-num">
+								<div class="media">
+									<div class="media-body">
+									  <p class="media-heading">$91.34</p><br><br>
+									  <p class="numw">9.54% &nbsp;<i class='fas fa-arrow-up'></i></p>
+									</div>
+									<div class="media-right">
+									  <span class="glyphicon glyphicon-chevron-right"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						   <center><h4 style="margin-top:30px;color:rgba(0,0,0,0.6)">Buy, sell and trade over 500 markets</h4></center> 
+						
+					</div>			
+				</div>
+			</div><br><br><br>
+			<br><br><br>
+		</section>
+<!--------------------- section-7 or slide --> 
+		<section class="section-10"> 
+		
+		</section>
+<!--------------------- section-8 --> 
+		<section class="section-11">
+		    <div class="container">
+				
+					<div class="row ">
+						<div class="col-md-12 slideanim sign-up">
+						
+							<center>
+								<h1 >Sign up now</h1>
+								<p>So what are you waiting for? Join over 2 million people who’ve found a better way to<br> manage their money online. Sign up to sendbit to open your account today.</p>					
+							</center><br>
+							<center>
+							<div class="row">
+								
+								<div class="col-md-12">
+									<center><a href="#" class="btn btn-primary" role="button">Sign up</a></center>
+								</div>
+							</div>
+						   </center>
+						</div>
+					</div>
+				
+			</div><br><br><br>
+		</section>
+<!--------------------- section-9 --> 
+		<section class="section-12">
+		    <div class="container">
+			    <div class="row "> 
+		            <div class="col-md-3 col-sm-6 col-xs-6">
+		                <h1 style="font-size:23px;font-weight:bold;">Sendbit<span style="font-size:22px;opacity:0.7;">.io</span></h1>
+		                    <ul class="list-group">
+								<li class="list-group-item"><a href="#"><img src="img/footer/twitter-color.svg">&nbsp;&nbsp;&nbsp;Twitter</a></li>
+								<li class="list-group-item"><a href="#"><img src="img/footer/instagram.png">&nbsp;&nbsp;&nbsp;Instagram</a></li>
+								<li class="list-group-item"><a href="#"><img src="img/footer/linkedin.png">&nbsp;&nbsp;&nbsp;Linked</a></li>
+								
+		                    </ul>
+		            </div> 
+					
+					<div class="col-md-3 col-sm-6 col-xs-6">  
+						<h1>Learn</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Buy crypto</a></li>
+								<li class="list-group-item"><a href="#">Exchange</a></li>
+								<li class="list-group-item"><a href="#">Explorer</a></li>
+							</ul>
+					</div> 
+					<div class="col-md-3 col-sm-6 col-xs-6">  
+						<h1>Resources</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">API Documentation</a></li>
+								<li class="list-group-item"><a href="#">API Status</a></li>
+								<li class="list-group-item"><a href="#">FAQ's</a></li>
+								
+							</ul>
+					</div> 
+					<div class="col-md-3 col-sm-6 col-xs-6">  
+						<h1>About</h1>
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Terms of services</a></li>
+								<li class="list-group-item"><a href="#">Careers&nbsp;&nbsp;&nbsp;<span style="background:rgb(50,50,150);color:#fff;padding:3px;border-radius:4px;padding-left:5px;padding-right:5px;font-size:11px;padding-top: 5;">HIRING</span></a></li>
+								
+							</ul>
+					</div> 
+					
+                </div>
+               
+			</div>
+		</section>
+<!--------------------- section-10 or footer--> 
+<div class="dropup dropuptemporaly">
+	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	  All Page
+	  <span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+	  <li><a href="/buisness/buis.html">Business</a></li>
+	  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+	  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+	  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+	  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+	  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+	  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+	  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+	  <li><a href="/main/invoice.html">Invioce</a></li>
+	  <li><a href="/main/payment.html">Payment</a></li>
+	</ul>
+  </div>
+		<a href="#top" id="js-top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a>
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			 
+			   <script src="js/bootstrap.min.js"></script>
+			   <script src="js/extranal.js"></script>
+			    <script src="js/dist/js/bootstrap-select.js"></script>
+			    
+                <script>
+						$(window).scroll(function(){
+	
+	$('nav').toggleClass('scrolled', $(this).scrollTop() >80);
+	$('nav').toggleClass('scrolledd', $(this).scrollTop() >700);
+	$('nav').toggleClass('scrolleddd', $(this).scrollTop() >850);
+});
+				</script>
+	</body>
+</html>

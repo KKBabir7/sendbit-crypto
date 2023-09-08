@@ -1,0 +1,162 @@
+
+.log-d{
+	background:none;
+	background:transparent;
+	
+}
+.log-d  .jjj{
+	overflow-y:scroll;
+	height:100%;
+	border-right:1px solid rgba(0,0,0,0.1);
+	background-image:url(../img/sign/log.svg);
+    background-color:#F7FAFC;
+    background-position: center;
+    background-position-y: 70px; 
+	background-size: cover;
+    background-repeat: no-repeat;
+   
+	z-index:10000;
+}
+.log-d .l-form {
+ 
+ padding-top:100px;
+  
+}
+
+.l-form{
+	padding:0;
+	
+}
+.sendbit{
+	padding:2px 8px 5px 8px;
+	text-shadow: 2px 1px 1px rgba(55,55,255,0.9);
+	color:rgba(55,55,255,0.5);
+	font-weight:bold;
+	font-size:30px;
+   text-align:center;
+margin-bottom:8%;
+}
+.l-form .center{
+	background:#ffff;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:35px;
+	padding-right:35px;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.20);
+}
+
+.l-form .center h2 {
+	color:rgba(0,0,0,0.6);
+	font-weight:500;
+	
+   margin-bottom:5%;
+}
+.l-form .form-group{
+	margin-top:30px;
+}
+.l-form .form-group label{
+	margin-top:10px;
+	margin-bottom:10px;
+	color:rgba(0,0,0,0.7);
+	font-size:15px;
+}
+.l-form .form-group input{
+	box-shadow:none;
+	border-bottom:2px linear-gradient(to right, rgba(252,205,77,1) 0%, rgba(252,214,112,1) 50%, rgba(251,223,147,1) 100%);
+	border-left:none;
+	border-right:none;
+	
+	font-weight:400;
+	border-top:none;
+	
+}
+.l-tem{
+	
+	margin-top:30px;
+}
+
+.l-tem a{
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.submittl{
+	
+	margin-top:10px;
+}
+
+
+
+
+
+
+.under {
+	margin-top:20px;
+	margin-bottom:0px;
+}
+.under a,.l-footer li a{
+	text-decoration:none;
+	font-size:14.5px;
+	font-weight:bold;
+	color:rgba(51,122,183,0.7);
+	transition:all 0.3s ease;
+}
+.l-footer li a{
+	text-decoration:none;
+	font-size:13px;
+	font-weight:500;
+	color:rgba(0,0,0,0.5);
+}
+.under a:hover,.l-footer li a:hover{
+	
+	color:rgba(51,122,183,0.5);
+	
+}
+.cr{
+	margin-top:30px;
+}
+
+.l-footer{
+	padding:0;
+	margin:0;
+}
+.l-footer li{
+	list-style-type:none;
+	display:inline-block;
+	margin-right:10px;
+	bottom:0;
+}
+
+.er{
+	position:absolute;
+	text-align:center;
+	left:12%;
+	font-weight:500;
+	color:rgba(255,0,0,0.6);
+	margin-top:7px;
+	
+}
+@media screen and (max-width: 992px) {
+.log-d .jjj {
+   
+    background-position-y: 50px;
+}
+ @media screen and (max-width: 768px) {
+	 .log-d{
+	    margin-top:0px;
+}
+	
+.l-form .center{
+	background:#ffff;
+	padding-top:0px;
+	}
+	 .l-form .center{
+		 box-shadow:none;
+	 }
+	 .log-d  .jjj {
+        background: none;
+    }
+ }
+
+
+

@@ -1,0 +1,227 @@
+<html>
+       <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	          Sendbit-log in
+	        </title>
+			           <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+		               <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/navbar.css">
+						<link rel="stylesheet" href="css/sign-style.css">
+						<link rel="stylesheet" href="css/log-style.css">
+						
+						<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+						<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+					    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+                        
+	                    
+	</head>
+	
+	<body>
+
+
+<!---------------------navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+	<div class="container">
+		<div class="navbar-header">
+			<button onclick="mobile()" type="button" class="navbar-toggle collapsed first-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/index.html"><img   class="img-responsive"  src="img/img/sendbitlogo.png">
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav menu-left">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/main/documentation.html">API documentation</a></li>
+				<li><a href="/main/security.html">Security</a></li>
+				<li><a href="/main/reviews.html">FAQ</a></li>
+				<li><a href="/main/docs.html">API status</a></li>
+				
+			</ul>
+			<ul class="nav navbar-nav navbar-right menu-right">
+				<li class="log"><a href="/main/log.html"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+				<li class="sign "><a href="/main/sign.html" type="button" class="btn btn-primary">Sign up</a>&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+		</div>	
+	</div>
+</nav> 
+<!---------------------mobile navbar -->
+<div id="mobile" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<center>
+				<div class="tabbable-line">
+					<ul class="nav nav-tabs ul">
+						<li><a data-toggle="tab" href="#business">API docs</a></li>
+					</ul>
+				</div>
+			</center>   
+			<span class="close">&times;</span>	
+		</div>
+		<div class="modal-body">
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/main/documentation.html">API documentation</a></li>
+				<li><a href="/main/security.html">Security</a></li>
+				<li><a href="/main/reviews.html">FAQ</a></li>
+				<li><a href="/main/docs.html">API status</a></li>
+				<li class="log"><a href="/main/log.html
+					"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+				<center><p class="gt"><a href="/main/sign.html" class="btn btn-primary" role="button">Get Start</a></p></center>
+			</ul>
+		</div>
+	</div>
+</div>
+
+		<section class="log-d">
+			<div class="row jjj">
+			    <div class="col-md-4 col-sm-3">
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 l-form">
+					<div class="container-fluid">
+					     
+						<div class="center">				
+							<h3 style="color:rgba(0,0,0,0.7);font-weight:500;font-size:31px;">Sign in to your account</h3>
+							<form> 
+								<div class="form-group">
+									<label for="exampleInputwallet">Wallet id</label>
+									<input type="text" class="form-control" id="wallet" placeholder="Enter your wallet id..">
+									<span class="er" id="wa"></span>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<input id="password-field" type="password" class="form-control" name="password"  Placeholder="Enter password..">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+									<span class="er" id="pas"></span>
+								</div>
+								<p class="l-tem tem"> <input type="checkbox" aria-label="..."> Stay signed in for a week</a></p>
+								<div class="row ff">
+								    <div class="col-md-12">
+								       <input onclick="return Validate()" class="btn btn-default submitt submittl" type="submit" value="LOG IN">
+									</div>
+								</div>
+								<div class="row under">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+								       <center><a href="sign.html">Forget password ?</a></center> 
+									</div>
+								</div>
+							</form>						
+					    </div>
+					    <div class="row under cr">
+							<div class="col-md-12">
+							   <center><span style="color:rgba(0,0,0,0.6);font-weight:400">Don't have an account ? </span> <a href="sign.html">Create account.</a></center>
+							</div>
+						</div><br><br><br>
+						<center>
+						    <ul class="l-footer">
+						  
+                                <li><a href="#"><span class="glyphicon glyphicon-copyright-mark " aria-hidden="true"></span> Sendbit</a></li>
+						        <li><a href="#">Contact</a></li>
+						        <li><a href="#">Privacy & terms</a></li>
+						        
+							</ul>
+						</center>
+						<br><br>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-3 ">
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
+		
+		<div class="dropup dropuptemporaly">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  All Page
+			  <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+			  <li><a href="/buisness/buis.html">Business</a></li>
+			  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+			  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+			  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+			  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+			  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+			  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+			  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+			  <li><a href="/main/invoice.html">Invioce</a></li>
+			  <li><a href="/main/payment.html">Payment</a></li>
+			</ul>
+		  </div>
+		
+		
+	         
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			   
+			   <script src="js/bootstrap.min.js"></script>
+			   <script src="js/extranal.js"></script>
+			   
+			   <script>
+			   
+			   $(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+			   
+			   
+			   </script>
+			   
+			   
+<script type="text/javascript">
+    function Validate() {
+	  var wa = document.getElementById("wallet").value;
+			if(wa==""){
+				document.getElementById("wa").innerHTML="Wallet Incorrect"
+				
+					return false;
+					
+				   }
+				   else{
+				   document.getElementById("wa").style.display="none";
+				   }
+        var password = document.getElementById("password-field").value;
+       
+			if(password==""){
+		document.getElementById("pas").innerHTML="Passwords Incorrect"
+		
+			return false;
+		    
+           }
+		   else{
+		   document.getElementById("pas").style.display="none";
+		   }
+		
+       
+	}
+</script>
+<script>
+  var re=document.getElementById("content1").value;
+  re = Math.floor((Math.random() * 100) + 1);
+</script>
+			<script>
+var mySVG = document.getElementById("mySVG");
+mySVG.setAttribute("width",  window.innerWidth);
+mySVG.setAttribute("height", window.innerHeight);
+</script>   
+	</body>
+</html>

@@ -1,0 +1,1569 @@
+
+<html>
+       <head>
+
+
+
+             <meta charset="utf-8">
+             <meta http-equiv="X-UA-Compatible" content="IE=edge">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+            <title>
+               SendBit Dashboard
+            </title>
+						           <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+                    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+                    <link rel="stylesheet" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/bootstrap.css">
+                    <link rel="stylesheet" href="css/style.css">
+                    <link rel="stylesheet" href="css/account.css">
+                       
+                        
+                        <link rel="stylesheet" href="css/select/bootstrap-select.css">
+                    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+					<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+                    <link rel="stylesheet" href="fonts/font-awesome.min.css">                       
+                    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+                   <link href="@import url('https://fonts.googleapis.com/css?family=Patua+One');" rel="stylesheet">
+				   
+                   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				   
+                  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        </head>
+    <style>
+    
+
+  .usd {
+        background-image:url(img/select-img/usd.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .btc {
+        background-image:url(img/select-img/btc.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .ltc {
+        background-image:url(img/select-img/ltc.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .dash {
+        background-image:url(img/select-img/dash.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .bch {
+        background-image:url(img/select-img/bch.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .eur {
+        background-image:url(img/select-img/eur.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .eth {
+        background-image:url(img/select-img/eth.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+
+</style> 
+    <body>
+
+
+           
+<!-----------------------navber side------------ --> 
+        <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+            <!-----logo------------ -->
+                    <a class="navbar-brand" href="/index.html">   
+                        <img src="img/logo/sendbitlogo.png" width="123" height="28">
+                    
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+       <!-----profile-dropdown------------ -->
+                    <li class="dropdown dropevelmobile">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dashbord</a></li>
+                            <li><a href="#">Edit profile</a></li>
+                            <li><a href="#">API keys</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Google 2FA Setting</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li id ="menu-bar" onclick="menu()"><span style="margin-top:-10px;" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></li>
+                </ul>              
+            </div>
+        </nav>
+
+<!----------main section 2nd nav-section------------ -->
+        <div class="tabbable-panel second-nav">
+            <div  class="bg" id="bg">
+                <div class="nav-section-m" id="nav-section-m">
+                    <div class="tabbable-line">
+                        <ul class="nav nav-tabs ul container">
+                            <li>
+                                <span onclick="remove()" class="glyphicon glyphicon-remove" aria-hidden="true"></span>  
+                            </li>               
+                            <li class="active"><a data-toggle="tab" href="#dashboard"><i class="zmdi zmdi-view-dashboard"></i> Dashbord</a></li>
+                            <li id="noac" onclick="sendpayments()"><a  data-toggle="tab"  href="#sendcrypto"> <i class="fa fa-send"></i></i> Send payment</a></li>
+                            <li id="noacr" onclick="requestcrypto()"><a   href="#requestcrypto" data-toggle="tab" ><i class="zmdi zmdi-balance-wallet"></i> Request crypto</a></li>
+							 <li id="noacd" onclick="depositt()"><a  data-toggle="tab" href="#deposit"><i class="fa fa-bank" ></i> Deposit</a></li>
+							 <li id="noace" onclick="exchange()"><a  data-toggle="tab" href="#exchange"><i class="fa fa-exchange"></i> Exchange</a></li>
+							 
+                            <li><a data-toggle="tab"  href="#tolss"><i class="zmdi zmdi-case"></i> Tools</a></li>
+                            <li><a data-toggle="tab" href="#setting"> <i class="zmdi zmdi-settings"></i> Setting</a></li>                                    
+                        </ul>
+                                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content second-nav-content">
+            <div id="dashboard" class="tab-pane fade in active menu-3 ">
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <div class="row accound">
+                            <div class="col-md-4 currency-static" title="Scroll Down">
+                                <div class="row">
+								    <div class="row total-blance">
+									    <div class="col-md-6 col-xs-7 col-sm-6">
+										    <h4>Total Balance</h4>
+										</div>
+										<div class="col-md-6 col-xs-5 col-sm-6">
+										    <h3>$1.54</h3>
+										</div>
+										
+									</div>
+									<div class="col-md-12">
+										<ul class="nav nav-tabs sb-tabs">
+											<li  class="active"><a data-toggle="tab" href="#buyc">Crypto</a></li>
+											<li><a data-toggle="tab" href="#sellc">Fiat</a></li>
+											<li><a data-toggle="tab" href="#hard">Learn</a></li>
+										</ul>
+										<div class="tab-content tab-content-right">
+											<div id="buyc" class="tab-pane fade in active">
+
+												<BR>
+												<div class="row">
+													<div class="col-md-5 col-xs-5 col-sm-5">
+														<ul>
+															<li class="sbc">
+																<img  class="img-responsive " src="img/transfer/btc.png" alt="...">
+																<span class="sbcname">Bitcoin</span>
+																
+															</li>
+														</ul>	
+													</div>
+													<div class="col-md-4 col-sm-4 col-xs-4">
+													   <img   class="img-responsive c-coin" src="img/1.png">
+													</div>
+													<div class="col-md-3 col-xs-3 col-sm-3">
+														<p id="currency-count-from-btc" class="sbcnumber">$23,394.43 <br><span class="sbcc">340.00000000</span></p>
+													</div>
+												</div>
+
+<BR><BR>
+
+
+												<div class="row">
+													<div class="col-md-5 col-xs-5 col-sm-5">
+														<ul>
+															<li class="sbc">
+																<img  class="img-responsive" src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=007" alt="...">
+																<span class="sbcname">Ethereum</span>
+																
+															</li>
+														</ul>	
+													</div>
+													<div class="col-md-4 col-xs-4 col-sm-4">
+													    <img class="img-responsive c-coin" src="img/1.png">
+													</div>
+													<div class="col-md-3 col-xs-3 col-sm-3">
+														<p id="currency-count-from-btc" class="sbcnumber">$0.00 <br><span class="sbcc">0.00000000</span></p>
+													</div>
+												</div>
+
+
+
+<BR><BR>
+												<div class="row">
+													<div class="col-md-5 col-xs-5 col-sm-5">
+														<ul>
+															<li class="sbc">
+																<img  class="img-responsive" src="https://bitcoinbch.com/assets/img/resources/logo-2020/bitcoin-cash-circle.svg" alt="...">
+																<span class="sbcname">Bitcoin Cash</span>
+																
+															</li>
+														</ul>	
+													</div>
+													<div class="col-md-4 col-xs-4 col-sm-4">
+													    <img  class="img-responsive c-coin" src="img/1.png">
+													</div>
+													<div class="col-md-3 col-xs-3 col-sm-3">
+														<p id="currency-count-from-btc" class="sbcnumber">$0.00 <br><span class="sbcc">0.00000000</span></p>
+													</div>
+												</div>
+										
+						<BR><BR>
+										
+										
+												<div class="row">
+													<div class="col-md-5 col-xs-5 col-sm-5">
+														<ul>
+															<li class="sbc">
+																<img  class="img-responsive" src="https://cryptologos.cc/logos/litecoin-ltc-logo.svg?v=007" alt="...">
+																<span class="sbcname">Litecoin</span>
+																
+															</li>
+														</ul>	
+
+
+													</div>
+													<div class="col-md-4 col-xs-4 col-sm-4">
+													    <img  class="img-responsive c-coin" src="img/1.png">
+													</div>
+													<div class="col-md-3 col-xs-3 col-sm-3">
+														<p id="currency-count-from-btc" class="sbcnumber">$0.00 <br><span class="sbcc">0.00000000</span></p>
+													</div>
+
+                                                    
+												</div>
+
+
+<BR><BR>
+
+												<div class="row">
+													<div class="col-md-5 col-xs-5 col-sm-5">
+														<ul>
+															<li class="sbc">
+																<img  class="img-responsive" src="https://media.dash.org/wp-content/uploads/Dash-D-blue.svg" alt="...">
+																<span class="sbcname">Dash</span>
+																
+															</li>
+														</ul>	
+													</div>
+													<div class="col-md-4 col-xs-4 col-sm-4">
+													    <img  class="img-responsive c-coin" src="img/1.png">
+													</div>
+													<div class="col-md-3 col-xs-3 col-sm-3">
+														<p id="currency-count-from-btc" class="sbcnumber">$0.00 <br><span class="sbcc">0.00000000</span></p>
+													</div>
+												</div>
+												
+<BR>
+											</div>
+
+									
+											<div id="sellc" class="tab-pane fade">
+												<BR>
+												<div class="row">
+													<div class="col-md-9 col-xs-9 col-sm-9">
+														<ul>
+															<li class="sbc">
+																<img  class="img-responsive" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgAgMAAAApuhOPAAAACVBMVEUAU6eApFP/9ABWIW2TAAAAQ0lEQVQY02NgoD5gdEDisE1AsEXYJojAOZmMDpkIDhjBlIERMbbAbQLZArcJhYOiDA9AsRTFOSgORfECiueIsoVkAACg9AqhFj835AAAAABJRU5ErkJggg==" alt="...">
+																<span class="sbcname">Bitcoin</span>
+																
+															</li>
+														</ul>	
+													</div>
+													<div class="col-md-3 col-xs-3 col-sm-3">
+														<p id="currency-count-from-btc" class="sbcnumber">$0.0 <br><span class="sbcc">$0.0</span></p>
+													</div>
+												</div>
+									            <br></br>
+										
+															<div class="row"  onclick="ltc()">
+													<div class="col-md-9 col-xs-9 col-sm-9">
+														<ul>
+															<li class="sbc">
+																<img  class="img-responsive" src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=007" alt="...">
+																<span class="sbcname">Ethereum</span>
+																
+															</li>
+														</ul>	
+													</div>
+													<div class="col-md-3 col-xs-3 col-sm-3">
+														<p id="currency-count-from-btc" class="sbcnumber">$0.00 <br><span class="sbcc">0.00000000</span></p>
+													</div>
+
+												</div>
+												<BR><BR>
+											</div>
+											<div id="hard" class="tab-pane fade">
+												<div class="row">
+													<p>Unconfimed transactions balance will not be shown, balance is updated upon 3 or more confirmations to prevent double spends.
+                                                    <br>
+                                                    <br>
+                                                    Never release goods/services until your transactions has 3 or more confirmations</p>
+												</div>
+											</div>
+											
+											
+										</div>
+									</div>
+								</div>   
+                            </div>
+                            
+
+                            <div class="col-md-8 history">
+							
+                                <div class="row tran">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <h5 style="color:rgba(0,0,0,0.5)">Transactions</h5>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="inner-addon right-addon search-icon">
+                                            <i class="glyphicon glyphicon-search "></i>
+                                            <input type="text" placeholder="Search transaction" class="form-control search-box" />
+                                        </div>
+                                    </div>
+                                </div> 
+                               	<div class="container-fluid">
+                                    <div class="row col-history">
+									    <div class="col-md-12 ">
+										
+
+       <style>
+
+.dRTXS {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    padding: 16px 24px;
+    border-bottom: 1px solid rgb(236, 239, 241);
+    border-top: none;
+    cursor: pointer;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+ @media screen and (max-width: 792px) {
+.dRTXS {
+    
+    width: 650px;
+	padding-left:0;
+	}}
+
+.bWyJVM {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    min-width: 1px;
+    
+}
+
+
+
+.dCBDnV {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 34px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+
+.jSCdti {
+    display: flex;
+    flex-direction: row;
+    margin-right: 16px;
+}
+
+
+.hznKuR {
+    display: flex;
+    flex: 1 1 auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+	padding-left:5px;
+}
+
+.hdlfEh {
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.3;
+    color: rgb(5, 15, 25);
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+constructed stylesheet
+.cicsNy {
+    display: block;
+    margin: 0px;
+}
+
+
+.fuOWTt {
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgba(17, 51, 83, 0.6);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px; 
+}
+
+.flHALs {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    text-align: right;
+    margin-left: 16px;
+}
+
+
+.dIDTYz {
+    flex-shrink: 0;
+    fill: rgba(17, 51, 83, 0.6);
+    width: 40px;
+    height: 40px;
+
+}
+
+
+
+.kBzJqa {
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.3;
+    color: rgb(5, 15, 25);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.cut-text { 
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 120px; 
+  height: 1.2em; 
+  white-space: nowrap;
+}
+
+
+.QQmsQ {
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.3;
+    color: rgb(5, 177, 105);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+.jhBYcZ {
+    font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.3;
+    color: rgb(223, 95, 103);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+.gYwkWe {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    padding: 0px 16px;
+    border: 1px solid rgb(236, 239, 241);
+    border-radius: 4px;
+    box-shadow: rgba(17, 51, 83, 0.02) 0px 4px 12px 0px;
+    background: rgb(255, 255, 255);
+}
+
+  .usd {
+        background-image:url(img/select-img/usd.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .btc {
+        background-image:url(img/select-img/btc.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .ltc {
+        background-image:url(img/select-img/ltc.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .dash {
+        background-image:url(img/select-img/dash.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        .bch {
+        background-image:url(img/select-img/bch.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .eur {
+        background-image:url(img/select-img/eur.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+         .eth {
+        background-image:url(img/select-img/eth.png);
+        width:26px;
+        height:26px;
+        margin-top: 8;
+    position: absolute;
+    overflow:hidden;
+        }
+        
+.page-link{
+   width:80px;
+   text-align:center;
+}
+ page-link-m{
+    width:250px;
+ }
+</style>         
+
+
+
+
+          
+
+    </center>
+
+
+        
+<style>  br2 {
+    line-height: 10px;
+ }
+
+ </style>
+
+ <BR2>
+
+
+<style>
+       .all-c-icon svg{
+	   
+	    width: 40px;
+  height: 40px;
+   border-radius:50px;
+   padding: 8px;
+   border:1px solid rgba(0,0,0,0.2);
+  fill:rgba(0,0,0,0.4);
+
+	   }
+	 .bch-icon svg{
+	  transform: rotate(-18deg)
+	 }  
+	   
+   </style>
+
+
+        <div class="Flex-l69ttv-0 cardStyles__CardRow-wgcfkc-0 TransactionListItem__LinkContainer-sc-18qpabl-0 dRTXS">
+           <div class="Flex-l69ttv-0 TransactionListItem__NameContainer-sc-18qpabl-1 bWyJVM">
+               <div class="Flex-l69ttv-0 styles__DateContainer-sc-193ww2v-0 dCBDnV"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Caps__StyledCaps-sc-1m9jrwx-0 hCjgIc">OCT</span><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa">21</span>
+			   </div>
+                <div class="col-md-2 bitcoin-icon all-c-icon">
+			   <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path d="M16.30426,11.24115A3.99779,3.99779,0,0,0,12.9917,5.002v-1a1,1,0,1,0-2,0v1h-2v-1a1,1,0,1,0-2,0v1h-1a1,1,0,0,0,0,2h1v10h-1a1,1,0,0,0,0,2h1v1a1,1,0,0,0,2,0v-1h2v1a1,1,0,0,0,2,0v-1h2a3.98966,3.98966,0,0,0,1.31256-7.7608ZM8.9917,7.002h4a2,2,0,0,1,0,4h-4Zm6,10h-6v-4h6a2,2,0,1,1,0,4Z"/></svg>
+		   </div>
+			   <div class="Flex-l69ttv-0 TransactionListItem__TitleWrapper-sc-18qpabl-2 hznKuR">
+				    <span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 hdlfEh">Sent Bitcoin</span>
+				    <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 fuOWTt"><a class="a2" href="">a6cac1407b1e26e83b48594b1a10509d5b0d40b65949dcff01d86943d25cd6be66666666666666666</a> <br>
+					<span>Transaction confirmed</span></a></p>
+			    </div>
+            </div>
+		  
+		   <div class="Flex-l69ttv-0 styles__AmountContainer-sc-193ww2v-3 flHALs">
+			  <div class="Flex-l69ttv-0 ionTLM"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa"><span class="">0.00000000 BTC</span></span></div>
+			  <div class="Flex-l69ttv-0 ionTLM">
+				 <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 iNHHmI" style="line-height:30px;"><span class="">$0.00</span></p>
+			  </div>
+		   </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="Flex-l69ttv-0 cardStyles__CardRow-wgcfkc-0 TransactionListItem__LinkContainer-sc-18qpabl-0 dRTXS">
+            <div class="Flex-l69ttv-0 TransactionListItem__NameContainer-sc-18qpabl-1 bWyJVM">
+                <div class="Flex-l69ttv-0 styles__DateContainer-sc-193ww2v-0 dCBDnV"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Caps__StyledCaps-sc-1m9jrwx-0 hCjgIc">OCT</span><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa">21</span></div>
+               <div class="col-md-2 eth-icon all-c-icon">
+				<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 128 128" xml:space="preserve"><path d="M103.2 63.6v-.2c0-.1 0-.1-.1-.2V63c0-.1-.1-.1-.1-.2 0 0 0-.1-.1-.1L65.7 1c-.1-.1-.2-.3-.3-.4h-.1c-.1-.1-.2-.2-.3-.2 0 0-.1 0-.1-.1-.1-.1-.2-.1-.3-.1h-.1c-.2-.2-.3-.2-.5-.2s-.3 0-.5.1h-.1c-.1 0-.2.1-.3.1 0 0-.1 0-.1.1-.1.1-.2.1-.3.2h-.1c-.1.1-.2.2-.3.4L25.1 62.7s0 .1-.1.1c0 .1-.1.1-.1.2v.2c0 .1 0 .1-.1.2v.8c0 .1 0 .1.1.2v.1c.1.2.2.3.3.4l.1.1.3.3s.1 0 .1.1L63 87.2h.1c.1.1.2.1.3.1h.1c.2 0 .3.1.5.1s.3 0 .5-.1h.1c.1 0 .2-.1.3-.1h.1l37.2-21.7c.1 0 .1-.1.2-.1l.1-.1.2-.2.1-.1c0-.1.1-.1.1-.2s.1-.1.1-.2 0-.1.1-.2c0-.1 0-.1.1-.2V64v-.2-.2zM62 45.6L31.9 59.3 62 9.2v36.4zm0 4.4v32L31.2 64 62 50zm4 0l30.8 14L66 82V50zm0-4.4V9.2l30.1 50.1L66 45.6z"/><path d="M100.1 72L64 93.7 27.9 72c-.8-.5-1.9-.3-2.5.4-.6.7-.7 1.7-.2 2.5l37.2 52.2.1.1c.1.1.1.2.2.2l.1.1c.1.1.2.1.2.2 0 0 .1 0 .1.1.1 0 .2.1.3.1h.1c.1 0 .3.1.4.1.2 0 .3 0 .4-.1h.1c.1 0 .2-.1.3-.1 0 0 .1 0 .1-.1.1 0 .2-.1.2-.2l.1-.1.2-.2.1-.1 37.2-52.2c.5-.8.5-1.8-.2-2.5s-1.4-.8-2.3-.4zM62 97.1v22.6L34 80.4l28 16.7zm4 22.6V97.1l28-16.8-28 39.4z"/><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description about="https://iconscout.com/legal#licenses" dc:title="ethereum" dc:description="ethereum" dc:publisher="Iconscout" dc:date="2018-01-14" dc:format="image/svg+xml" dc:language="en"><dc:creator><rdf:Bag><rdf:li>Icon Mafia</rdf:li></rdf:Bag></dc:creator></rdf:Description></rdf:RDF></metadata></svg>
+			   
+		    </div>
+				<div class="Flex-l69ttv-0 TransactionListItem__TitleWrapper-sc-18qpabl-2 hznKuR">
+					 <span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 hdlfEh">Sent Bitcoin</span>
+					 <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 fuOWTt"><a class="a2" href="">a6cac1407b1e26e83b48594b1a10509d5b0d40b65949dcff01d86943d25cd6be</a> <br>
+					<span> Transaction confirmed</span>
+			       </a></p>
+				</div>
+            </div>
+		    
+		   <div class="Flex-l69ttv-0 styles__AmountContainer-sc-193ww2v-3 flHALs">
+			  <div class="Flex-l69ttv-0 ionTLM"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa"><span class="">0.00000000 BTC</span></span></div>
+			  <div class="Flex-l69ttv-0 ionTLM">
+				 <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 iNHHmI" style="line-height:30px;"><span class="">$0.00</span></p>
+			  </div>
+		   </div>
+       </div>
+
+
+
+
+
+
+
+
+
+    <div class="Flex-l69ttv-0 cardStyles__CardRow-wgcfkc-0 TransactionListItem__LinkContainer-sc-18qpabl-0 dRTXS">
+        <div class="Flex-l69ttv-0 TransactionListItem__NameContainer-sc-18qpabl-1 bWyJVM">
+            <div class="Flex-l69ttv-0 styles__DateContainer-sc-193ww2v-0 dCBDnV"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Caps__StyledCaps-sc-1m9jrwx-0 hCjgIc">OCT</span><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa">21</span></div>
+            <div class="col-md-2 bch-icon all-c-icon">
+		   <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"><path d="M16.30426,11.24115A3.99779,3.99779,0,0,0,12.9917,5.002v-1a1,1,0,1,0-2,0v1h-2v-1a1,1,0,1,0-2,0v1h-1a1,1,0,0,0,0,2h1v10h-1a1,1,0,0,0,0,2h1v1a1,1,0,0,0,2,0v-1h2v1a1,1,0,0,0,2,0v-1h2a3.98966,3.98966,0,0,0,1.31256-7.7608ZM8.9917,7.002h4a2,2,0,0,1,0,4h-4Zm6,10h-6v-4h6a2,2,0,1,1,0,4Z"/></svg>
+	   </div>
+			<div class="Flex-l69ttv-0 TransactionListItem__TitleWrapper-sc-18qpabl-2 hznKuR">
+				 <span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 hdlfEh">Sent Bitcoin</span>
+				 <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 fuOWTt"><a class="a2" href="">a6cac1407b1e26e83b48594b1a10509d5b0d40b65949dcff01d86943d25cd6be</a> <br>
+				<span>Transaction confirmed</span>
+		        </a></p>
+
+			</div>
+        </div>
+	   
+	   <div class="Flex-l69ttv-0 styles__AmountContainer-sc-193ww2v-3 flHALs">
+		  <div class="Flex-l69ttv-0 ionTLM"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa"><span class="">0.00000000 BTC</span></span></div>
+		  <div class="Flex-l69ttv-0 ionTLM">
+			 <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 iNHHmI" style="line-height:30px;"><span class="">$0.00</span></p>
+		  </div>
+	   </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Flex-l69ttv-0 cardStyles__CardRow-wgcfkc-0 TransactionListItem__LinkContainer-sc-18qpabl-0 dRTXS">
+        <div class="Flex-l69ttv-0 TransactionListItem__NameContainer-sc-18qpabl-1 bWyJVM">
+            <div class="Flex-l69ttv-0 styles__DateContainer-sc-193ww2v-0 dCBDnV"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Caps__StyledCaps-sc-1m9jrwx-0 hCjgIc">OCT</span><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa">21</span></div>
+                <div class="col-md-2 litecoin-icon all-c-icon">
+		   <?xml version="1.0" encoding="UTF-8"?><svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 120 150" xml:space="preserve"><path d="M56.3 102.8l8.3-31.3 19.7-7.2 4.9-18.4-.2-.4-19.4 7.1L83.6 0H44L25.7 68.6l-15.2 5.6-5.1 18.9 15.3-5.5L9.9 128h105.4l6.7-25.2z"/><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description about="https://iconscout.com/legal#licenses" dc:title="litecoin" dc:description="litecoin" dc:publisher="Iconscout" dc:date="2018-01-14" dc:format="image/svg+xml" dc:language="en"><dc:creator><rdf:Bag><rdf:li>Icon Mafia</rdf:li></rdf:Bag></dc:creator></rdf:Description></rdf:RDF></metadata></svg>
+		   
+	   </div>
+				<div class="Flex-l69ttv-0 TransactionListItem__TitleWrapper-sc-18qpabl-2 hznKuR">
+					 <span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 hdlfEh">Sent Bitcoin</span>
+					 <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 fuOWTt"><a class="a2" href="">a6cac1407b1e26e83b48594b1a10509d5b0d40b65949dcff01d86943d25cd6be</a> <br>
+					<span>Transaction confirmed</span></a></p>
+				</div>
+        </div>
+	   
+		<div class="Flex-l69ttv-0 styles__AmountContainer-sc-193ww2v-3 flHALs">
+		  <div class="Flex-l69ttv-0 ionTLM"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa"><span class="">0.00000000 BTC</span></span></div>
+		  <div class="Flex-l69ttv-0 ionTLM">
+			 <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 iNHHmI" style="line-height:30px;"><span class="">$0.00</span></p>
+		  </div>
+		</div>
+    </div>
+    <div class="Flex-l69ttv-0 cardStyles__CardRow-wgcfkc-0 TransactionListItem__LinkContainer-sc-18qpabl-0 dRTXS">
+        <div class="Flex-l69ttv-0 TransactionListItem__NameContainer-sc-18qpabl-1 bWyJVM">
+            <div class="Flex-l69ttv-0 styles__DateContainer-sc-193ww2v-0 dCBDnV"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Caps__StyledCaps-sc-1m9jrwx-0 hCjgIc">OCT</span><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa">21</span></div>
+           <div class="col-md-2 dash-icon all-c-icon">
+		  <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 120 120" xml:space="preserve"><path d="M3 99.8C5 94 6.8 88.6 8.8 83.1c.2-.5 1.2-1 1.8-1 3.3-.1 6.6 0 9.9 0h64.6c1.7 0 2.5-.5 3-2.2 3.6-10.6 7.3-21.2 11-31.8.2-.6.3-1.1.6-2H21.4c2-5.9 3.9-11.4 5.9-16.9.2-.4 1-.8 1.5-.8 2-.1 3.9 0 5.9 0 26.5 0 53 .2 79.6-.1 7.9-.1 16.3 6 12.9 17.6-2.5 8.7-5.8 17.1-8.7 25.6-1 2.9-2 5.9-3 8.7-3.7 10.2-11.2 16.3-21.5 19.2-.9.3-1.9.3-2.9.3H5.2c-.6.1-1.3.1-2.2.1z"/><path d="M52.6 55.6c-2 5.6-3.9 10.9-5.9 16-.1.4-.9.7-1.4.7H.8c-.2 0-.4-.1-.8-.3 1.9-5.2 3.7-10.3 5.7-15.4.2-.5 1-1 1.5-1h45.4z"/><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description about="https://iconscout.com/legal#licenses" dc:title="dash" dc:description="dash" dc:publisher="Iconscout" dc:date="2018-01-14" dc:format="image/svg+xml" dc:language="en"><dc:creator><rdf:Bag><rdf:li>Icon Mafia</rdf:li></rdf:Bag></dc:creator></rdf:Description></rdf:RDF></metadata></svg>
+		   
+	   </div>
+			<div class="Flex-l69ttv-0 TransactionListItem__TitleWrapper-sc-18qpabl-2 hznKuR">
+				<span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 hdlfEh">Sent Bitcoin</span>
+				<p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 fuOWTt"><a class="a2" href="">a6cac1407b1e26e83b48594b1a10509d5b0d40b65949dcff01d86943d25cd6be</a> <br>
+				<span>Transaction confirmed</span></a></p>
+			</div>
+        </div>
+ 
+		
+	   <div class="Flex-l69ttv-0 styles__AmountContainer-sc-193ww2v-3 flHALs">
+		  <div class="Flex-l69ttv-0 ionTLM"><span class="TextElement__Spacer-hxkcw5-0 cicsNy Header__StyledHeader-sc-1xiyexz-0 kBzJqa"><span class="">0.00000000 BTC</span></span></div>
+		  <div class="Flex-l69ttv-0 ionTLM">
+			 <p class="TextElement__Spacer-hxkcw5-0 cicsNy Body__StyledBody-sc-17wx6cn-0 iNHHmI" style="line-height:30px;"><span class="">$0.00</span></p>
+		  </div>
+	   </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									    </div>
+
+
+
+
+
+
+
+									</div>
+                                </div>								
+                            </div>   
+					    </div>
+					</div>
+				</div>
+			</div>
+			<div id="tolss" class="tab-pane fade tols">
+					<div class="container-fluid t-m">
+						<div class="container-fluid tols-fluid" style="border:1px solid rgba(0,0,0,0.1);">
+							<div class="row" >
+								<div class="col-md-12">
+									<div class="row tols-head">
+										<div class="col-md-8 col-xs-6 col-sm-8">
+											<h1>API Keys</h1>
+										</div>
+										<div class="col-md-4 col-xs-6 col-sm-4">
+											<a href="#" type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  New API Key</a>
+										</div>
+										
+									</div>
+									<hr class="api-hr">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="media">
+												<div class="media-left">
+													<a href="#">
+														<i><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></i> 
+													</a>
+												</div>
+												<div class="media-body">
+													<h5>You haven't create any API keys yet.</h5>
+													<p>API keys allow you to perform automated action on your account with youe own software  &nbsp;<a href="#">Learn More.</a></p>
+												</div>
+											</div>
+										</div>  
+									</div>
+								</div>
+							</div> 
+							<br><br><br>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row tols-head">
+										<div class="col-md-8 col-sm-6">
+											<h1>My OAuth2 Application yet.</h1>
+										</div>
+										<div class="col-md-4 col-sm-6">
+											<a href="#" type="button" class="btn btn-default OAuth2"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  New OAuth2 Application</a>
+										</div>
+										
+									</div>
+									<hr class="api-hr">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="media">
+												<div class="media-left">
+													<a href="#">
+														<i><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></i> 
+													</a>
+												</div>
+												<div class="media-body">
+													<h5>You haven't create any OAuth2 applications yet.</h5>
+													<p>Build applications for other using the Sendbit API &nbsp;<a href="#">Learn More.</a></p>
+												</div>
+											</div>
+										</div>  
+									</div>
+								</div>
+							</div> 
+							
+							<br><br><br>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row tols-head">
+										<div class="col-md-8">
+											<h1>API Version and Notifications.</h1>
+										</div>
+										<div class="col-md-4">
+										   
+										</div>
+										
+									</div>
+									<hr class="api-hr">
+									<div class="row">
+										<div class="col-md-12">
+											
+													
+													<p>API version is genarally as a &nbsp;<a style="font-weight:1000;" href="#">CB_VERSION</a>&nbsp; header if the API version onlend .the version display will be used .Learn more about API version <a href="#">Learn More about API versoning.</a></p>
+													<p>Notifications version is genarally as a  header if the API version onlend .the version display will be used .Learn more about API versionLearn More about API versoning.Notifications version is genarally as a  header if the API version onlend .the version display will be used .Learn more about API versionLearn More about API versoning.&nbsp;<a href="#">Learn More about notfications</a></p>
+												<h5>API Version:2020-10-03 &nbsp;<a href="#" type="button" class="btn btn-primary uptodate">You're up-to-date</a></h5>
+										</div>  
+									</div>
+								</div>
+							</div> 
+						</div> 
+					</div>
+				</div>
+                <div id="setting" class="tab-pane fade seting">
+					<div class="container-fluid">
+						<div class="container-fluid seting-fluid" style="border:1px solid rgba(0,0,0,0.1);">
+							<div class="row all-ver">
+								<div class="col-md-1 col-sm-2 col-xs-2 icon">
+									<i style="margin-top:-2px;"  class="fa fa-check-circle"></i>
+									<br>
+									<br>
+									<br>
+									<br><br>
+									<br><br>
+									<br><br>
+									<br>
+									<i style="margin-top:-4px;" class="fa fa-check-circle"></i>
+								
+								</div>
+								<div class="col-md-5 col-sm-10 col-xs-10">
+									<p class="ver">Verifed</p>
+									<h4 class="lev">Level 1</h4>
+									<p class="wek">Weekly buy and sell limits across all your payment method</p>
+									<p class="vp"><i class="fa fa-check"></i>&nbsp; <span>Verify phone number</span></p>
+									<p class="vp"><i class="fa fa-check"></i>&nbsp; <span>Verify photo ID</span></p>
+									<br>
+									<br>
+									<br>
+									<div class="ver-col">
+									<p class="ver">Verifed</p>
+									<h4 class="lev">Level 2</h4>
+									<p class="wek">Unlimited buying and selling</p>
+									<p class="vp"><i class="fa fa-check"></i>&nbsp; <span>Verify personal information</span></p>
+								   </div>
+								</div>
+								<div class="col-md-6 amount">
+									<h3>Account Limits</h3>
+									<div class="row">
+										<div class="col-md-6 col-sm-6 col-xs-6">
+										   <p><i style="font-size:11px;"  class="fa fa-paper-plane"></i>&nbsp;&nbsp; Send cryptocurrency</p>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-6">
+											<span>Enabled</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-6 col-xs-6">
+										   <p><i style="font-size:12px;"  class="fa fa-qrcode"></i>&nbsp;&nbsp; Receive cryptocurrency</p>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-6">
+											<span>Enabled</span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-6 col-xs-6">
+										   <p><i style="font-size:11px;" class="fa fa-credit-card-alt"></i>&nbsp;&nbsp;3D Secure purchases</p>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-6">
+											<span>$1,000 <b>/week</b></span>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-6 col-xs-6">
+										   <p><i style="font-size:11px;"  class="fa fa-paypal"></i>&nbsp;&nbsp; Paypal withdrawals</p>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-6">
+											<span>$20,000 <b>/week</b></span>
+										</div>
+									</div>
+									
+								
+								
+								</div>
+								
+							</div> 
+						</div> 
+					</div>
+                </div><br><br> <br> <br> <br> 
+       
+       
+        </div>
+    <!----footer----------- -->
+        <div class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-5">
+                        <ul class="left-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Carrers</a></li>
+                            <li><a href="#">Legal & Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-7">
+                        <ul class=" right-menu">
+                            <li><a href="#">@2017 SendBit LTD</a></li>
+                            
+                                <li><button type="button" class="btn btn-primary">Need Help ?</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<section class="send-payment">
+			<div id="cModal" class="cmodal">
+				<div class="cmodal-content" id="cmodalleft">
+					<div class="modal-header">
+						 <h3><i class="fa fa-send" style=""></i> &nbsp;Send <span id="setcoin">Bitcoin</span></h3>
+						<span class="close">&times;</span>
+					</div>
+					<div class="cmodal-body">
+						<div id="websiteOverlay" class="fixed">
+							<div class="row w-s">
+							<p class="cur-p">Currency</p>
+								<form action="" method="POST">
+								<div class="col-md-8 col-xs-8 col-sm-8">
+									<select class="selectpicker"  name="coin" onchange="change()"  id="mv">
+										<option value="BTC" data-icon="btc">&nbsp;BTC</option>
+										<option value="ETH" data-icon="eth">&nbsp;ETH</option>
+										<option value="LTC" data-icon="ltc">&nbsp;LTC</option>
+										<option value="DASH" data-icon="dash" >&nbsp;DASH</option>
+										<option value="BCH" data-icon="bch">&nbsp;BCH</option>
+									</select> 
+								</div>
+							</div>
+							<div class="row f-e">
+								<div class="col-md-12">
+									<div class="form-group">    
+									<label>To</label>
+										<div class="input-group">
+											 
+											<input type="text" name="recipient" class="form-control" id="inputtext3" placeholder="Paste,scan,or select destination ">
+											<div class="input-group-addon"><img width="25px;" src="img/account/qr_code_PNG28.png"></div>     
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row u-e">
+								<div class="col-md-12">
+									<div class="form-group">    
+											<p class="bg-info">Upgrade your account to buy,sell,and trade<span style="float:right"><a href="">Upgrade ></a></span></p>
+												 
+										</div>
+									</div>
+							</div>  
+							<label>Amount</label>
+							<div class="row ammount">
+								<div class="col-md-6 col-xs-6 col-sm-6">
+									<form class="form-inline">
+										<div class="form-group">
+											<div class="input-group">
+												<input value="0"  onkeyup="changeusd()" type="text" class="form-control" id="frinput" placeholder="">
+												<div class="input-group-addon">USD</div>
+											</div>
+									    </div>
+									</form>
+								</div>
+									<span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>
+								<div class="col-md-6 col-xs-6 col-sm-6">
+									<form class="form-inline">
+										<div class="form-group">
+											<div class="input-group">
+											<input value="0" name="amount" type="text" class="form-control send2"  id="inputvalue" onkeyup="changeother()">
+											<div class="input-group-addon" id="cv">BTC</div>   
+											</div>
+									  </div>
+								</div>
+							</div>
+							<div class="row f-m">
+								<div class="col-md-12">
+									<div class="form-group">
+										
+										<label>Description <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></label>
+										<textarea placeholder="What this transactions for?(optional)" class="form-control" rows="2"></textarea>  
+									</div>
+								</div>
+							</div>
+							<div class="row f-blance">
+								<div class="col-md-6 col-xs-6 col-sm-6">
+									<p id="fcurrency">Miner fee</p> 
+								</div>
+								<div class="col-md-6 col-xs-6 col-sm-6">
+									<p id="fblance">0 USD ≈ $0.00</p>
+								</div>          
+							</div>
+							<div class="row f-estemate">
+								<div class="col-md-12">
+									<center><p style="color:rgba(0,0,0,0.5);font-weight:400;">Estemate confirmed time 1 hour</p></center> 
+									<input  class="form-control fee" type="text" onkeyup="changefree()"  id="feevalue">  
+								</div>
+							</div>
+							<div class="row f-b">
+								<div class="col-md-12">
+								<input  type="submit" name="submit_pay" value="Send Payment" class="btn btn-primary btn-lg  btn-block">
+								</div>
+								</form>
+							</div>
+						</div>            
+					</div>            
+				</div>          
+			</div>
+		</section>
+		<section class="request-crypto">
+			<div id="rrModal" class="rrmodal">
+				<div class="rrmodal-content" id="recivepcontent"> 
+					<div class="modal-header">
+						 <h3><i class="fa fa-upload" style=" transform: rotate(0deg);"></i>&nbsp;&nbsp; <h3 id="requestcoin">Request Bitcoin</h3></h3>
+						<span class="close">&times;</span>
+					</div>
+					<div class="rrmodal-body">
+						<div id="websiteOverlay" class="fixed">
+							<div class="row w-s">
+							   <p class="cur-p">Currency</p>
+								<div class="col-md-8 col-xs-8 col-sm-8">
+									<select class="selectpicker"  onchange="rchanger()"  id="mvr2">
+										<option value="BTC"  data-icon="btc">&nbsp;BTC</option>
+										<option value="LTC"  data-icon="ltc">&nbsp;LTC</option>
+										<option value="ETH"  data-icon="eth">&nbsp;ETH</option>
+										<option value="DASH"  data-icon="dash" >&nbsp;DASH</option>
+										<option value="BCH"  data-icon="bch">&nbsp;BCH</option>
+									</select> 
+								</div>
+							</div>
+							<div class="row r-p">
+								<div class="col-md-12">
+									<div class="container-fluid">
+										<center><img class="img-responsive" src="img/account/scaner.PNG"></center>
+									</div>
+								</div>
+							</div>
+							<div class="row due">
+								<div class="col-md-12">
+									
+									<p class="cop-1" id="copied2"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>&nbsp;Address Copied</p>
+									<p class="link" id="content2" style="padding-top:14px;padding-bottom:14px"><span id="inneraddress">79758320xiyjyu889ju9une4597e46FF3F55CD1079758326...</span></p>
+									<i class="material-icons copy-text" data-clipboard-target="#content2" id="ok2"  style="font-size:22px">content_copy</i>
+									 
+								</div>
+							</div>
+							<div class="row f-b">
+								<div class="col-md-12">
+									<button onclick="setTimeout(confirm, 2000);" type="button" class="btn btmm btn-primary btn-lg  btn-block" >Done</button>
+								</div>
+							</div>
+							<div class="row f-estemate">
+								<div class="col-md-12">
+									<center><p style="color:rgba(0,0,0,0.5);font-weight:400;"><a href="#">Create Shareable Request Link</a></p></center>    
+								</div>
+							</div>
+						</div>            
+					</div>            
+				</div>          
+			</div>
+		</section>
+		<section class="deposit">
+			<div id="deposit" class="rrmodal">
+				<div class="rrmodal-content" id="depositcontent"> 
+					<div class="modal-header">
+						 <h3><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgAgMAAAApuhOPAAAACVBMVEUAU6eApFP/9ABWIW2TAAAAQ0lEQVQY02NgoD5gdEDisE1AsEXYJojAOZmMDpkIDhjBlIERMbbAbQLZArcJhYOiDA9AsRTFOSgORfECiueIsoVkAACg9AqhFj835AAAAABJRU5ErkJggg==">&nbsp;&nbsp; Sepa deposit</h3>
+						<span class="close">×</span>
+					</div>
+					<div class="rrmodal-body">
+						<div id="websiteOverlay" class="fixed">
+							<div class="row due">
+								<div class="col-md-12">
+										Receiver name
+										<p class="cop-1" id="copied3"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>&nbsp;Address Copied</p>
+										<p class="link" id="contentsepa2" style="padding-top:14px;padding-bottom:14px">SENDBIT</p>
+										<i class="material-icons copy-text" data-clipboard-target="#contentsepa2" id="ok3" style="font-size:22px">content_copy</i>  
+								</div>
+							</div>
+							<div class="row due">
+								<div class="col-md-12">
+									Bank account country
+									<p class="cop-1" id="copied4"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>&nbsp;Address Copied</p>
+
+									<p class="link" id="contentsepa3" style="padding-top:14px;padding-bottom:14px">Germany</p>
+									<i class="material-icons copy-text" data-clipboard-target="#contentsepa3" id="ok4" style="font-size:22px">content_copy</i>
+									 
+								</div>
+							</div>
+							<div class="row due">
+								<div class="col-md-12">
+									IBAN
+									<p class="cop-1" id="copied5"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>&nbsp;Address Copied</p>
+									<p class="link" id="contentsepa4" style="padding-top:14px;padding-bottom:14px">DE53 1101 0100 2411 9974 17</p>
+									<i class="material-icons copy-text" data-clipboard-target="#contentsepa4" id="ok5" style="font-size:22px">content_copy</i>
+								</div>
+							</div>
+							<div class="row due">
+								<div class="col-md-12">
+									BIC
+									<p class="cop-1" id="copied6"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>&nbsp;Address Copied</p>
+
+									<p class="link" id="contentsepa5" style="padding-top:14px;padding-bottom:14px">SOBKDEBBXXX</p>
+									<i class="material-icons copy-text" data-clipboard-target="#contentsepa5" id="ok6" style="font-size:22px">content_copy</i>
+									 
+								</div>
+							</div>
+							<div class="row due">
+								<div class="col-md-12">
+									Refrence
+									<p class="cop-1" id="copied7"><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>&nbsp;Address Copied</p>
+
+									<p class="link" id="contentsepa6" style="padding-top:14px;padding-bottom:14px">SBGJDLLKFIKNMS</p>
+									<i class="material-icons copy-text" data-clipboard-target="#contentsepa6" id="ok7" style="font-size:22px">content_copy</i>
+									 
+								</div>
+							</div>Please include the reference or else your deposit will not be recorded. <br> <br>
+							<div class="row f-b">
+								<div class="col-md-12">
+									<button onclick="setTimeout(confirm, 2000);" type="button" class="btn btmm btn-primary btn-lg  btn-block">Close</button>
+								</div>
+							</div>
+							<div class="row f-estemate">
+								<div class="col-md-12">
+								</div>
+							</div>
+						</div>            
+					</div>            
+				</div>          
+			</div>
+		</section>
+		<section class="exchange">
+			<div id="edModal" class="cmodal">
+				<div class="edmodal-content" id="edmodalleft">
+					<div class="modal-header">
+						 <h3><i class="fa fa-send" style=""></i> &nbsp;Send <span id="esetcoin">EUR</span></h3>
+						<span class="close">&times;</span>
+					</div>
+					<div class="cmodal-body">
+						<div id="websiteOverlay" class="fixed">
+							<div class="row w-s">
+							<p class="cur-p">Currency to purchase</p>
+								<form action="" method="POST">
+								<div class="col-md-8 col-xs-8 col-sm-8">
+									<select class="selectpicker"  name="coin" onchange="changeur()"  id="mur">
+										
+										<option value="EUR" data-icon="eur">&nbsp;EUR</option>
+										<option value="LTC" data-icon="ltc">&nbsp;LTC</option>
+										<option value="ETH" data-icon="eth">&nbsp;ETH</option>
+										<option value="DASH" data-icon="dash" >&nbsp;DASH</option>
+										<option value="BCH" data-icon="bch">&nbsp;BCH</option>
+									</select> 
+								</div>
+								</form>
+							</div>
+							<div class="row f-e">
+								<div class="col-md-12">
+									<div class="form-group">    
+									<label>Reciving address</label>
+										<div class="input-group">
+											 
+											<input type="text" name="recipient" class="form-control" id="inputtext3" placeholder="Paste,scan,or select destination ">
+											<div class="input-group-addon"><img width="25px;" src="img/account/qr_code_PNG28.png"></div>     
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row u-e">
+								<div class="col-md-12">
+									<div class="form-group">   
+									
+										<p class="bg-info">Upgrade your account to buy,sell,and trade<span style="float:right"><a href="">Upgrade ></a></span></p>		 
+									</div>
+								</div>
+							</div>  
+						   
+							<div class="row ammount">
+								<div class="col-md-6 col-xs-6 col-sm-6">
+								 <label>Amount you wish to buy</label>
+									<form class="form-inline">
+										<div class="form-group">
+											<div class="input-group">
+												<input value="0"  onkeyup="changeeur()" type="text" class="form-control" id="frinputur" placeholder="">
+												<div class="input-group-addon">USD</div>
+											</div>
+									    </div>
+								    </form>
+								</div>
+									<span style="margin-top:40px;" class="glyphicon glyphicon-transfer jko" aria-hidden="true"></span>
+								<div class="col-md-6 col-xs-6 col-sm-6">
+								<label>Amount you wish to buy</label>
+									<form class="form-inline">
+										<div class="form-group">
+											<div class="input-group"> 
+											
+											<input value="0" name="amount" type="text" class="form-control send2"  id="inputvalueur" onkeyup="changeotherur()">
+											<div class="input-group-addon" id="cur">EUR</div>
+											
+											   
+											</div>
+									  </div>
+									</form>
+								</div>
+							</div>
+							<div class="row f-m">
+								<div class="col-md-12">
+									<div class="form-group">
+										
+										<label>Description <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></label>
+										<textarea placeholder="What this transactions for?(optional)" class="form-control" rows="2"></textarea>  
+									</div>
+								</div>
+							</div>
+							<div class="row f-blance">
+								<div class="col-md-6 col-xs-6 col-sm-6">
+									<p id="efcurrency">Miner fee</p> 
+								</div>
+								<div class="col-md-6 col-xs-6 col-sm-6">
+									<p style="float:right" id="efblance">0 USD ≈ $0.00</p>
+								</div>          
+							</div>
+							<div class="row f-estemate">
+								<div class="col-md-12">
+									<center><p style="color:rgba(0,0,0,0.5);font-weight:400;">Estemate confirmed time 1 hour</p></center> 
+									<input  class="form-control fee" type="text" onkeyup="changefreer()"  id="feevaluer">  
+								</div>
+							</div>
+							<div class="row f-b">
+								<div class="col-md-12">
+								<input  type="submit" name="submit_pay" value="Send Payment" class="btn btn-primary btn-lg  btn-block">								   
+								</div>
+								
+							</div>
+						</div>            
+					</div>            
+				</div>          
+			</div>
+		</section>
+		<div class="dropup dropuptemporaly">
+			<button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  All Page
+			  <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+			  <li><a href="/buisness/buis.html">Business</a></li>
+			  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+			  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+			  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+			  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+			  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+			  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+			  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+			  <li><a href="/main/invoice.html">Invioce</a></li>
+			  <li><a href="/main/payment.html">Payment</a></li>
+			</ul>
+		  </div>
+            <script src="js/bootstrap.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/canvasjs.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/extarnal.js"></script>
+            <script src="js/dist/js/bootstrap-select.js"></script>
+            <script src="js/account.js"></script>
+            <script src="js/account-currency.js"></script>
+            <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+            <script>
+                function sendpayments(){
+					var cmodal = document.getElementById("cModal");
+					var cmodalleft = document.getElementById("cmodalleft");
+					var span = document.getElementsByClassName("close")[0];
+					cmodalleft.style.right="0";
+					cmodalleft.style.transition="0.3s";
+					cmodal.style.width="100%";
+					cmodal.style.height="100%";
+					  
+					span.onclick = function() {
+						cmodalleft.style.right="-1200";
+						cmodalleft.style.transition="0.3s";
+						cmodal.style.width="0";
+						 cmodal.style.height="0";
+					     var elements = document.getElementById("noac");
+						  elements.classList.remove("active");
+						  elements.classList.add("noacadd");
+						  
+					
+					}
+					window.onclick = function(event) {
+					  if (event.target == cmodal) {
+						cmodalleft.style.right="-1200";
+						cmodalleft.style.transition="0.3s";
+						cmodal.style.width="0";
+						 cmodal.style.height="0";
+						  var elements = document.getElementById("noac");
+						  elements.classList.remove("active");
+						  elements.classList.add("noacadd");
+					  }
+					}
+					return false;
+					}
+            </script>
+            <script>
+                function requestcrypto(){
+                var rrmodal = document.getElementById("rrModal");
+                
+                var span = document.getElementsByClassName("close")[1];
+                    recivepcontent.style.right="0";
+                    recivepcontent.style.transition="0.3s";
+                    rrmodal.style.width="100%";
+                    rrmodal.style.height="100%";
+                span.onclick = function() {
+                
+                  recivepcontent.style.right="-1200";
+                    recivepcontent.style.transition="0.3s";
+                    rrmodal.style.width="0";
+                    rrmodal.style.height="0";
+                  var elementr = document.getElementById("noacr");
+                      elementr.classList.remove("active");
+                      elementr.classList.add("noacaddr");
+                }
+                window.onclick = function(event) {
+                  if (event.target == rrmodal) {
+                     recivepcontent.style.right="-1200";
+                    recivepcontent.style.transition="0.3s";
+                    rrmodal.style.width="0";
+                    rrmodal.style.height="0";
+                    document.getElementById("copied2").style.display="none";
+                     var elementr = document.getElementById("noacr");
+                      elementr.classList.remove("active");
+                      elementr.classList.add("noacaddr");
+                  }
+                }
+                return false;
+                }
+            </script>
+             <script>
+                function depositt(){
+                var deposit = document.getElementById("deposit");
+                var depositcontent = document.getElementById("depositcontent");
+                
+                var span = document.getElementsByClassName("close")[2];
+                    depositcontent.style.right="0";
+                    depositcontent.style.transition="0.3s";
+                    deposit.style.width="100%";
+                    deposit.style.height="100%";
+                    span.onclick = function() {
+                
+                    depositcontent.style.right="-1200";
+                    depositcontent.style.transition="0.3s";
+                    deposit.style.width="0";
+                    deposit.style.height="0";
+					
+					var elementd = document.getElementById("noacd");
+						  elementd.classList.remove("active");
+						  elementd.classList.add("noacd");
+                  
+                }
+                window.onclick = function(event) {
+                  if (event.target == deposit) {
+                     depositcontent.style.right="-1200";
+                    depositcontent.style.transition="0.3s";
+                    deposit.style.width="0";
+                    deposit.style.height="0";
+                    document.getElementById("copied2").style.display="none";
+					
+					var elementd = document.getElementById("noacd");
+						  elementd.classList.remove("active");
+						  elementd.classList.add("noacd");
+                  }
+                }
+                return false;
+                }
+            </script>
+            <script>
+                function exchange(){
+					var edmodal = document.getElementById("edModal");
+					var edmodalleft = document.getElementById("edmodalleft");
+					var span = document.getElementsByClassName("close")[3];
+					edmodalleft.style.left="0";
+					edmodalleft.style.transition="0.3s";
+					edmodal.style.width="100%";
+					edmodal.style.height="100%";
+					  
+					span.onclick = function() {
+						edmodalleft.style.left="-1200";
+						edmodalleft.style.transition="0.3s";
+						edmodal.style.width="0";
+						edmodal.style.height="0";
+					    var elemente = document.getElementById("noace");
+						  elemente.classList.remove("active");
+						  elemente.classList.add("noace");
+					
+					}
+					window.onclick = function(event) {
+					  if (event.target == edmodal) {
+						edmodalleft.style.left="-1200";
+						edmodalleft.style.transition="0.3s";
+						edmodal.style.width="0";
+						 edmodal.style.height="0";
+						  var elemente = document.getElementById("noace");
+						  elemente.classList.remove("active");
+						  elemente.classList.add("noace");
+					  }
+					}
+					return false;
+					}
+            </script>
+            
+            
+             <script>
+                
+                
+                $('.btmm').on('click', function() {
+                    var $this = $(this);
+                  $this.button('loading');
+                    setTimeout(function() {
+                       $this.button('reset');
+                   },8000);
+                });
+                
+            </script>
+          <script>
+                $(function(){
+                  new Clipboard('.copy-text');
+                });
+                </script>
+                <script>
+					setTimeout(function() {
+					
+					$("#ok2").on('click', function() {
+					   $("#copied2").fadeIn();
+					  $("#copied2").fadeOut();
+					});
+							 
+							}, 2000);
+							
+						 setTimeout(function() {
+						 
+						  $("#ok3").on('click', function() {
+					   $("#copied3").fadeIn();
+					   $("#copied3").fadeOut();
+					});
+						 
+						 }  , 2000);
+							
+					  setTimeout(function() {
+						 
+						  $("#ok4").on('click', function() {
+					   $("#copied4").fadeIn();
+					   $("#copied4").fadeOut();
+					});
+						 
+						 }  , 2000);
+							
+					 setTimeout(function() {
+						 
+						  $("#ok5").on('click', function() {
+					   $("#copied5").fadeIn();
+					   $("#copied5").fadeOut();
+					});
+						 
+						 }  , 2000);
+							
+					 setTimeout(function() {
+						 
+						  $("#ok6").on('click', function() {
+					   $("#copied6").fadeIn();
+					   $("#copied6").fadeOut();
+					});
+						 
+						 }  , 2000);
+							
+					 setTimeout(function() {
+						 
+						  $("#ok7").on('click', function() {
+					   $("#copied7").fadeIn();
+					   $("#copied7").fadeOut();
+					});
+						 
+						 }  , 2000);
+                        
+            </script>
+            
+     
+            
+            
+            
+        
+            
+            
+            
+            
+        
+                
+                
+            
+    </body>
+</html>

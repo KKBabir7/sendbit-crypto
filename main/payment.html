@@ -1,0 +1,278 @@
+<html>
+       <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	        <title>
+	          Sendbit-payments
+	        </title>
+			           <link rel="icon" href="img/logo/title.png" type="image/png" sizes="16x16">
+		               <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+	                    <link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+						<link rel="stylesheet" href="css/bootstrap.min.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/navbar.css">
+						<link rel="stylesheet" href="css/payment.css">
+						<link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+		               <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+					    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+                      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+                        
+	    
+	</head>
+	
+	<body>
+
+
+<!---------------------navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+	<div class="container">
+		<div class="navbar-header">
+			<button onclick="mobile()" type="button" class="navbar-toggle collapsed first-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				 <span class="icon-bar"></span>
+				 <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/index.html"><img   class="img-responsive"  src="img/img/sendbitlogo.png">
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav menu-left">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/main/documentation.html">API documentation</a></li>
+				<li><a href="/main/security.html">Security</a></li>
+				<li><a href="/main/reviews.html">FAQ</a></li>
+				<li><a href="/main/docs.html">API status</a></li>
+				
+			</ul>
+			<ul class="nav navbar-nav navbar-right menu-right">
+				<li class="log"><a href="/main/log.html"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+				<li class="sign "><a href="/main/sign.html" type="button" class="btn btn-primary">Sign up</a>&nbsp;&nbsp;&nbsp;</li>
+			</ul>
+		</div>	
+	</div>
+</nav> 
+<!---------------------mobile navbar -->
+<div id="mobile" class="modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<center>
+				<div class="tabbable-line">
+					<ul class="nav nav-tabs ul">
+						<li><a data-toggle="tab" href="#business">API docs</a></li>
+					</ul>
+				</div>
+			</center>   
+			<span class="close">&times;</span>	
+		</div>
+		<div class="modal-body">
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/main/documentation.html">API documentation</a></li>
+				<li><a href="/main/security.html">Security</a></li>
+				<li><a href="/main/reviews.html">FAQ</a></li>
+				<li><a href="/main/docs.html">API status</a></li>
+				<li class="log"><a href="/main/log.html
+					"><i class="fa fa-user-o"></i>&nbsp; <span>Log in</span></a></li>
+				<center><p class="gt"><a href="/main/sign.html" class="btn btn-primary" role="button">Get Start</a></p></center>
+			</ul>
+		</div>
+	</div>
+</div>
+		<section class="payment">
+		    <div class="container-fluid p-head">
+			    <div class="row">
+			        <div class="col-md-12">
+					    <center>
+					    <p>Amount:10.0 EUR</p>
+					    <h2>Make a payment</h2>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="row payment-row">
+			    <div class="col-md-3 col-sm-3">
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 payment-form">
+					<div class="container-fluid">
+					  
+						<div class="center"> 
+						    <div class="row payment-center">
+							    <div class="col-md-5 payment-center-5">
+								    <div class="img">
+								        <img class="img-responsive" src="img/1scaner.png">
+								    </div>
+									<center><p>2NqpuenAhbidduebjeAggjskjuyyriw</p></center>
+								</div>
+							    <div class="col-md-7 payment-center-7">
+								    <div class="row">
+									    <div class="col-md-8 col-sm-8 col-xs-8">
+										    <p class="send">Send exact amount</p>
+										    <h4 class="add" id="signature_container">0.00104686 BTC</h4>
+										</div>
+										<div class="col-md-4 col-sm-4 col-xs-4">
+										    <p id="rok" class="copy" onclick="selectElementContents( document.getElementById('signature_container') );">COPY<span><i class="fa fa-check" id="dik"></i></span></p>
+										</div>
+										
+									</div>
+									
+								    <div class="row">
+									    <div class="col-md-8 col-sm-8 col-xs-8">
+										    <p class="send">To this BTC address</p>
+										    <h4 class="add" id="signature_container1">2N9vg....MHPHr</h4>
+										
+										</div>
+										<div class="col-md-4 col-sm-4 col-xs-4">
+										    <p id="rok1" class="copy" onclick="selectElementContents1( document.getElementById('signature_container1') );">COPY</p>
+										
+										</div>
+									</div>
+									<center><p class="wallet"><i class="fas fa-wallet"></i> &nbsp;Open wallet</p></center>
+								    
+								</div>
+							    
+							
+							</div>
+					    </div>
+						
+				    </div>
+					
+				</div>
+				
+				<div class="col-md-3 col-sm-3 ">
+				</div>		
+			</div>
+			<div class="container-fluid p-footer" >
+			    <div class="row">
+				    <div class="col-md-3">
+					</div>
+				    <div class="col-md-6">
+					    <div class="row">
+						    <div class="col-md-5 p-footer-5">
+							<i class="material-icons">info_outline</i>
+					        <p>Make sure you send BTC within 10 minutes.Afterwards the rate will expire and you will have to create a new payment</p>
+							</div>
+							<div class="col-md-7 p-footer-7">
+							    <p>Exchange rate fixed for <span class="rate">9.47</span></p>
+							    <p>Fixed rate<span class="rate1">1 BTC = 9,552,4159 EUR</span></p>
+							</div>	
+						</div>
+						<br><br><br>
+					</div>
+					<div class="col-md-3">
+					
+					</div>
+				</div>
+			
+			</div>
+			
+		</section>
+		
+	<div class="copied" id="cpop">
+        <p>Copied successfully &nbsp;<i onclick="remove()" class="fa fa-close"></i></p>
+
+    </div>	
+		<div class="copied" id="cpope">
+        <p>Copied successfully &nbsp;<i onclick="removee()" class="fa fa-close"></i></p>
+
+    </div>	
+		
+		
+		
+	<div class="dropup dropuptemporaly">
+		<button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  All Page
+		  <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+		  <li><a href="/buisness/buis.html">Business</a></li>
+		  <li><a href="/dashbord and profile/index.html">Dashboard</a></li>
+		  <li><a href="/dashbord and profile/edit.html">Edit Profile</a></li>
+		  <li><a href="/learn coin/bit.html">Bit Learn</a></li>
+		  <li><a href="/learn coin/eth.html">Eth Learn</a></li>
+		  <li><a href="/learn coin/lite.html">Lite Learn</a></li>
+		  <li><a href="/learn coin/bch.html">Bch Learn</a></li>
+		  <li><a href="/learn coin/dash.html">Dash Learn</a></li>
+		  <li><a href="/main/invoice.html">Invioce</a></li>
+		  <li><a href="/main/payment.html">Payment</a></li>
+		</ul>
+	  </div>
+		
+		
+	         
+	           <script src="js/bootstrap.js"></script>
+			   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			   
+			   <script src="js/bootstrap.min.js"></script>
+			   <script src="js/extranal.js"></script>
+			   
+			    <script>
+  function selectElementContents(el) {
+    var body = document.body,
+      range, sel;
+    if (document.createRange && window.getSelection) {
+      range = document.createRange();
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      range.selectNodeContents(el);
+      sel.addRange(range);
+    }
+    document.execCommand("Copy");
+	document.getElementById("cpope").style.display="none";
+	document.getElementById("rok").innerHTML="COPIED";
+	document.getElementById("cpop").style.display="block";
+	setTimeout(function(){
+	   document.getElementById("rok").innerHTML="COPY";
+	   document.getElementById("cpop").style.display="none";
+	},4000);
+  }
+function remove(){
+document.getElementById("cpop").style.display="none";
+document.getElementById("cpope").style.display="none";
+}
+	
+		    </script>
+			   <script>
+  function selectElementContents1(el) {
+    var body = document.body,
+      range, sel;
+    if (document.createRange && window.getSelection) {
+      range = document.createRange();
+      sel = window.getSelection();
+      sel.removeAllRanges();
+      range.selectNodeContents(el);
+      sel.addRange(range);
+    }
+    document.execCommand("Copy");
+	document.getElementById("cpop").style.display="none";
+	document.getElementById("rok1").innerHTML="COPIED";
+	document.getElementById("cpope").style.display="block";
+	setTimeout(function(){
+	   document.getElementById("rok1").innerHTML="COPY";
+	    document.getElementById("cpope").style.display="none";
+		
+	},4000);
+  }
+  
+  function removee(){
+document.getElementById("cpope").style.display="none";
+document.getElementById("cpop").style.display="none";
+
+}
+	
+  
+	    </script>
+			  
+		
+<script>
+  var re=document.getElementById("content1").value;
+  re = Math.floor((Math.random() * 100) + 1);
+</script>
+			<script>
+var mySVG = document.getElementById("mySVG");
+mySVG.setAttribute("width",  window.innerWidth);
+mySVG.setAttribute("height", window.innerHeight);
+</script>   
+	</body>
+</html>

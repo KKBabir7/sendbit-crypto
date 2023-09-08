@@ -1,0 +1,179 @@
+body{
+	overflow:hidden;
+}
+.edit-p{
+	overflow-y:scroll;
+	 -ms-overflow-style: none;  /* IE and Edge */
+	 overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+	height:100%;
+	border-right:1px solid rgba(0,0,0,0.1);
+	background-image:url(../img/log.svg);
+
+    background-position: center;
+    background-position-y: 60px; 
+    background-position-x: -60px; 
+	background-size: cover;
+    background-repeat: no-repeat;
+	z-index:10000;
+}
+.edit-p::-webkit-scrollbar {
+  display: none;
+}
+.edit-p .e-i{
+    color:#0d427b;
+	margin-bottom:25px;
+	font-weight:600;
+	font-size:24px;
+	
+}
+.edit-p .e-i-a{
+    color:rgba(0,0,0,0.8);
+	margin-bottom:25px;
+	font-weight:600;
+	font-size:23px;
+	
+}
+.edit-p .jumbotron{
+	margin-top:80px;
+	padding:12px 30px 20px 30px;
+	background:#fff;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.20);
+}
+
+.edit-p .jumbotron .wrong1{
+	float:right;
+	margin-top:-45px;
+	font-size:14px;
+	color:rgba(255,0,0,0.7);
+	font-weight:bold;
+}
+.edit-p .jumbotron .wrong1 p{
+	float:right;
+	transition:all 0.3s ease;
+	
+	font-size:14px;
+	color:rgba(255,0,0,0.7);
+	font-weight:bold;
+}
+
+.edit-p .jumbotron .media .media-left img{
+	border:1px solid rgba(0,0,0,0.1);
+}
+
+.edit-p .jumbotron .media .media-body{
+	padding-top:38px;
+}
+
+
+.edit-p .jumbotron .media .media-body .btn{
+	
+	box-shadow:none;
+	outline:none;
+	border:none;
+}
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+.custom-file-upload .custom-file-upload1 {
+    border: 0px solid #ccc;
+    display: inline-block;
+    padding:2px 10px;
+	color:#fff;
+	border-radius:5px;
+	font-weight:500;
+	background:#5cb85c;
+    cursor: pointer;
+}
+.edit-p .jumbotron .media .media-body p{
+	font-size:13px;
+	font-weight:400;
+	color:rgba(0,0,0,0.5);
+}
+
+
+
+.form-horizontal{
+	padding-left:1px;
+}
+.form-horizontal label{
+	 color:rgba(0,0,0,0.5);
+
+}
+
+.form-horizontal input{
+	width:300px;
+	box-shadow:none;
+	outline:none;
+}
+.form-horizontal input:focus{
+	width:300px;
+	box-shadow:none;
+	outline:none;
+	border:1px solid #5cb85c;
+}
+
+
+.edit-p .jumbotron .btn-lg{
+	box-shadow:none;
+	outline:none;
+	border:none;
+	font-weight:bold;
+	font-size:15px;
+	background:#0d427b;
+	margin-top:35px;
+	transition:all 0.2s ease;
+}
+.edit-p .jumbotron .btn-lg:hover{
+	background:#5cb85c;
+}
+
+#ww1{
+	
+}
+
+ @media screen and (max-width: 768px) {
+	 .edit-p .jumbotron{
+	margin-top:80px;
+	padding:12px 30px 20px 30px;
+	background:#fff;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.20);
+}
+
+.edit-p .jumbotron .wrong1{
+	float:left;
+	margin-top:-20px;
+	
+	position:absolute;
+	font-size:14px;
+	color:rgba(255,0,0,0.7);
+	font-weight:bold;
+}
+
+ }
+
+ @media screen and (max-width: 423px) {
+	 .edit-p .jumbotron{
+	margin-top:80px;
+	padding:2px 30px 10px 10px;
+	background:#fff;
+	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.20);
+}
+}
+@media screen and (max-width: 392px) {
+	
+.edit-p .jumbotron .media .media-body{
+	padding-top:20px;
+}
+
+}
+@media screen and (max-width: 363px) {
+	
+.edit-p .jumbotron .media .media-body{
+	padding-top:0px;
+}
+
+}
+
+
+
